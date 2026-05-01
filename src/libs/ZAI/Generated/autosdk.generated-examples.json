@@ -1,0 +1,103 @@
+{
+  "Examples": [
+    {
+      "Order": 1,
+      "Title": "General Translation: General Translation API provides large model-based multilingual translation services, including general translation, paraphrase translation, two-step translation, and three-pass translation strategies. It supports automatic language detection, glossary customization, translation suggestions, and streaming output. Users only need to call the Translation API, input the text to be processed, specify the source language (auto-detection supported) and target language to receive high-quality translation results. \n\n Popular Special Effects Videos: Popular special effects videos are intelligent templates launched based on trending features from pan-entertainment platforms, designed to precisely adapt to short video creative production needs. Currently, three effect templates are available: \u0060French Kiss\u0060, \u0060Body Shake Dance\u0060, and \u0060Sexy Me\u0060. After selecting a template, users only need to upload an image and enter corresponding prompts to generate a special effects video. \n\n GLM Slide/Poster Agent: An intelligent creation agent built for working people and creators. It goes beyond traditional engineering-style assembly tools\u2014supporting one-click generation of slides or posters from natural language instructions. By natively integrating content generation with layout aesthetics and design conventions, it helps you quickly produce polished, professional-grade materials while lowering design barriers and boosting creative efficiency.",
+      "Slug": "general-translation-general-translation-api-provides-large-model-based-multilingual-translation-services-including-general-translation-paraphrase-translation-two-step-translation-and-three-pass-translation-strategies-it-supports-automatic-language-detection-glossary-customization-translation-suggestions-and-streaming-output-users-only-need-to-call-the-translation-api-input-the-text-to-be-processed-specify-the-source-language-auto-detection-supported-and-target-language-to-receive-high-quality-translation-results-popular-special-effects-videos-popular-special-effects-videos-are-intelligent-templates-launched-based-on-trending-features-from-pan-entertainment-platforms-designed-to-precisely-adapt-to-short-video-creative-production-needs-currently-three-effect-templates-are-available-french-kiss-body-shake-dance-and-sexy-me-after-selecting-a-template-users-only-need-to-upload-an-image-and-enter-corresponding-prompts-to-generate-a-special-effects-video-glm-slide-poster-agent-an-intelligent-creation-agent-built-for-working-people-and-creators-it-goes-beyond-traditional-engineering-style-assembly-tools-supporting-one-click-generation-of-slides-or-posters-from-natural-language-instructions-by-natively-integrating-content-generation-with-layout-aesthetics-and-design-conventions-it-helps-you-quickly-produce-polished-professional-grade-materials-while-lowering-design-barriers-and-boosting-creative-efficiency",
+      "Description": "General Translation: General Translation API provides large model-based multilingual translation services, including general translation, paraphrase translation, two-step translation, and three-pass translation strategies. It supports automatic language detection, glossary customization, translation suggestions, and streaming output. Users only need to call the Translation API, input the text to be processed, specify the source language (auto-detection supported) and target language to receive high-quality translation results. \n\n Popular Special Effects Videos: Popular special effects videos are intelligent templates launched based on trending features from pan-entertainment platforms, designed to precisely adapt to short video creative production needs. Currently, three effect templates are available: \u0060French Kiss\u0060, \u0060Body Shake Dance\u0060, and \u0060Sexy Me\u0060. After selecting a template, users only need to upload an image and enter corresponding prompts to generate a special effects video. \n\n GLM Slide/Poster Agent: An intelligent creation agent built for working people and creators. It goes beyond traditional engineering-style assembly tools\u2014supporting one-click generation of slides or posters from natural language instructions. By natively integrating content generation with layout aesthetics and design conventions, it helps you quickly produce polished, professional-grade materials while lowering design barriers and boosting creative efficiency.",
+      "Language": "http",
+      "Code": "### General Translation: General Translation API provides large model-based multilingual translation services, including general translation, paraphrase translation, two-step translation, and three-pass translation strategies. It supports automatic language detection, glossary customization, translation suggestions, and streaming output. Users only need to call the Translation API, input the text to be processed, specify the source language (auto-detection supported) and target language to receive high-quality translation results. \n\n Popular Special Effects Videos: Popular special effects videos are intelligent templates launched based on trending features from pan-entertainment platforms, designed to precisely adapt to short video creative production needs. Currently, three effect templates are available: \u0060French Kiss\u0060, \u0060Body Shake Dance\u0060, and \u0060Sexy Me\u0060. After selecting a template, users only need to upload an image and enter corresponding prompts to generate a special effects video. \n\n GLM Slide/Poster Agent: An intelligent creation agent built for working people and creators. It goes beyond traditional engineering-style assembly tools\u2014supporting one-click generation of slides or posters from natural language instructions. By natively integrating content generation with layout aesthetics and design conventions, it helps you quickly produce polished, professional-grade materials while lowering design barriers and boosting creative efficiency.\nPOST {{host}}/v1/agents\nAuthorization: Bearer {{token}}\nAccept-Language: en-US,en\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022agent_id\u0022: \u0022general_translation\u0022,\n  \u0022stream\u0022: true,\n  \u0022messages\u0022: [\n    {\n      \u0022role\u0022: \u0022user\u0022,\n      \u0022content\u0022: []\n    }\n  ],\n  \u0022custom_variables\u0022: {\n    \u0022source_lang\u0022: \u0022auto\u0022,\n    \u0022target_lang\u0022: \u0022zh-CN\u0022,\n    \u0022glossary\u0022: \u0022string\u0022,\n    \u0022strategy\u0022: \u0022general\u0022,\n    \u0022strategy_config\u0022: {\n      \u0022general\u0022: {},\n      \u0022cot\u0022: {}\n    }\n  }\n}\n\n## Responses\n# 200\n# Description: Processing successful\n# Content-Type: application/json\n# default\n# Description: The request has failed.\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "createAgents",
+      "Setup": null
+    },
+    {
+      "Order": 2,
+      "Title": "Generate Image (Async)",
+      "Slug": "generate-image-async",
+      "Description": "Use the [GLM-Image](/guides/image/glm-image) series models to generate high-quality images from text prompts. Through quick and accurate understanding of user text descriptions, \u0060AI\u0060 image expression becomes more precise and personalized. Only supports \u0060GLM-Image\u0060 model.",
+      "Language": "csharp",
+      "Code": "using var client = new ZaiClient(apiKey);\n\nvar request = global::System.Text.Json.JsonSerializer.Deserialize\u003Cglobal::ZAI.AsyncCreateImageRequest\u003E(\n    @\u0022{\n  \u0022\u0022model\u0022\u0022: \u0022\u0022glm-image\u0022\u0022,\n  \u0022\u0022prompt\u0022\u0022: \u0022\u0022A cute little kitten sitting on a sunny windowsill, with the background of blue sky and white clouds.\u0022\u0022,\n  \u0022\u0022size\u0022\u0022: \u0022\u00221280x1280\u0022\u0022\n}\u0022)!;\n\nvar response = await client.CreatePaasV4AsyncImagesGenerationsAsync(\n    request: request\n);",
+      "Format": "sdk",
+      "OperationId": "createPaasV4AsyncImagesGenerations",
+      "Setup": "This example assumes \u0060using ZAI;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 3,
+      "Title": "Speech to Text",
+      "Slug": "speech-to-text",
+      "Description": "Use the [GLM-ASR-2512](/guides/audio/glm-asr-2512) model to transcribe audio files into text, supporting multiple languages and real-time streaming transcription.",
+      "Language": "http",
+      "Code": "### Speech to Text\nPOST {{host}}/paas/v4/audio/transcriptions\nAuthorization: Bearer {{token}}\nContent-Type: multipart/form-data\nAccept: application/json, text/event-stream\n\n{\u0022model\u0022:\u0022glm-asr-2512\u0022,\u0022stream\u0022:false}\n\n## Responses\n# 200\n# Description: Request processed successfully\n# Content-Type: application/json, text/event-stream\n# default\n# Description: Request failed.\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "createPaasV4AudioTranscriptions",
+      "Setup": null
+    },
+    {
+      "Order": 4,
+      "Title": "Create a chat completion model that generates AI replies for given conversation messages. It supports multimodal inputs (text, images, audio, video, file), offers configurable parameters (like temperature, max tokens, tool use), and supports both streaming and non-streaming output modes.",
+      "Slug": "create-a-chat-completion-model-that-generates-ai-replies-for-given-conversation-messages-it-supports-multimodal-inputs-text-images-audio-video-file-offers-configurable-parameters-like-temperature-max-tokens-tool-use-and-supports-both-streaming-and-non-streaming-output-modes",
+      "Description": "Create a chat completion model that generates AI replies for given conversation messages. It supports multimodal inputs (text, images, audio, video, file), offers configurable parameters (like temperature, max tokens, tool use), and supports both streaming and non-streaming output modes.",
+      "Language": "csharp",
+      "Code": "using var client = new ZaiClient(apiKey);\n\nvar request = global::System.Text.Json.JsonSerializer.Deserialize\u003Cglobal::ZAI.OneOf\u003Cglobal::ZAI.ChatCompletionTextRequest, global::ZAI.ChatCompletionVisionRequest\u003E\u003E(\n    @\u0022{\n  \u0022\u0022model\u0022\u0022: \u0022\u0022glm-5.1\u0022\u0022,\n  \u0022\u0022messages\u0022\u0022: [\n    {\n      \u0022\u0022role\u0022\u0022: \u0022\u0022system\u0022\u0022,\n      \u0022\u0022content\u0022\u0022: \u0022\u0022You are a useful AI assistant.\u0022\u0022\n    },\n    {\n      \u0022\u0022role\u0022\u0022: \u0022\u0022user\u0022\u0022,\n      \u0022\u0022content\u0022\u0022: \u0022\u0022Please tell us about the development of artificial intelligence.\u0022\u0022\n    }\n  ],\n  \u0022\u0022temperature\u0022\u0022: 1,\n  \u0022\u0022stream\u0022\u0022: false\n}\u0022)!;\n\nvar response = await client.CreatePaasV4ChatCompletionsAsync(\n    request: request\n);",
+      "Format": "sdk",
+      "OperationId": "createPaasV4ChatCompletions",
+      "Setup": "This example assumes \u0060using ZAI;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 5,
+      "Title": "Generate Image",
+      "Slug": "generate-image",
+      "Description": "Use [GLM-Image](/guides/image/glm-image) series models to generate high-quality images from text prompts. Through quick and accurate understanding of user text descriptions, \u0060AI\u0060 image expression becomes more precise and personalized.",
+      "Language": "csharp",
+      "Code": "using var client = new ZaiClient(apiKey);\n\nvar request = global::System.Text.Json.JsonSerializer.Deserialize\u003Cglobal::ZAI.CreateImageRequest\u003E(\n    @\u0022{\n  \u0022\u0022model\u0022\u0022: \u0022\u0022glm-image\u0022\u0022,\n  \u0022\u0022prompt\u0022\u0022: \u0022\u0022A cute little kitten sitting on a sunny windowsill, with the background of blue sky and white clouds.\u0022\u0022,\n  \u0022\u0022size\u0022\u0022: \u0022\u00221280x1280\u0022\u0022\n}\u0022)!;\n\nvar response = await client.CreatePaasV4ImagesGenerationsAsync(\n    request: request\n);",
+      "Format": "sdk",
+      "OperationId": "createPaasV4ImagesGenerations",
+      "Setup": "This example assumes \u0060using ZAI;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 6,
+      "Title": "Layout Parsing",
+      "Slug": "layout-parsing",
+      "Description": "Use the [GLM-OCR](/guides/vlm/glm-ocr) model to parse the layout of documents and images and extract text content. Support OCR recognition of images and PDF documents, returning detailed layout information and visualization results.",
+      "Language": "csharp",
+      "Code": "using var client = new ZaiClient(apiKey);\n\nvar request = global::System.Text.Json.JsonSerializer.Deserialize\u003Cglobal::ZAI.LayoutParsingRequest\u003E(\n    @\u0022{\n  \u0022\u0022model\u0022\u0022: \u0022\u0022glm-ocr\u0022\u0022,\n  \u0022\u0022file\u0022\u0022: \u0022\u0022https://cdn.bigmodel.cn/static/logo/introduction.png\u0022\u0022\n}\u0022)!;\n\nvar response = await client.CreatePaasV4LayoutParsingAsync(\n    request: request\n);",
+      "Format": "sdk",
+      "OperationId": "createPaasV4LayoutParsing",
+      "Setup": "This example assumes \u0060using ZAI;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 7,
+      "Title": "Text Tokenizer",
+      "Slug": "text-tokenizer",
+      "Description": "\u0060Tokenizer\u0060 is used to split text into \u0060tokens\u0060 recognizable by the model and calculate the count. It receives user input text, processes it through the model for tokenization, and finally returns the corresponding \u0060token\u0060 count. It is suitable for text length evaluation, model input estimation, dialogue context truncation, cost calculation, etc.",
+      "Language": "csharp",
+      "Code": "using var client = new ZaiClient(apiKey);\n\nvar request = global::System.Text.Json.JsonSerializer.Deserialize\u003Cglobal::ZAI.TokenizerRequest\u003E(\n    @\u0022{\n  \u0022\u0022model\u0022\u0022: \u0022\u0022glm-4.6\u0022\u0022,\n  \u0022\u0022messages\u0022\u0022: [\n    {\n      \u0022\u0022role\u0022\u0022: \u0022\u0022user\u0022\u0022,\n      \u0022\u0022content\u0022\u0022: \u0022\u0022What opportunities and challenges will the Chinese large model industry face in 2025?\u0022\u0022\n    }\n  ]\n}\u0022)!;\n\nvar response = await client.CreatePaasV4TokenizerAsync(\n    request: request\n);",
+      "Format": "sdk",
+      "OperationId": "createPaasV4Tokenizer",
+      "Setup": "This example assumes \u0060using ZAI;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 8,
+      "Title": "CogVideoX is a video generation large model developed by Z.AI, equipped with powerful video generation capabilities. Simply inputting text or images allows for effortless video creation.\n\nVidu: A high-performance video large model that combines high consistency and high dynamism, with precise semantic understanding and exceptional reasoning speed.",
+      "Slug": "cogvideox-is-a-video-generation-large-model-developed-by-z-ai-equipped-with-powerful-video-generation-capabilities-simply-inputting-text-or-images-allows-for-effortless-video-creation-vidu-a-high-performance-video-large-model-that-combines-high-consistency-and-high-dynamism-with-precise-semantic-understanding-and-exceptional-reasoning-speed",
+      "Description": "CogVideoX is a video generation large model developed by Z.AI, equipped with powerful video generation capabilities. Simply inputting text or images allows for effortless video creation.\n\nVidu: A high-performance video large model that combines high consistency and high dynamism, with precise semantic understanding and exceptional reasoning speed.",
+      "Language": "csharp",
+      "Code": "using var client = new ZaiClient(apiKey);\n\nvar request = global::System.Text.Json.JsonSerializer.Deserialize\u003Cglobal::ZAI.OneOf\u003Cglobal::ZAI.CogVideoX3Request?, global::ZAI.ViduText2VideoRequest?, global::ZAI.ViduImage2VideoRequest?, global::ZAI.ViduFrames2VideoRequest?, global::ZAI.ViduReference2VideoRequest?\u003E\u003E(\n    @\u0022{\n  \u0022\u0022model\u0022\u0022: \u0022\u0022cogvideox-3\u0022\u0022,\n  \u0022\u0022image_url\u0022\u0022: [\n    \u0022\u0022https://gd-hbimg.huaban.com/ccee58d77afe8f5e17a572246b1994f7e027657fe9e6-qD66In_fw1200webp\u0022\u0022,\n    \u0022\u0022https://gd-hbimg.huaban.com/cc2601d568a72d18d90b2cc7f1065b16b2d693f7fa3f7-hDAwNq_fw1200webp\u0022\u0022\n  ],\n  \u0022\u0022prompt\u0022\u0022: \u0022\u0022Make the picture move\u0022\u0022,\n  \u0022\u0022quality\u0022\u0022: \u0022\u0022quality\u0022\u0022,\n  \u0022\u0022with_audio\u0022\u0022: true,\n  \u0022\u0022size\u0022\u0022: \u0022\u00221920x1080\u0022\u0022,\n  \u0022\u0022fps\u0022\u0022: 30\n}\u0022)!;\n\nvar response = await client.CreatePaasV4VideosGenerationsAsync(\n    request: request\n);",
+      "Format": "sdk",
+      "OperationId": "createPaasV4VideosGenerations",
+      "Setup": "This example assumes \u0060using ZAI;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 9,
+      "Title": "Web Reader",
+      "Slug": "web-reader",
+      "Description": "Reads and parses the content of the specified URL. Supports selectable return formats, cache control, image retention, and summary options.",
+      "Language": "csharp",
+      "Code": "using var client = new ZaiClient(apiKey);\n\nvar request = global::System.Text.Json.JsonSerializer.Deserialize\u003Cglobal::ZAI.ReaderRequest\u003E(\n    @\u0022{\n  \u0022\u0022url\u0022\u0022: \u0022\u0022https://www.example.com\u0022\u0022\n}\u0022)!;\n\nvar response = await client.CreatePaasV4ReaderAsync(\n    request: request\n);",
+      "Format": "sdk",
+      "OperationId": "createPaasV4Reader",
+      "Setup": "This example assumes \u0060using ZAI;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    }
+  ]
+}

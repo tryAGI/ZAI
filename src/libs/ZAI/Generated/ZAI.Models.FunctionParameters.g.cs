@@ -1,0 +1,18 @@
+
+#nullable enable
+
+namespace ZAI
+{
+    /// <summary>
+    /// Parameters defined using JSON Schema. Must pass a JSON Schema object to accurately define accepted parameters. Omit if no parameters are needed when calling the function.
+    /// </summary>
+    public sealed partial class FunctionParameters
+    {
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+    }
+}

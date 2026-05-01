@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Nuget">
+    <Description>C# SDK for Z.AI GLM APIs, including chat, image, video, audio transcription, tools, and agents.</Description>
+    <PackageTags>api;client;sdk;dotnet;openapi;zai;z-ai;zhipu;glm;llm;ai;image-generation;video-generation;audio;agents</PackageTags>
+  </PropertyGroup>
+
+</Project>
