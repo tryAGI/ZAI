@@ -30,6 +30,24 @@ namespace ZAI
         /// Default Value: en-US,en<br/>
         /// Example: en-US,en
         /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::ZAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::ZAI.AutoSDKHttpResponse<global::ZAI.WebSearchResponse>> CreatePaasV4WebSearchAsResponseAsync(
+
+            global::ZAI.WebSearchRequest request,
+            global::ZAI.CreatePaasV4WebSearchAcceptLanguage? acceptLanguage = default,
+            global::ZAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// The [Web Search](/guides/tools/web-search) is a specialized search engine for large language models. Building upon traditional search engine capabilities like web crawling and ranking, it enhances intent recognition to return results better suited for LLM processing (including webpage titles, URLs, summaries, site names, favicons etc.).
+        /// </summary>
+        /// <param name="acceptLanguage">
+        /// Config desired response language for HTTP requests.<br/>
+        /// Default Value: en-US,en<br/>
+        /// Example: en-US,en
+        /// </param>
         /// <param name="searchEngine">
         /// The search engine code to call.<br/>
         ///  search-prime: Z.AI Premium Version Search Engine<br/>

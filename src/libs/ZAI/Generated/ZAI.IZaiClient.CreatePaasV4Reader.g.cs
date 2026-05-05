@@ -21,6 +21,19 @@ namespace ZAI
         /// Web Reader<br/>
         /// Reads and parses the content of the specified URL. Supports selectable return formats, cache control, image retention, and summary options.
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::ZAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::ZAI.AutoSDKHttpResponse<global::ZAI.ReaderResponse>> CreatePaasV4ReaderAsResponseAsync(
+
+            global::ZAI.ReaderRequest request,
+            global::ZAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Web Reader<br/>
+        /// Reads and parses the content of the specified URL. Supports selectable return formats, cache control, image retention, and summary options.
+        /// </summary>
         /// <param name="url">
         /// The URL to retrieve
         /// </param>

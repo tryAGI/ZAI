@@ -21,6 +21,19 @@ namespace ZAI
         /// Text Tokenizer<br/>
         /// `Tokenizer` is used to split text into `tokens` recognizable by the model and calculate the count. It receives user input text, processes it through the model for tokenization, and finally returns the corresponding `token` count. It is suitable for text length evaluation, model input estimation, dialogue context truncation, cost calculation, etc.
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::ZAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::ZAI.AutoSDKHttpResponse<global::ZAI.TokenizerResponse>> CreatePaasV4TokenizerAsResponseAsync(
+
+            global::ZAI.TokenizerRequest request,
+            global::ZAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Text Tokenizer<br/>
+        /// `Tokenizer` is used to split text into `tokens` recognizable by the model and calculate the count. It receives user input text, processes it through the model for tokenization, and finally returns the corresponding `token` count. It is suitable for text length evaluation, model input estimation, dialogue context truncation, cost calculation, etc.
+        /// </summary>
         /// <param name="model">
         /// The model code to be called.<br/>
         /// Default Value: glm-4.6<br/>
