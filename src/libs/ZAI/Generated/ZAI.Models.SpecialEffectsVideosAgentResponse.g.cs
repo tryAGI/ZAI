@@ -29,6 +29,19 @@ namespace ZAI
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickSpecialEffectsVideosAgentResponseVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::ZAI.SpecialEffectsVideosAgentResponseVariant1? value)
+        {
+            value = SpecialEffectsVideosAgentResponseVariant1;
+            return IsSpecialEffectsVideosAgentResponseVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::ZAI.SpecialEffectsVideosAgentError? Error { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace ZAI
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Error))]
 #endif
         public bool IsError => Error != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickError(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::ZAI.SpecialEffectsVideosAgentError? value)
+        {
+            value = Error;
+            return IsError;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -118,8 +144,8 @@ namespace ZAI
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::ZAI.SpecialEffectsVideosAgentResponseVariant1?, TResult>? specialEffectsVideosAgentResponseVariant1 = null,
-            global::System.Func<global::ZAI.SpecialEffectsVideosAgentError?, TResult>? error = null,
+            global::System.Func<global::ZAI.SpecialEffectsVideosAgentResponseVariant1, TResult>? specialEffectsVideosAgentResponseVariant1 = null,
+            global::System.Func<global::ZAI.SpecialEffectsVideosAgentError, TResult>? error = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +169,32 @@ namespace ZAI
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::ZAI.SpecialEffectsVideosAgentResponseVariant1?>? specialEffectsVideosAgentResponseVariant1 = null,
-            global::System.Action<global::ZAI.SpecialEffectsVideosAgentError?>? error = null,
+            global::System.Action<global::ZAI.SpecialEffectsVideosAgentResponseVariant1>? specialEffectsVideosAgentResponseVariant1 = null,
+
+            global::System.Action<global::ZAI.SpecialEffectsVideosAgentError>? error = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsSpecialEffectsVideosAgentResponseVariant1)
+            {
+                specialEffectsVideosAgentResponseVariant1?.Invoke(SpecialEffectsVideosAgentResponseVariant1!);
+            }
+            else if (IsError)
+            {
+                error?.Invoke(Error!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::ZAI.SpecialEffectsVideosAgentResponseVariant1>? specialEffectsVideosAgentResponseVariant1 = null,
+            global::System.Action<global::ZAI.SpecialEffectsVideosAgentError>? error = null,
             bool validate = true)
         {
             if (validate)
