@@ -29,6 +29,19 @@ namespace ZAI
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickViduReference2VideoRequestVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::ZAI.ViduReference2VideoRequestVariant1? value)
+        {
+            value = ViduReference2VideoRequestVariant1;
+            return IsViduReference2VideoRequestVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::ZAI.VideoCommonRequest? Common { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace ZAI
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Common))]
 #endif
         public bool IsCommon => Common != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCommon(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::ZAI.VideoCommonRequest? value)
+        {
+            value = Common;
+            return IsCommon;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -118,8 +144,8 @@ namespace ZAI
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::ZAI.ViduReference2VideoRequestVariant1?, TResult>? viduReference2VideoRequestVariant1 = null,
-            global::System.Func<global::ZAI.VideoCommonRequest?, TResult>? common = null,
+            global::System.Func<global::ZAI.ViduReference2VideoRequestVariant1, TResult>? viduReference2VideoRequestVariant1 = null,
+            global::System.Func<global::ZAI.VideoCommonRequest, TResult>? common = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +169,32 @@ namespace ZAI
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::ZAI.ViduReference2VideoRequestVariant1?>? viduReference2VideoRequestVariant1 = null,
-            global::System.Action<global::ZAI.VideoCommonRequest?>? common = null,
+            global::System.Action<global::ZAI.ViduReference2VideoRequestVariant1>? viduReference2VideoRequestVariant1 = null,
+
+            global::System.Action<global::ZAI.VideoCommonRequest>? common = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsViduReference2VideoRequestVariant1)
+            {
+                viduReference2VideoRequestVariant1?.Invoke(ViduReference2VideoRequestVariant1!);
+            }
+            else if (IsCommon)
+            {
+                common?.Invoke(Common!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::ZAI.ViduReference2VideoRequestVariant1>? viduReference2VideoRequestVariant1 = null,
+            global::System.Action<global::ZAI.VideoCommonRequest>? common = null,
             bool validate = true)
         {
             if (validate)
