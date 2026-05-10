@@ -57,5 +57,18 @@ namespace ZAI
         public VisionMultimodalContentItemImage()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="VisionMultimodalContentItemImage"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static VisionMultimodalContentItemImage FromImageUrl(global::ZAI.VisionMultimodalContentItemImageImageUrl imageUrl)
+        {
+            return new VisionMultimodalContentItemImage
+            {
+                ImageUrl = imageUrl,
+            };
+        }
+
     }
 }

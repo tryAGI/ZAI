@@ -266,5 +266,6 @@ namespace ZAI
         public TranslationAgentRequestCustomVariables()
         {
         }
+
     }
 }

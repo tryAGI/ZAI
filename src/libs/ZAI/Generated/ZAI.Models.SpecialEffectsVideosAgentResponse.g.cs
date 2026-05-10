@@ -42,6 +42,13 @@ namespace ZAI
         /// <summary>
         /// 
         /// </summary>
+        public global::ZAI.SpecialEffectsVideosAgentResponseVariant1 PickSpecialEffectsVideosAgentResponseVariant1() => IsSpecialEffectsVideosAgentResponseVariant1
+            ? SpecialEffectsVideosAgentResponseVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SpecialEffectsVideosAgentResponseVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::ZAI.SpecialEffectsVideosAgentError? Error { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace ZAI
             value = Error;
             return IsError;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::ZAI.SpecialEffectsVideosAgentError PickError() => IsError
+            ? Error!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Error' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

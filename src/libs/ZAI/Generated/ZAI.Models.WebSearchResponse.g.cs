@@ -64,5 +64,6 @@ namespace ZAI
         public WebSearchResponse()
         {
         }
+
     }
 }

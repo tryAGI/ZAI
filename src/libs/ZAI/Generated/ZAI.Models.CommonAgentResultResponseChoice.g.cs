@@ -61,5 +61,6 @@ namespace ZAI
         public CommonAgentResultResponseChoice()
         {
         }
+
     }
 }

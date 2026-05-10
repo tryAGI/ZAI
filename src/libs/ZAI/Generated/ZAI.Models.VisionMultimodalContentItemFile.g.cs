@@ -57,5 +57,18 @@ namespace ZAI
         public VisionMultimodalContentItemFile()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="VisionMultimodalContentItemFile"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static VisionMultimodalContentItemFile FromFileUrl(global::ZAI.VisionMultimodalContentItemFileFileUrl fileUrl)
+        {
+            return new VisionMultimodalContentItemFile
+            {
+                FileUrl = fileUrl,
+            };
+        }
+
     }
 }

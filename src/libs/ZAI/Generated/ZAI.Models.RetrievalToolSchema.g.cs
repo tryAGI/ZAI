@@ -53,5 +53,18 @@ namespace ZAI
         public RetrievalToolSchema()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="RetrievalToolSchema"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static RetrievalToolSchema FromRetrieval(global::ZAI.RetrievalObject retrieval)
+        {
+            return new RetrievalToolSchema
+            {
+                Retrieval = retrieval,
+            };
+        }
+
     }
 }

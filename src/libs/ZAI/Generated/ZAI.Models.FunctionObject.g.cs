@@ -66,5 +66,6 @@ namespace ZAI
         public FunctionObject()
         {
         }
+
     }
 }

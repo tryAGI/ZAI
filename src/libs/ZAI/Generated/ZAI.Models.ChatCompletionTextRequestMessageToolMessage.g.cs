@@ -67,5 +67,6 @@ namespace ZAI
         public ChatCompletionTextRequestMessageToolMessage()
         {
         }
+
     }
 }

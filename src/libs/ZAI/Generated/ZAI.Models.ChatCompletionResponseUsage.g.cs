@@ -72,5 +72,6 @@ namespace ZAI
         public ChatCompletionResponseUsage()
         {
         }
+
     }
 }

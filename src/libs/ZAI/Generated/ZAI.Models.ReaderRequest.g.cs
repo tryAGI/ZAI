@@ -146,5 +146,6 @@ namespace ZAI
         public ReaderRequest()
         {
         }
+
     }
 }

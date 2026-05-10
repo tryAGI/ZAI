@@ -39,5 +39,6 @@ namespace ZAI
         public GlmSlideAgentConversationResponseChoice()
         {
         }
+
     }
 }

@@ -57,5 +57,18 @@ namespace ZAI
         public MultimodalContentItemAudio()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="MultimodalContentItemAudio"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static MultimodalContentItemAudio FromInputAudio(global::ZAI.MultimodalContentItemAudioInputAudio inputAudio)
+        {
+            return new MultimodalContentItemAudio
+            {
+                InputAudio = inputAudio,
+            };
+        }
+
     }
 }

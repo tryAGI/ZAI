@@ -57,5 +57,18 @@ namespace ZAI
         public VisionMultimodalContentItemVideo()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="VisionMultimodalContentItemVideo"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static VisionMultimodalContentItemVideo FromVideoUrl(global::ZAI.VisionMultimodalContentItemVideoVideoUrl videoUrl)
+        {
+            return new VisionMultimodalContentItemVideo
+            {
+                VideoUrl = videoUrl,
+            };
+        }
+
     }
 }
