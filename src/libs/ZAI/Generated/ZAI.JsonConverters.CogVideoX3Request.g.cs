@@ -84,6 +84,7 @@ namespace ZAI.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::ZAI.CogVideoX3RequestVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::ZAI.CogVideoX3RequestVariant1> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::ZAI.CogVideoX3RequestVariant1).Name}");
                     cogVideoX3RequestVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -94,9 +95,13 @@ namespace ZAI.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (cogVideoX3RequestVariant1 == null && common == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::ZAI.VideoCommonRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::ZAI.VideoCommonRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::ZAI.VideoCommonRequest).Name}");
                     common = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

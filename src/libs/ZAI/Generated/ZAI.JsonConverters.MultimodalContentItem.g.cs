@@ -150,6 +150,7 @@ namespace ZAI.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::ZAI.MultimodalContentItemText), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::ZAI.MultimodalContentItemText> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::ZAI.MultimodalContentItemText).Name}");
                     text = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -160,9 +161,13 @@ namespace ZAI.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (text == null && image == null && audio == null && video == null && file == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::ZAI.MultimodalContentItemImage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::ZAI.MultimodalContentItemImage> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::ZAI.MultimodalContentItemImage).Name}");
                     image = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -173,9 +178,13 @@ namespace ZAI.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (text == null && image == null && audio == null && video == null && file == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::ZAI.MultimodalContentItemAudio), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::ZAI.MultimodalContentItemAudio> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::ZAI.MultimodalContentItemAudio).Name}");
                     audio = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -186,9 +195,13 @@ namespace ZAI.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (text == null && image == null && audio == null && video == null && file == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::ZAI.MultimodalContentItemVideo), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::ZAI.MultimodalContentItemVideo> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::ZAI.MultimodalContentItemVideo).Name}");
                     video = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -199,9 +212,13 @@ namespace ZAI.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (text == null && image == null && audio == null && video == null && file == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::ZAI.MultimodalContentItemFile), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::ZAI.MultimodalContentItemFile> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::ZAI.MultimodalContentItemFile).Name}");
                     file = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
