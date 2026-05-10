@@ -149,6 +149,11 @@ namespace ZAI
         /// <summary>
         /// 
         /// </summary>
+        public static VisionMultimodalContentItem FromText(global::ZAI.VisionMultimodalContentItemText? value) => new VisionMultimodalContentItem(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator VisionMultimodalContentItem(global::ZAI.VisionMultimodalContentItemImage value) => new VisionMultimodalContentItem((global::ZAI.VisionMultimodalContentItemImage?)value);
 
         /// <summary>
@@ -163,6 +168,11 @@ namespace ZAI
         {
             Image = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static VisionMultimodalContentItem FromImage(global::ZAI.VisionMultimodalContentItemImage? value) => new VisionMultimodalContentItem(value);
 
         /// <summary>
         /// 
@@ -185,6 +195,11 @@ namespace ZAI
         /// <summary>
         /// 
         /// </summary>
+        public static VisionMultimodalContentItem FromVideo(global::ZAI.VisionMultimodalContentItemVideo? value) => new VisionMultimodalContentItem(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator VisionMultimodalContentItem(global::ZAI.VisionMultimodalContentItemFile value) => new VisionMultimodalContentItem((global::ZAI.VisionMultimodalContentItemFile?)value);
 
         /// <summary>
@@ -199,6 +214,11 @@ namespace ZAI
         {
             File = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static VisionMultimodalContentItem FromFile(global::ZAI.VisionMultimodalContentItemFile? value) => new VisionMultimodalContentItem(value);
 
         /// <summary>
         /// 

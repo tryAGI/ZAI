@@ -89,6 +89,11 @@ namespace ZAI
         /// <summary>
         /// 
         /// </summary>
+        public static ViduFrames2VideoRequest FromViduFrames2VideoRequestVariant1(global::ZAI.ViduFrames2VideoRequestVariant1? value) => new ViduFrames2VideoRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ViduFrames2VideoRequest(global::ZAI.VideoCommonRequest value) => new ViduFrames2VideoRequest((global::ZAI.VideoCommonRequest?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace ZAI
         {
             Common = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ViduFrames2VideoRequest FromCommon(global::ZAI.VideoCommonRequest? value) => new ViduFrames2VideoRequest(value);
 
         /// <summary>
         /// 
