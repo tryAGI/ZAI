@@ -89,6 +89,11 @@ namespace ZAI
         /// <summary>
         /// 
         /// </summary>
+        public static CogVideoX3Request FromCogVideoX3RequestVariant1(global::ZAI.CogVideoX3RequestVariant1? value) => new CogVideoX3Request(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator CogVideoX3Request(global::ZAI.VideoCommonRequest value) => new CogVideoX3Request((global::ZAI.VideoCommonRequest?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace ZAI
         {
             Common = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static CogVideoX3Request FromCommon(global::ZAI.VideoCommonRequest? value) => new CogVideoX3Request(value);
 
         /// <summary>
         /// 

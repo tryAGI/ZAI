@@ -179,6 +179,11 @@ namespace ZAI
         /// <summary>
         /// 
         /// </summary>
+        public static MultimodalContentItem FromText(global::ZAI.MultimodalContentItemText? value) => new MultimodalContentItem(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator MultimodalContentItem(global::ZAI.MultimodalContentItemImage value) => new MultimodalContentItem((global::ZAI.MultimodalContentItemImage?)value);
 
         /// <summary>
@@ -193,6 +198,11 @@ namespace ZAI
         {
             Image = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static MultimodalContentItem FromImage(global::ZAI.MultimodalContentItemImage? value) => new MultimodalContentItem(value);
 
         /// <summary>
         /// 
@@ -215,6 +225,11 @@ namespace ZAI
         /// <summary>
         /// 
         /// </summary>
+        public static MultimodalContentItem FromAudio(global::ZAI.MultimodalContentItemAudio? value) => new MultimodalContentItem(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator MultimodalContentItem(global::ZAI.MultimodalContentItemVideo value) => new MultimodalContentItem((global::ZAI.MultimodalContentItemVideo?)value);
 
         /// <summary>
@@ -233,6 +248,11 @@ namespace ZAI
         /// <summary>
         /// 
         /// </summary>
+        public static MultimodalContentItem FromVideo(global::ZAI.MultimodalContentItemVideo? value) => new MultimodalContentItem(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator MultimodalContentItem(global::ZAI.MultimodalContentItemFile value) => new MultimodalContentItem((global::ZAI.MultimodalContentItemFile?)value);
 
         /// <summary>
@@ -247,6 +267,11 @@ namespace ZAI
         {
             File = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static MultimodalContentItem FromFile(global::ZAI.MultimodalContentItemFile? value) => new MultimodalContentItem(value);
 
         /// <summary>
         /// 

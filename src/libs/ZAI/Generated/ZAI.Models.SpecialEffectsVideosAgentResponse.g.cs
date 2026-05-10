@@ -89,6 +89,11 @@ namespace ZAI
         /// <summary>
         /// 
         /// </summary>
+        public static SpecialEffectsVideosAgentResponse FromSpecialEffectsVideosAgentResponseVariant1(global::ZAI.SpecialEffectsVideosAgentResponseVariant1? value) => new SpecialEffectsVideosAgentResponse(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator SpecialEffectsVideosAgentResponse(global::ZAI.SpecialEffectsVideosAgentError value) => new SpecialEffectsVideosAgentResponse((global::ZAI.SpecialEffectsVideosAgentError?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace ZAI
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static SpecialEffectsVideosAgentResponse FromError(global::ZAI.SpecialEffectsVideosAgentError? value) => new SpecialEffectsVideosAgentResponse(value);
 
         /// <summary>
         /// 
