@@ -55,5 +55,18 @@ namespace ZAI
         public ChatCompletionTextRequestMessageSystemMessage()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="ChatCompletionTextRequestMessageSystemMessage"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static ChatCompletionTextRequestMessageSystemMessage FromContent(string content)
+        {
+            return new ChatCompletionTextRequestMessageSystemMessage
+            {
+                Content = content,
+            };
+        }
+
     }
 }

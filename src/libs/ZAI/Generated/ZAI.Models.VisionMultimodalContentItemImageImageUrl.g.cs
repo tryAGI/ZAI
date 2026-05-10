@@ -42,5 +42,6 @@ namespace ZAI
         public VisionMultimodalContentItemImageImageUrl()
         {
         }
+
     }
 }

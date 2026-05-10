@@ -74,5 +74,6 @@ namespace ZAI
         public TokenizerResponseUsage()
         {
         }
+
     }
 }

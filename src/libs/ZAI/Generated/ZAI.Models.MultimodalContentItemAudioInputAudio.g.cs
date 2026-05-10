@@ -55,5 +55,6 @@ namespace ZAI
         public MultimodalContentItemAudioInputAudio()
         {
         }
+
     }
 }

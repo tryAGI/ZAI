@@ -55,5 +55,18 @@ namespace ZAI
         public TokenizerRequestMessageSystemMessage()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="TokenizerRequestMessageSystemMessage"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static TokenizerRequestMessageSystemMessage FromContent(string content)
+        {
+            return new TokenizerRequestMessageSystemMessage
+            {
+                Content = content,
+            };
+        }
+
     }
 }

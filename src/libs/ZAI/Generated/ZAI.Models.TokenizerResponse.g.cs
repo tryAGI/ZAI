@@ -81,5 +81,6 @@ namespace ZAI
         public TokenizerResponse()
         {
         }
+
     }
 }

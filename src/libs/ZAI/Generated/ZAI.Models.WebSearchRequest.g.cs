@@ -150,5 +150,18 @@ namespace ZAI
         public WebSearchRequest()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="WebSearchRequest"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static WebSearchRequest FromSearchQuery(string searchQuery)
+        {
+            return new WebSearchRequest
+            {
+                SearchQuery = searchQuery,
+            };
+        }
+
     }
 }

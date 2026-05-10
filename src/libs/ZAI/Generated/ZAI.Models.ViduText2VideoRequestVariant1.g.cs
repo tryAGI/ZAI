@@ -141,5 +141,6 @@ namespace ZAI
         public ViduText2VideoRequestVariant1()
         {
         }
+
     }
 }

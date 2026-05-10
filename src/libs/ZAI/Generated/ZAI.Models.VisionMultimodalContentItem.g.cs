@@ -42,6 +42,13 @@ namespace ZAI
         /// <summary>
         /// 
         /// </summary>
+        public global::ZAI.VisionMultimodalContentItemText PickText() => IsText
+            ? Text!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::ZAI.VisionMultimodalContentItemImage? Image { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace ZAI
             value = Image;
             return IsImage;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::ZAI.VisionMultimodalContentItemImage PickImage() => IsImage
+            ? Image!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Image' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -102,6 +116,13 @@ namespace ZAI
         /// <summary>
         /// 
         /// </summary>
+        public global::ZAI.VisionMultimodalContentItemVideo PickVideo() => IsVideo
+            ? Video!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Video' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::ZAI.VisionMultimodalContentItemFile? File { get; init; }
 #else
@@ -128,6 +149,13 @@ namespace ZAI
             value = File;
             return IsFile;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::ZAI.VisionMultimodalContentItemFile PickFile() => IsFile
+            ? File!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'File' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

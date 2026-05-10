@@ -206,5 +206,6 @@ namespace ZAI
         public ChatCompletionVisionRequest()
         {
         }
+
     }
 }

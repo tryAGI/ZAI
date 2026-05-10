@@ -42,6 +42,13 @@ namespace ZAI
         /// <summary>
         /// 
         /// </summary>
+        public global::ZAI.ViduText2VideoRequestVariant1 PickViduText2VideoRequestVariant1() => IsViduText2VideoRequestVariant1
+            ? ViduText2VideoRequestVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ViduText2VideoRequestVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::ZAI.VideoCommonRequest? Common { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace ZAI
             value = Common;
             return IsCommon;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::ZAI.VideoCommonRequest PickCommon() => IsCommon
+            ? Common!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Common' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

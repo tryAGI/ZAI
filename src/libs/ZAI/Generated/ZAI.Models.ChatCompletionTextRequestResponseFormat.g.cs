@@ -46,5 +46,6 @@ namespace ZAI
         public ChatCompletionTextRequestResponseFormat()
         {
         }
+
     }
 }

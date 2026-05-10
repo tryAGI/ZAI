@@ -57,5 +57,18 @@ namespace ZAI
         public TranslationAgentRequestMessageContentItem()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="TranslationAgentRequestMessageContentItem"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static TranslationAgentRequestMessageContentItem FromText(string text)
+        {
+            return new TranslationAgentRequestMessageContentItem
+            {
+                Text = text,
+            };
+        }
+
     }
 }
