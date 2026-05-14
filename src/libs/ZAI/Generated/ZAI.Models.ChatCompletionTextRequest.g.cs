@@ -59,10 +59,10 @@ namespace ZAI
 
         /// <summary>
         /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. The GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series default value is `1.0`, GLM-4.5 series default value is `0.6`, GLM-4-32B-0414-128K default value is `0.75`.<br/>
-        /// Default Value: 1F<br/>
-        /// Example: 1F
+        /// Default Value: 1<br/>
+        /// Example: 1
         /// </summary>
-        /// <example>1F</example>
+        /// <example>1</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("temperature")]
         public float? Temperature { get; set; }
 
@@ -158,8 +158,8 @@ namespace ZAI
         /// </param>
         /// <param name="temperature">
         /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. The GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series default value is `1.0`, GLM-4.5 series default value is `0.6`, GLM-4-32B-0414-128K default value is `0.75`.<br/>
-        /// Default Value: 1F<br/>
-        /// Example: 1F
+        /// Default Value: 1<br/>
+        /// Example: 1
         /// </param>
         /// <param name="topP">
         /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. The GLM-5.1, GLM-5, GLM-4.7, GLM-4.6, GLM-4.5 series default value is `0.95`, GLM-4-32B-0414-128K default value is `0.9`.<br/>
