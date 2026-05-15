@@ -9,7 +9,7 @@ namespace ZAI
     public sealed partial class VideoCommonRequest
     {
         /// <summary>
-        /// Provided by the client, must be unique; used to distinguish each request’s unique identifier. If not provided by the client, the platform will generate one by default.
+        /// Passed by the user side, needs to be unique; used to distinguish each request, 6–64 characters. If not provided by the user side, the platform will generate one by default.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("request_id")]
         public string? RequestId { get; set; }
@@ -30,7 +30,7 @@ namespace ZAI
         /// Initializes a new instance of the <see cref="VideoCommonRequest" /> class.
         /// </summary>
         /// <param name="requestId">
-        /// Provided by the client, must be unique; used to distinguish each request’s unique identifier. If not provided by the client, the platform will generate one by default.
+        /// Passed by the user side, needs to be unique; used to distinguish each request, 6–64 characters. If not provided by the user side, the platform will generate one by default.
         /// </param>
         /// <param name="userId">
         /// Unique ID of the end-user, assists the platform in intervening in end-user violations, generating illegal or inappropriate information, or other abusive behaviors. ID length requirement: minimum `6` characters, maximum `128` characters.

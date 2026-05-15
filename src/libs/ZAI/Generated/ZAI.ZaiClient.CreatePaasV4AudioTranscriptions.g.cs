@@ -604,10 +604,10 @@ namespace ZAI
         /// Hotword list to improve recognition accuracy for domain-specific vocabulary. Format example: ["person_name","place_name"]. Recommended not to exceed 100 items.
         /// </param>
         /// <param name="requestId">
-        /// Passed by the client, must be unique. A unique identifier to distinguish each request. If not provided by the client, the platform will generate one by default.
+        /// Passed by the user side, needs to be unique; used to distinguish each request, 6–64 characters. If not provided by the user side, the platform will generate one by default.
         /// </param>
         /// <param name="userId">
-        /// A unique `ID` for the end user, helping the platform intervene in illegal activities, generation of illegal or inappropriate content, or other abusive behaviors by end users. `ID` length requirement: at least `6` characters, at most `128` characters.
+        /// Unique ID for the end user, 6–128 characters. Avoid using sensitive information.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -667,10 +667,10 @@ namespace ZAI
         /// Hotword list to improve recognition accuracy for domain-specific vocabulary. Format example: ["person_name","place_name"]. Recommended not to exceed 100 items.
         /// </param>
         /// <param name="requestId">
-        /// Passed by the client, must be unique. A unique identifier to distinguish each request. If not provided by the client, the platform will generate one by default.
+        /// Passed by the user side, needs to be unique; used to distinguish each request, 6–64 characters. If not provided by the user side, the platform will generate one by default.
         /// </param>
         /// <param name="userId">
-        /// A unique `ID` for the end user, helping the platform intervene in illegal activities, generation of illegal or inappropriate content, or other abusive behaviors by end users. `ID` length requirement: at least `6` characters, at most `128` characters.
+        /// Unique ID for the end user, 6–128 characters. Avoid using sensitive information.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -1205,10 +1205,10 @@ namespace ZAI
         /// Hotword list to improve recognition accuracy for domain-specific vocabulary. Format example: ["person_name","place_name"]. Recommended not to exceed 100 items.
         /// </param>
         /// <param name="requestId">
-        /// Passed by the client, must be unique. A unique identifier to distinguish each request. If not provided by the client, the platform will generate one by default.
+        /// Passed by the user side, needs to be unique; used to distinguish each request, 6–64 characters. If not provided by the user side, the platform will generate one by default.
         /// </param>
         /// <param name="userId">
-        /// A unique `ID` for the end user, helping the platform intervene in illegal activities, generation of illegal or inappropriate content, or other abusive behaviors by end users. `ID` length requirement: at least `6` characters, at most `128` characters.
+        /// Unique ID for the end user, 6–128 characters. Avoid using sensitive information.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>

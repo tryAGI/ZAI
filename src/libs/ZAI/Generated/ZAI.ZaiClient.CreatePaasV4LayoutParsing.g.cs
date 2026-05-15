@@ -502,12 +502,10 @@ namespace ZAI
         /// End page number for parsing when PDF is provided
         /// </param>
         /// <param name="requestId">
-        /// Unique request identifier, automatically generated if not provided<br/>
-        /// Example: req_123456789
+        /// Passed by the user side, needs to be unique; used to distinguish each request, 6–64 characters. If not provided by the user side, the platform will generate one by default.
         /// </param>
         /// <param name="userId">
-        /// End user ID for abuse monitoring. Length: 6-128 characters<br/>
-        /// Example: user_123456
+        /// Unique ID for the end user, 6–128 characters. Avoid using sensitive information.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
