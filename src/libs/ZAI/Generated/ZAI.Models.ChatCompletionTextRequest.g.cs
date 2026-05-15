@@ -28,12 +28,6 @@ namespace ZAI
         public required global::System.Collections.Generic.IList<global::ZAI.OneOf<global::ZAI.ChatCompletionTextRequestMessageUserMessage, global::ZAI.ChatCompletionTextRequestMessageSystemMessage, global::ZAI.ChatCompletionTextRequestMessageAssistantMessage, global::ZAI.ChatCompletionTextRequestMessageToolMessage>> Messages { get; set; }
 
         /// <summary>
-        /// Passed by the user side, needs to be unique; used to distinguish each request. If not provided by the user side, the platform will generate one by default.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("request_id")]
-        public string? RequestId { get; set; }
-
-        /// <summary>
         /// When do_sample is true, sampling strategy is enabled; when do_sample is false, sampling strategy parameters such as temperature and top_p will not take effect. Default value is `true`.<br/>
         /// Default Value: true<br/>
         /// Example: true
@@ -59,10 +53,10 @@ namespace ZAI
 
         /// <summary>
         /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. The GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series default value is `1.0`, GLM-4.5 series default value is `0.6`, GLM-4-32B-0414-128K default value is `0.75`.<br/>
-        /// Default Value: 1<br/>
-        /// Example: 1
+        /// Default Value: 1F<br/>
+        /// Example: 1F
         /// </summary>
-        /// <example>1</example>
+        /// <example>1F</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("temperature")]
         public float? Temperature { get; set; }
 
@@ -118,6 +112,12 @@ namespace ZAI
         public global::ZAI.ChatCompletionTextRequestResponseFormat? ResponseFormat { get; set; }
 
         /// <summary>
+        /// Passed by the user side, needs to be unique; used to distinguish each request, 6–64 characters. If not provided by the user side, the platform will generate one by default.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("request_id")]
+        public string? RequestId { get; set; }
+
+        /// <summary>
         /// Unique ID for the end user, 6–128 characters. Avoid using sensitive information.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("user_id")]
@@ -140,9 +140,6 @@ namespace ZAI
         /// <param name="messages">
         /// The current conversation message list as the model’s prompt input, provided in JSON array format, e.g.,`{“role”: “user”, “content”: “Hello”}`. Possible message types include system messages, user messages, assistant messages, and tool messages. Note: The input must not consist of system messages or assistant messages only.
         /// </param>
-        /// <param name="requestId">
-        /// Passed by the user side, needs to be unique; used to distinguish each request. If not provided by the user side, the platform will generate one by default.
-        /// </param>
         /// <param name="doSample">
         /// When do_sample is true, sampling strategy is enabled; when do_sample is false, sampling strategy parameters such as temperature and top_p will not take effect. Default value is `true`.<br/>
         /// Default Value: true<br/>
@@ -158,8 +155,8 @@ namespace ZAI
         /// </param>
         /// <param name="temperature">
         /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. The GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series default value is `1.0`, GLM-4.5 series default value is `0.6`, GLM-4-32B-0414-128K default value is `0.75`.<br/>
-        /// Default Value: 1<br/>
-        /// Example: 1
+        /// Default Value: 1F<br/>
+        /// Example: 1F
         /// </param>
         /// <param name="topP">
         /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. The GLM-5.1, GLM-5, GLM-4.7, GLM-4.6, GLM-4.5 series default value is `0.95`, GLM-4-32B-0414-128K default value is `0.9`.<br/>
@@ -187,6 +184,9 @@ namespace ZAI
         /// <param name="responseFormat">
         /// Specifies the response format of the model. Defaults to text. Supports two formats:{ "type": "text" } plain text mode, returns natural language text, { "type": "json_object" } JSON mode, returns valid JSON data. When using JSON mode, it’s recommended to clearly request JSON output in the prompt.
         /// </param>
+        /// <param name="requestId">
+        /// Passed by the user side, needs to be unique; used to distinguish each request, 6–64 characters. If not provided by the user side, the platform will generate one by default.
+        /// </param>
         /// <param name="userId">
         /// Unique ID for the end user, 6–128 characters. Avoid using sensitive information.
         /// </param>
@@ -196,7 +196,6 @@ namespace ZAI
         public ChatCompletionTextRequest(
             global::ZAI.ChatCompletionTextRequestModel model,
             global::System.Collections.Generic.IList<global::ZAI.OneOf<global::ZAI.ChatCompletionTextRequestMessageUserMessage, global::ZAI.ChatCompletionTextRequestMessageSystemMessage, global::ZAI.ChatCompletionTextRequestMessageAssistantMessage, global::ZAI.ChatCompletionTextRequestMessageToolMessage>> messages,
-            string? requestId,
             bool? doSample,
             bool? stream,
             global::ZAI.ChatThinking? thinking,
@@ -208,11 +207,11 @@ namespace ZAI
             global::ZAI.ChatCompletionTextRequestToolChoice? toolChoice,
             global::System.Collections.Generic.IList<string>? stop,
             global::ZAI.ChatCompletionTextRequestResponseFormat? responseFormat,
+            string? requestId,
             string? userId)
         {
             this.Model = model;
             this.Messages = messages ?? throw new global::System.ArgumentNullException(nameof(messages));
-            this.RequestId = requestId;
             this.DoSample = doSample;
             this.Stream = stream;
             this.Thinking = thinking;
@@ -224,6 +223,7 @@ namespace ZAI
             this.ToolChoice = toolChoice;
             this.Stop = stop;
             this.ResponseFormat = responseFormat;
+            this.RequestId = requestId;
             this.UserId = userId;
         }
 

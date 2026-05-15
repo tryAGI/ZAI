@@ -539,10 +539,10 @@ namespace ZAI
         /// `search_pro_jina`
         /// </param>
         /// <param name="requestId">
-        /// User-provided unique identifier for distinguishing requests. If not provided, the platform will generate one.
+        /// Passed by the user side, needs to be unique; used to distinguish each request, 6–64 characters. If not provided by the user side, the platform will generate one by default.
         /// </param>
         /// <param name="userId">
-        /// Unique ID of the end user, helping the platform intervene in illegal activities, inappropriate content generation, or other abuses. ID length: 6 to 128 characters.
+        /// Unique ID for the end user, 6–128 characters. Avoid using sensitive information.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>

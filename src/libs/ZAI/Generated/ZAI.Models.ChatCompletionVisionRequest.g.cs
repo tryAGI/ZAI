@@ -28,12 +28,6 @@ namespace ZAI
         public required global::System.Collections.Generic.IList<global::ZAI.OneOf<global::ZAI.ChatCompletionVisionRequestMessageUserMessage, global::ZAI.ChatCompletionVisionRequestMessageSystemMessage, global::ZAI.ChatCompletionVisionRequestMessageAssistantMessage>> Messages { get; set; }
 
         /// <summary>
-        /// Passed by the user side, needs to be unique; used to distinguish each request. If not provided by the user side, the platform will generate one by default.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("request_id")]
-        public string? RequestId { get; set; }
-
-        /// <summary>
         /// When do_sample is true, sampling strategy is enabled; when do_sample is false, sampling strategy parameters such as temperature and top_p will not take effect. Default value is `true`.<br/>
         /// Default Value: true<br/>
         /// Example: true
@@ -103,6 +97,12 @@ namespace ZAI
         public global::System.Collections.Generic.IList<string>? Stop { get; set; }
 
         /// <summary>
+        /// Passed by the user side, needs to be unique; used to distinguish each request, 6–64 characters. If not provided by the user side, the platform will generate one by default.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("request_id")]
+        public string? RequestId { get; set; }
+
+        /// <summary>
         /// Unique ID for the end user, 6–128 characters. Avoid using sensitive information.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("user_id")]
@@ -124,9 +124,6 @@ namespace ZAI
         /// </param>
         /// <param name="messages">
         /// The current conversation message list as the model’s prompt input, provided in JSON array format, e.g.,`{“role”: “user”, “content”: “Hello”}`. Possible message types include system messages, user messages. Note: The input must not consist of system or assistant messages only.
-        /// </param>
-        /// <param name="requestId">
-        /// Passed by the user side, needs to be unique; used to distinguish each request. If not provided by the user side, the platform will generate one by default.
         /// </param>
         /// <param name="doSample">
         /// When do_sample is true, sampling strategy is enabled; when do_sample is false, sampling strategy parameters such as temperature and top_p will not take effect. Default value is `true`.<br/>
@@ -164,6 +161,9 @@ namespace ZAI
         /// <param name="stop">
         /// Stop word list. Generation stops when the model encounters any specified string. Currently, only one stop word is supported, in the format ["stop_word1"].
         /// </param>
+        /// <param name="requestId">
+        /// Passed by the user side, needs to be unique; used to distinguish each request, 6–64 characters. If not provided by the user side, the platform will generate one by default.
+        /// </param>
         /// <param name="userId">
         /// Unique ID for the end user, 6–128 characters. Avoid using sensitive information.
         /// </param>
@@ -173,7 +173,6 @@ namespace ZAI
         public ChatCompletionVisionRequest(
             global::ZAI.ChatCompletionVisionRequestModel model,
             global::System.Collections.Generic.IList<global::ZAI.OneOf<global::ZAI.ChatCompletionVisionRequestMessageUserMessage, global::ZAI.ChatCompletionVisionRequestMessageSystemMessage, global::ZAI.ChatCompletionVisionRequestMessageAssistantMessage>> messages,
-            string? requestId,
             bool? doSample,
             bool? stream,
             global::ZAI.ChatThinking? thinking,
@@ -183,11 +182,11 @@ namespace ZAI
             global::System.Collections.Generic.IList<global::ZAI.FunctionToolSchema>? tools,
             global::ZAI.ChatCompletionVisionRequestToolChoice? toolChoice,
             global::System.Collections.Generic.IList<string>? stop,
+            string? requestId,
             string? userId)
         {
             this.Model = model;
             this.Messages = messages ?? throw new global::System.ArgumentNullException(nameof(messages));
-            this.RequestId = requestId;
             this.DoSample = doSample;
             this.Stream = stream;
             this.Thinking = thinking;
@@ -197,6 +196,7 @@ namespace ZAI
             this.Tools = tools;
             this.ToolChoice = toolChoice;
             this.Stop = stop;
+            this.RequestId = requestId;
             this.UserId = userId;
         }
 
