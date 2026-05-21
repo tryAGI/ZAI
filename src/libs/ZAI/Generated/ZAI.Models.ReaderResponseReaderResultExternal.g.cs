@@ -41,5 +41,6 @@ namespace ZAI
         public ReaderResponseReaderResultExternal()
         {
         }
+
     }
 }

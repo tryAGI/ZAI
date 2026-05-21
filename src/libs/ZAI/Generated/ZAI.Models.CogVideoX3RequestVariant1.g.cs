@@ -144,5 +144,6 @@ namespace ZAI
         public CogVideoX3RequestVariant1()
         {
         }
+
     }
 }

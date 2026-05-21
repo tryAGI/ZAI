@@ -30,6 +30,24 @@ namespace ZAI
         /// Default Value: en-US,en<br/>
         /// Example: en-US,en
         /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::ZAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::ZAI.AutoSDKHttpResponse<global::ZAI.WebSearchResponse>> CreatePaasV4WebSearchAsResponseAsync(
+
+            global::ZAI.WebSearchRequest request,
+            global::ZAI.CreatePaasV4WebSearchAcceptLanguage? acceptLanguage = default,
+            global::ZAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// The [Web Search](/guides/tools/web-search) is a specialized search engine for large language models. Building upon traditional search engine capabilities like web crawling and ranking, it enhances intent recognition to return results better suited for LLM processing (including webpage titles, URLs, summaries, site names, favicons etc.).
+        /// </summary>
+        /// <param name="acceptLanguage">
+        /// Config desired response language for HTTP requests.<br/>
+        /// Default Value: en-US,en<br/>
+        /// Example: en-US,en
+        /// </param>
         /// <param name="searchEngine">
         /// The search engine code to call.<br/>
         ///  search-prime: Z.AI Premium Version Search Engine<br/>
@@ -65,10 +83,10 @@ namespace ZAI
         /// `search_pro_jina`
         /// </param>
         /// <param name="requestId">
-        /// User-provided unique identifier for distinguishing requests. If not provided, the platform will generate one.
+        /// Passed by the user side, needs to be unique; used to distinguish each request, 6–64 characters. If not provided by the user side, the platform will generate one by default.
         /// </param>
         /// <param name="userId">
-        /// Unique ID of the end user, helping the platform intervene in illegal activities, inappropriate content generation, or other abuses. ID length: 6 to 128 characters.
+        /// Unique ID for the end user, 6–128 characters. Avoid using sensitive information.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>

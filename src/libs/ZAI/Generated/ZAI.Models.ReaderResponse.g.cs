@@ -86,5 +86,6 @@ namespace ZAI
         public ReaderResponse()
         {
         }
+
     }
 }

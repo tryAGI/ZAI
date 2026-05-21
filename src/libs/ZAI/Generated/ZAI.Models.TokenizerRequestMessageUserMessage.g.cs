@@ -56,5 +56,6 @@ namespace ZAI
         public TokenizerRequestMessageUserMessage()
         {
         }
+
     }
 }

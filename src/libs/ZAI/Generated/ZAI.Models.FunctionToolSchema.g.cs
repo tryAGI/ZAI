@@ -53,5 +53,18 @@ namespace ZAI
         public FunctionToolSchema()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="FunctionToolSchema"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static FunctionToolSchema FromFunction(global::ZAI.FunctionObject function)
+        {
+            return new FunctionToolSchema
+            {
+                Function = function,
+            };
+        }
+
     }
 }

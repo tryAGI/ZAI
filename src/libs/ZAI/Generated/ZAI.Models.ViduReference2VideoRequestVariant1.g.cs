@@ -154,5 +154,6 @@ namespace ZAI
         public ViduReference2VideoRequestVariant1()
         {
         }
+
     }
 }

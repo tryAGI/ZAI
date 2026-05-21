@@ -53,18 +53,14 @@ namespace ZAI
         public int? EndPageId { get; set; }
 
         /// <summary>
-        /// Unique request identifier, automatically generated if not provided<br/>
-        /// Example: req_123456789
+        /// Passed by the user side, needs to be unique; used to distinguish each request, 6–64 characters. If not provided by the user side, the platform will generate one by default.
         /// </summary>
-        /// <example>req_123456789</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("request_id")]
         public string? RequestId { get; set; }
 
         /// <summary>
-        /// End user ID for abuse monitoring. Length: 6-128 characters<br/>
-        /// Example: user_123456
+        /// Unique ID for the end user, 6–128 characters. Avoid using sensitive information.
         /// </summary>
-        /// <example>user_123456</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("user_id")]
         public string? UserId { get; set; }
 
@@ -100,12 +96,10 @@ namespace ZAI
         /// End page number for parsing when PDF is provided
         /// </param>
         /// <param name="requestId">
-        /// Unique request identifier, automatically generated if not provided<br/>
-        /// Example: req_123456789
+        /// Passed by the user side, needs to be unique; used to distinguish each request, 6–64 characters. If not provided by the user side, the platform will generate one by default.
         /// </param>
         /// <param name="userId">
-        /// End user ID for abuse monitoring. Length: 6-128 characters<br/>
-        /// Example: user_123456
+        /// Unique ID for the end user, 6–128 characters. Avoid using sensitive information.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -136,5 +130,6 @@ namespace ZAI
         public LayoutParsingRequest()
         {
         }
+
     }
 }

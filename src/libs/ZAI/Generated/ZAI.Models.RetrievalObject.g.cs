@@ -53,5 +53,6 @@ namespace ZAI
         public RetrievalObject()
         {
         }
+
     }
 }

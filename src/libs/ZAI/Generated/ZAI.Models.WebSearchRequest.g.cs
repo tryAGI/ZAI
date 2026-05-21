@@ -63,13 +63,13 @@ namespace ZAI
         public global::ZAI.WebSearchRequestSearchRecencyFilter? SearchRecencyFilter { get; set; }
 
         /// <summary>
-        /// User-provided unique identifier for distinguishing requests. If not provided, the platform will generate one.
+        /// Passed by the user side, needs to be unique; used to distinguish each request, 6–64 characters. If not provided by the user side, the platform will generate one by default.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("request_id")]
         public string? RequestId { get; set; }
 
         /// <summary>
-        /// Unique ID of the end user, helping the platform intervene in illegal activities, inappropriate content generation, or other abuses. ID length: 6 to 128 characters.
+        /// Unique ID for the end user, 6–128 characters. Avoid using sensitive information.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("user_id")]
         public string? UserId { get; set; }
@@ -112,10 +112,10 @@ namespace ZAI
         /// `search_pro_jina`
         /// </param>
         /// <param name="requestId">
-        /// User-provided unique identifier for distinguishing requests. If not provided, the platform will generate one.
+        /// Passed by the user side, needs to be unique; used to distinguish each request, 6–64 characters. If not provided by the user side, the platform will generate one by default.
         /// </param>
         /// <param name="userId">
-        /// Unique ID of the end user, helping the platform intervene in illegal activities, inappropriate content generation, or other abuses. ID length: 6 to 128 characters.
+        /// Unique ID for the end user, 6–128 characters. Avoid using sensitive information.
         /// </param>
         /// <param name="searchEngine">
         /// The search engine code to call.<br/>
@@ -150,5 +150,18 @@ namespace ZAI
         public WebSearchRequest()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="WebSearchRequest"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static WebSearchRequest FromSearchQuery(string searchQuery)
+        {
+            return new WebSearchRequest
+            {
+                SearchQuery = searchQuery,
+            };
+        }
+
     }
 }

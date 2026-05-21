@@ -53,5 +53,18 @@ namespace ZAI
         public WebSearchToolSchema()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="WebSearchToolSchema"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static WebSearchToolSchema FromWebSearch(global::ZAI.WebSearchObject webSearch)
+        {
+            return new WebSearchToolSchema
+            {
+                WebSearch = webSearch,
+            };
+        }
+
     }
 }

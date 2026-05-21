@@ -87,6 +87,7 @@ namespace ZAI.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::ZAI.SpecialEffectsVideosAgentResponseVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::ZAI.SpecialEffectsVideosAgentResponseVariant1> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::ZAI.SpecialEffectsVideosAgentResponseVariant1).Name}");
                     specialEffectsVideosAgentResponseVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -97,9 +98,13 @@ namespace ZAI.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (specialEffectsVideosAgentResponseVariant1 == null && error == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::ZAI.SpecialEffectsVideosAgentError), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::ZAI.SpecialEffectsVideosAgentError> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::ZAI.SpecialEffectsVideosAgentError).Name}");
                     error = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

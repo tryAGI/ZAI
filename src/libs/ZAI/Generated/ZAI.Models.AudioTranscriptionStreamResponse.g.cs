@@ -85,5 +85,6 @@ namespace ZAI
         public AudioTranscriptionStreamResponse()
         {
         }
+
     }
 }

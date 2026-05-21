@@ -43,5 +43,6 @@ namespace ZAI
         public SpecialEffectsVideosAgentRequestCustomVariables()
         {
         }
+
     }
 }

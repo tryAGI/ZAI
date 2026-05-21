@@ -57,5 +57,18 @@ namespace ZAI
         public MultimodalContentItemText()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="MultimodalContentItemText"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static MultimodalContentItemText FromText(string text)
+        {
+            return new MultimodalContentItemText
+            {
+                Text = text,
+            };
+        }
+
     }
 }

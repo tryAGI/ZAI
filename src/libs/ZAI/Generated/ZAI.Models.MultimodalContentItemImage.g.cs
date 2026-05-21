@@ -57,5 +57,18 @@ namespace ZAI
         public MultimodalContentItemImage()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="MultimodalContentItemImage"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static MultimodalContentItemImage FromImageUrl(global::ZAI.MultimodalContentItemImageImageUrl imageUrl)
+        {
+            return new MultimodalContentItemImage
+            {
+                ImageUrl = imageUrl,
+            };
+        }
+
     }
 }

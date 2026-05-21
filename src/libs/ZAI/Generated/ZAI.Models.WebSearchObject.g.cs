@@ -197,5 +197,6 @@ namespace ZAI
         public WebSearchObject()
         {
         }
+
     }
 }

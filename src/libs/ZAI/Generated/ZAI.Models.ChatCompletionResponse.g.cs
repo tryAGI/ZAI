@@ -108,5 +108,6 @@ namespace ZAI
         public ChatCompletionResponse()
         {
         }
+
     }
 }

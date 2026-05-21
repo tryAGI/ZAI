@@ -78,5 +78,6 @@ namespace ZAI
         public GlmSlideAgentResponseChoiceMessageItemContentItemObject()
         {
         }
+
     }
 }

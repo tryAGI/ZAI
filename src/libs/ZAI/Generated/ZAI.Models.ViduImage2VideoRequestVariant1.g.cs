@@ -123,5 +123,6 @@ namespace ZAI
         public ViduImage2VideoRequestVariant1()
         {
         }
+
     }
 }

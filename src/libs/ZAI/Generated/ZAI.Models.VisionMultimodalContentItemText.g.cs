@@ -57,5 +57,18 @@ namespace ZAI
         public VisionMultimodalContentItemText()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="VisionMultimodalContentItemText"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static VisionMultimodalContentItemText FromText(string text)
+        {
+            return new VisionMultimodalContentItemText
+            {
+                Text = text,
+            };
+        }
+
     }
 }

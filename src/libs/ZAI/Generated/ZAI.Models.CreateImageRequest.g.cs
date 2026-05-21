@@ -104,5 +104,6 @@ namespace ZAI
         public CreateImageRequest()
         {
         }
+
     }
 }

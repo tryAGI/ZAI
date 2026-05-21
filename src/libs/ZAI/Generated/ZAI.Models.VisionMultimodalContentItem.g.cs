@@ -29,6 +29,26 @@ namespace ZAI
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickText(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::ZAI.VisionMultimodalContentItemText? value)
+        {
+            value = Text;
+            return IsText;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::ZAI.VisionMultimodalContentItemText PickText() => IsText
+            ? Text!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::ZAI.VisionMultimodalContentItemImage? Image { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace ZAI
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Image))]
 #endif
         public bool IsImage => Image != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickImage(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::ZAI.VisionMultimodalContentItemImage? value)
+        {
+            value = Image;
+            return IsImage;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::ZAI.VisionMultimodalContentItemImage PickImage() => IsImage
+            ? Image!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Image' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -63,6 +103,26 @@ namespace ZAI
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickVideo(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::ZAI.VisionMultimodalContentItemVideo? value)
+        {
+            value = Video;
+            return IsVideo;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::ZAI.VisionMultimodalContentItemVideo PickVideo() => IsVideo
+            ? Video!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Video' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::ZAI.VisionMultimodalContentItemFile? File { get; init; }
 #else
@@ -76,6 +136,26 @@ namespace ZAI
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(File))]
 #endif
         public bool IsFile => File != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFile(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::ZAI.VisionMultimodalContentItemFile? value)
+        {
+            value = File;
+            return IsFile;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::ZAI.VisionMultimodalContentItemFile PickFile() => IsFile
+            ? File!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'File' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -93,6 +173,11 @@ namespace ZAI
         {
             Text = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static VisionMultimodalContentItem FromText(global::ZAI.VisionMultimodalContentItemText? value) => new VisionMultimodalContentItem(value);
 
         /// <summary>
         /// 
@@ -115,6 +200,11 @@ namespace ZAI
         /// <summary>
         /// 
         /// </summary>
+        public static VisionMultimodalContentItem FromImage(global::ZAI.VisionMultimodalContentItemImage? value) => new VisionMultimodalContentItem(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator VisionMultimodalContentItem(global::ZAI.VisionMultimodalContentItemVideo value) => new VisionMultimodalContentItem((global::ZAI.VisionMultimodalContentItemVideo?)value);
 
         /// <summary>
@@ -133,6 +223,11 @@ namespace ZAI
         /// <summary>
         /// 
         /// </summary>
+        public static VisionMultimodalContentItem FromVideo(global::ZAI.VisionMultimodalContentItemVideo? value) => new VisionMultimodalContentItem(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator VisionMultimodalContentItem(global::ZAI.VisionMultimodalContentItemFile value) => new VisionMultimodalContentItem((global::ZAI.VisionMultimodalContentItemFile?)value);
 
         /// <summary>
@@ -147,6 +242,11 @@ namespace ZAI
         {
             File = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static VisionMultimodalContentItem FromFile(global::ZAI.VisionMultimodalContentItemFile? value) => new VisionMultimodalContentItem(value);
 
         /// <summary>
         /// 
@@ -196,10 +296,10 @@ namespace ZAI
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::ZAI.VisionMultimodalContentItemText?, TResult>? text = null,
-            global::System.Func<global::ZAI.VisionMultimodalContentItemImage?, TResult>? image = null,
-            global::System.Func<global::ZAI.VisionMultimodalContentItemVideo?, TResult>? video = null,
-            global::System.Func<global::ZAI.VisionMultimodalContentItemFile?, TResult>? file = null,
+            global::System.Func<global::ZAI.VisionMultimodalContentItemText, TResult>? text = null,
+            global::System.Func<global::ZAI.VisionMultimodalContentItemImage, TResult>? image = null,
+            global::System.Func<global::ZAI.VisionMultimodalContentItemVideo, TResult>? video = null,
+            global::System.Func<global::ZAI.VisionMultimodalContentItemFile, TResult>? file = null,
             bool validate = true)
         {
             if (validate)
@@ -231,10 +331,46 @@ namespace ZAI
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::ZAI.VisionMultimodalContentItemText?>? text = null,
-            global::System.Action<global::ZAI.VisionMultimodalContentItemImage?>? image = null,
-            global::System.Action<global::ZAI.VisionMultimodalContentItemVideo?>? video = null,
-            global::System.Action<global::ZAI.VisionMultimodalContentItemFile?>? file = null,
+            global::System.Action<global::ZAI.VisionMultimodalContentItemText>? text = null,
+
+            global::System.Action<global::ZAI.VisionMultimodalContentItemImage>? image = null,
+
+            global::System.Action<global::ZAI.VisionMultimodalContentItemVideo>? video = null,
+
+            global::System.Action<global::ZAI.VisionMultimodalContentItemFile>? file = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsText)
+            {
+                text?.Invoke(Text!);
+            }
+            else if (IsImage)
+            {
+                image?.Invoke(Image!);
+            }
+            else if (IsVideo)
+            {
+                video?.Invoke(Video!);
+            }
+            else if (IsFile)
+            {
+                file?.Invoke(File!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::ZAI.VisionMultimodalContentItemText>? text = null,
+            global::System.Action<global::ZAI.VisionMultimodalContentItemImage>? image = null,
+            global::System.Action<global::ZAI.VisionMultimodalContentItemVideo>? video = null,
+            global::System.Action<global::ZAI.VisionMultimodalContentItemFile>? file = null,
             bool validate = true)
         {
             if (validate)

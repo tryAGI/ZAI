@@ -153,5 +153,6 @@ namespace ZAI
         public LayoutParsingResponse()
         {
         }
+
     }
 }
