@@ -132,1027 +132,1031 @@ namespace ZAI
         /// <summary>
         /// 
         /// </summary>
-        public float? Type26 { get; set; }
+        public global::ZAI.ChatCompletionTextRequestReasoningEffort? Type26 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.AnyOf<global::ZAI.FunctionToolSchema, global::ZAI.RetrievalToolSchema, global::ZAI.WebSearchToolSchema>>? Type27 { get; set; }
+        public float? Type27 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.AnyOf<global::ZAI.FunctionToolSchema, global::ZAI.RetrievalToolSchema, global::ZAI.WebSearchToolSchema>? Type28 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.AnyOf<global::ZAI.FunctionToolSchema, global::ZAI.RetrievalToolSchema, global::ZAI.WebSearchToolSchema>>? Type28 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.FunctionToolSchema? Type29 { get; set; }
+        public global::ZAI.AnyOf<global::ZAI.FunctionToolSchema, global::ZAI.RetrievalToolSchema, global::ZAI.WebSearchToolSchema>? Type29 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.RetrievalToolSchema? Type30 { get; set; }
+        public global::ZAI.FunctionToolSchema? Type30 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.WebSearchToolSchema? Type31 { get; set; }
+        public global::ZAI.RetrievalToolSchema? Type31 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ChatCompletionTextRequestToolChoice? Type32 { get; set; }
+        public global::ZAI.WebSearchToolSchema? Type32 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<string>? Type33 { get; set; }
+        public global::ZAI.ChatCompletionTextRequestToolChoice? Type33 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ChatCompletionTextRequestResponseFormat? Type34 { get; set; }
+        public global::System.Collections.Generic.IList<string>? Type34 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ChatCompletionTextRequestResponseFormatType? Type35 { get; set; }
+        public global::ZAI.ChatCompletionTextRequestResponseFormat? Type35 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ChatCompletionVisionRequest? Type36 { get; set; }
+        public global::ZAI.ChatCompletionTextRequestResponseFormatType? Type36 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ChatCompletionVisionRequestModel? Type37 { get; set; }
+        public global::ZAI.ChatCompletionVisionRequest? Type37 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ChatCompletionVisionRequestMessageUserMessage? Type38 { get; set; }
+        public global::ZAI.ChatCompletionVisionRequestModel? Type38 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ChatCompletionVisionRequestMessageUserMessageRole? Type39 { get; set; }
+        public global::ZAI.ChatCompletionVisionRequestMessageUserMessage? Type39 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.OneOf<global::System.Collections.Generic.IList<global::ZAI.VisionMultimodalContentItem>, string>? Type40 { get; set; }
+        public global::ZAI.ChatCompletionVisionRequestMessageUserMessageRole? Type40 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.VisionMultimodalContentItem>? Type41 { get; set; }
+        public global::ZAI.OneOf<global::System.Collections.Generic.IList<global::ZAI.VisionMultimodalContentItem>, string>? Type41 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.VisionMultimodalContentItem? Type42 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.VisionMultimodalContentItem>? Type42 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ChatCompletionVisionRequestMessageSystemMessage? Type43 { get; set; }
+        public global::ZAI.VisionMultimodalContentItem? Type43 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ChatCompletionVisionRequestMessageSystemMessageRole? Type44 { get; set; }
+        public global::ZAI.ChatCompletionVisionRequestMessageSystemMessage? Type44 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ChatCompletionVisionRequestMessageAssistantMessage? Type45 { get; set; }
+        public global::ZAI.ChatCompletionVisionRequestMessageSystemMessageRole? Type45 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ChatCompletionVisionRequestMessageAssistantMessageRole? Type46 { get; set; }
+        public global::ZAI.ChatCompletionVisionRequestMessageAssistantMessage? Type46 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.FunctionToolSchema>? Type47 { get; set; }
+        public global::ZAI.ChatCompletionVisionRequestMessageAssistantMessageRole? Type47 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ChatCompletionVisionRequestToolChoice? Type48 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.FunctionToolSchema>? Type48 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.MultimodalContentItem? Type49 { get; set; }
+        public global::ZAI.ChatCompletionVisionRequestToolChoice? Type49 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.MultimodalContentItemText? Type50 { get; set; }
+        public global::ZAI.MultimodalContentItem? Type50 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.MultimodalContentItemTextType? Type51 { get; set; }
+        public global::ZAI.MultimodalContentItemText? Type51 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.MultimodalContentItemImage? Type52 { get; set; }
+        public global::ZAI.MultimodalContentItemTextType? Type52 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.MultimodalContentItemImageType? Type53 { get; set; }
+        public global::ZAI.MultimodalContentItemImage? Type53 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.MultimodalContentItemImageImageUrl? Type54 { get; set; }
+        public global::ZAI.MultimodalContentItemImageType? Type54 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.MultimodalContentItemAudio? Type55 { get; set; }
+        public global::ZAI.MultimodalContentItemImageImageUrl? Type55 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.MultimodalContentItemAudioType? Type56 { get; set; }
+        public global::ZAI.MultimodalContentItemAudio? Type56 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.MultimodalContentItemAudioInputAudio? Type57 { get; set; }
+        public global::ZAI.MultimodalContentItemAudioType? Type57 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.MultimodalContentItemAudioInputAudioFormat? Type58 { get; set; }
+        public global::ZAI.MultimodalContentItemAudioInputAudio? Type58 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.MultimodalContentItemVideo? Type59 { get; set; }
+        public global::ZAI.MultimodalContentItemAudioInputAudioFormat? Type59 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.MultimodalContentItemVideoType? Type60 { get; set; }
+        public global::ZAI.MultimodalContentItemVideo? Type60 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.MultimodalContentItemVideoVideoUrl? Type61 { get; set; }
+        public global::ZAI.MultimodalContentItemVideoType? Type61 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.MultimodalContentItemFile? Type62 { get; set; }
+        public global::ZAI.MultimodalContentItemVideoVideoUrl? Type62 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.MultimodalContentItemFileType? Type63 { get; set; }
+        public global::ZAI.MultimodalContentItemFile? Type63 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.MultimodalContentItemFileFileUrl? Type64 { get; set; }
+        public global::ZAI.MultimodalContentItemFileType? Type64 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.VisionMultimodalContentItemText? Type65 { get; set; }
+        public global::ZAI.MultimodalContentItemFileFileUrl? Type65 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.VisionMultimodalContentItemTextType? Type66 { get; set; }
+        public global::ZAI.VisionMultimodalContentItemText? Type66 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.VisionMultimodalContentItemImage? Type67 { get; set; }
+        public global::ZAI.VisionMultimodalContentItemTextType? Type67 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.VisionMultimodalContentItemImageType? Type68 { get; set; }
+        public global::ZAI.VisionMultimodalContentItemImage? Type68 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.VisionMultimodalContentItemImageImageUrl? Type69 { get; set; }
+        public global::ZAI.VisionMultimodalContentItemImageType? Type69 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.VisionMultimodalContentItemVideo? Type70 { get; set; }
+        public global::ZAI.VisionMultimodalContentItemImageImageUrl? Type70 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.VisionMultimodalContentItemVideoType? Type71 { get; set; }
+        public global::ZAI.VisionMultimodalContentItemVideo? Type71 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.VisionMultimodalContentItemVideoVideoUrl? Type72 { get; set; }
+        public global::ZAI.VisionMultimodalContentItemVideoType? Type72 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.VisionMultimodalContentItemFile? Type73 { get; set; }
+        public global::ZAI.VisionMultimodalContentItemVideoVideoUrl? Type73 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.VisionMultimodalContentItemFileType? Type74 { get; set; }
+        public global::ZAI.VisionMultimodalContentItemFile? Type74 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.VisionMultimodalContentItemFileFileUrl? Type75 { get; set; }
+        public global::ZAI.VisionMultimodalContentItemFileType? Type75 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ChatThinkingType? Type76 { get; set; }
+        public global::ZAI.VisionMultimodalContentItemFileFileUrl? Type76 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.WebSearchToolSchemaType? Type77 { get; set; }
+        public global::ZAI.ChatThinkingType? Type77 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.WebSearchObject? Type78 { get; set; }
+        public global::ZAI.WebSearchToolSchemaType? Type78 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.WebSearchObjectSearchEngine? Type79 { get; set; }
+        public global::ZAI.WebSearchObject? Type79 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.WebSearchObjectSearchRecencyFilter? Type80 { get; set; }
+        public global::ZAI.WebSearchObjectSearchEngine? Type80 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.WebSearchObjectContentSize? Type81 { get; set; }
+        public global::ZAI.WebSearchObjectSearchRecencyFilter? Type81 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.WebSearchObjectResultSequence? Type82 { get; set; }
+        public global::ZAI.WebSearchObjectContentSize? Type82 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.FunctionToolSchemaType? Type83 { get; set; }
+        public global::ZAI.WebSearchObjectResultSequence? Type83 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.FunctionObject? Type84 { get; set; }
+        public global::ZAI.FunctionToolSchemaType? Type84 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.FunctionParameters? Type85 { get; set; }
+        public global::ZAI.FunctionObject? Type85 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.RetrievalToolSchemaType? Type86 { get; set; }
+        public global::ZAI.FunctionParameters? Type86 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.RetrievalObject? Type87 { get; set; }
+        public global::ZAI.RetrievalToolSchemaType? Type87 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ChatCompletionResponse? Type88 { get; set; }
+        public global::ZAI.RetrievalObject? Type88 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.ChatCompletionResponseChoice>? Type89 { get; set; }
+        public global::ZAI.ChatCompletionResponse? Type89 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ChatCompletionResponseChoice? Type90 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.ChatCompletionResponseChoice>? Type90 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ChatCompletionResponseMessage? Type91 { get; set; }
+        public global::ZAI.ChatCompletionResponseChoice? Type91 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ChatCompletionResponseUsage? Type92 { get; set; }
+        public global::ZAI.ChatCompletionResponseMessage? Type92 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public double? Type93 { get; set; }
+        public global::ZAI.ChatCompletionResponseUsage? Type93 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ChatCompletionResponseUsagePromptTokensDetails? Type94 { get; set; }
+        public double? Type94 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.WebSearchObjectResponse>? Type95 { get; set; }
+        public global::ZAI.ChatCompletionResponseUsagePromptTokensDetails? Type95 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.WebSearchObjectResponse? Type96 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.WebSearchObjectResponse>? Type96 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.ChatCompletionResponseMessageToolCall>? Type97 { get; set; }
+        public global::ZAI.WebSearchObjectResponse? Type97 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ChatCompletionResponseMessageToolCall? Type98 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.ChatCompletionResponseMessageToolCall>? Type98 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ChatCompletionResponseMessageToolCallFunction? Type99 { get; set; }
+        public global::ZAI.ChatCompletionResponseMessageToolCall? Type99 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public object? Type100 { get; set; }
+        public global::ZAI.ChatCompletionResponseMessageToolCallFunction? Type100 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.CogVideoX3Request? Type101 { get; set; }
+        public object? Type101 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.CogVideoX3RequestVariant1? Type102 { get; set; }
+        public global::ZAI.CogVideoX3Request? Type102 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.CogVideoX3RequestVariant1Model? Type103 { get; set; }
+        public global::ZAI.CogVideoX3RequestVariant1? Type103 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.CogVideoX3RequestVariant1Quality? Type104 { get; set; }
+        public global::ZAI.CogVideoX3RequestVariant1Model? Type104 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.OneOf<string, byte[]>>? Type105 { get; set; }
+        public global::ZAI.CogVideoX3RequestVariant1Quality? Type105 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.OneOf<string, byte[]>? Type106 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.OneOf<string, byte[]>>? Type106 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public byte[]? Type107 { get; set; }
+        public global::ZAI.OneOf<string, byte[]>? Type107 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.CogVideoX3RequestVariant1Size? Type108 { get; set; }
+        public byte[]? Type108 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.VideoCommonRequest? Type109 { get; set; }
+        public global::ZAI.CogVideoX3RequestVariant1Size? Type109 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduText2VideoRequest? Type110 { get; set; }
+        public global::ZAI.VideoCommonRequest? Type110 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduText2VideoRequestVariant1? Type111 { get; set; }
+        public global::ZAI.ViduText2VideoRequest? Type111 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduText2VideoRequestVariant1Model? Type112 { get; set; }
+        public global::ZAI.ViduText2VideoRequestVariant1? Type112 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduText2VideoRequestVariant1Style? Type113 { get; set; }
+        public global::ZAI.ViduText2VideoRequestVariant1Model? Type113 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduText2VideoRequestVariant1AspectRatio? Type114 { get; set; }
+        public global::ZAI.ViduText2VideoRequestVariant1Style? Type114 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduText2VideoRequestVariant1Size? Type115 { get; set; }
+        public global::ZAI.ViduText2VideoRequestVariant1AspectRatio? Type115 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduText2VideoRequestVariant1MovementAmplitude? Type116 { get; set; }
+        public global::ZAI.ViduText2VideoRequestVariant1Size? Type116 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduImage2VideoRequest? Type117 { get; set; }
+        public global::ZAI.ViduText2VideoRequestVariant1MovementAmplitude? Type117 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduImage2VideoRequestVariant1? Type118 { get; set; }
+        public global::ZAI.ViduImage2VideoRequest? Type118 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduImage2VideoRequestVariant1Model? Type119 { get; set; }
+        public global::ZAI.ViduImage2VideoRequestVariant1? Type119 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.OneOf<global::ZAI.ViduImage2VideoRequestVariant1SizeViduq1Image?, global::ZAI.ViduImage2VideoRequestVariant1SizeViduq2Image?>? Type120 { get; set; }
+        public global::ZAI.ViduImage2VideoRequestVariant1Model? Type120 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduImage2VideoRequestVariant1SizeViduq1Image? Type121 { get; set; }
+        public global::ZAI.OneOf<global::ZAI.ViduImage2VideoRequestVariant1SizeViduq1Image?, global::ZAI.ViduImage2VideoRequestVariant1SizeViduq2Image?>? Type121 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduImage2VideoRequestVariant1SizeViduq2Image? Type122 { get; set; }
+        public global::ZAI.ViduImage2VideoRequestVariant1SizeViduq1Image? Type122 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduImage2VideoRequestVariant1MovementAmplitude? Type123 { get; set; }
+        public global::ZAI.ViduImage2VideoRequestVariant1SizeViduq2Image? Type123 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduFrames2VideoRequest? Type124 { get; set; }
+        public global::ZAI.ViduImage2VideoRequestVariant1MovementAmplitude? Type124 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduFrames2VideoRequestVariant1? Type125 { get; set; }
+        public global::ZAI.ViduFrames2VideoRequest? Type125 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduFrames2VideoRequestVariant1Model? Type126 { get; set; }
+        public global::ZAI.ViduFrames2VideoRequestVariant1? Type126 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.OneOf<global::ZAI.ViduFrames2VideoRequestVariant1SizeViduq1StartEnd?, global::ZAI.ViduFrames2VideoRequestVariant1SizeVidu2StartEnd?>? Type127 { get; set; }
+        public global::ZAI.ViduFrames2VideoRequestVariant1Model? Type127 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduFrames2VideoRequestVariant1SizeViduq1StartEnd? Type128 { get; set; }
+        public global::ZAI.OneOf<global::ZAI.ViduFrames2VideoRequestVariant1SizeViduq1StartEnd?, global::ZAI.ViduFrames2VideoRequestVariant1SizeVidu2StartEnd?>? Type128 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduFrames2VideoRequestVariant1SizeVidu2StartEnd? Type129 { get; set; }
+        public global::ZAI.ViduFrames2VideoRequestVariant1SizeViduq1StartEnd? Type129 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduFrames2VideoRequestVariant1MovementAmplitude? Type130 { get; set; }
+        public global::ZAI.ViduFrames2VideoRequestVariant1SizeVidu2StartEnd? Type130 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduReference2VideoRequest? Type131 { get; set; }
+        public global::ZAI.ViduFrames2VideoRequestVariant1MovementAmplitude? Type131 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduReference2VideoRequestVariant1? Type132 { get; set; }
+        public global::ZAI.ViduReference2VideoRequest? Type132 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduReference2VideoRequestVariant1Model? Type133 { get; set; }
+        public global::ZAI.ViduReference2VideoRequestVariant1? Type133 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduReference2VideoRequestVariant1AspectRatio? Type134 { get; set; }
+        public global::ZAI.ViduReference2VideoRequestVariant1Model? Type134 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduReference2VideoRequestVariant1Size? Type135 { get; set; }
+        public global::ZAI.ViduReference2VideoRequestVariant1AspectRatio? Type135 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ViduReference2VideoRequestVariant1MovementAmplitude? Type136 { get; set; }
+        public global::ZAI.ViduReference2VideoRequestVariant1Size? Type136 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.AsyncResponse? Type137 { get; set; }
+        public global::ZAI.ViduReference2VideoRequestVariant1MovementAmplitude? Type137 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.AsyncCreateImageRequest? Type138 { get; set; }
+        public global::ZAI.AsyncResponse? Type138 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.AsyncCreateImageRequestModel? Type139 { get; set; }
+        public global::ZAI.AsyncCreateImageRequest? Type139 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.AsyncCreateImageRequestQuality? Type140 { get; set; }
+        public global::ZAI.AsyncCreateImageRequestModel? Type140 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.AsyncVideoGenerationResponse? Type141 { get; set; }
+        public global::ZAI.AsyncCreateImageRequestQuality? Type141 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.AsyncVideoGenerationResponseVideoResultItem>? Type142 { get; set; }
+        public global::ZAI.AsyncVideoGenerationResponse? Type142 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.AsyncVideoGenerationResponseVideoResultItem? Type143 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.AsyncVideoGenerationResponseVideoResultItem>? Type143 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.AsyncImageGenerationResponse? Type144 { get; set; }
+        public global::ZAI.AsyncVideoGenerationResponseVideoResultItem? Type144 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.AsyncImageGenerationResponseImageResultItem>? Type145 { get; set; }
+        public global::ZAI.AsyncImageGenerationResponse? Type145 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.AsyncImageGenerationResponseImageResultItem? Type146 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.AsyncImageGenerationResponseImageResultItem>? Type146 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.VideoResponse? Type147 { get; set; }
+        public global::ZAI.AsyncImageGenerationResponseImageResultItem? Type147 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.CreateImageRequest? Type148 { get; set; }
+        public global::ZAI.VideoResponse? Type148 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.CreateImageRequestModel? Type149 { get; set; }
+        public global::ZAI.CreateImageRequest? Type149 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.CreateImageRequestQuality? Type150 { get; set; }
+        public global::ZAI.CreateImageRequestModel? Type150 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ImageGenerationResponse? Type151 { get; set; }
+        public global::ZAI.CreateImageRequestQuality? Type151 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.ImageGenerationResponseDataItem>? Type152 { get; set; }
+        public global::ZAI.ImageGenerationResponse? Type152 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ImageGenerationResponseDataItem? Type153 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.ImageGenerationResponseDataItem>? Type153 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.ImageGenerationResponseContentFilterItem>? Type154 { get; set; }
+        public global::ZAI.ImageGenerationResponseDataItem? Type154 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ImageGenerationResponseContentFilterItem? Type155 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.ImageGenerationResponseContentFilterItem>? Type155 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.ImageGenerationResponseContentFilterItemRole? Type156 { get; set; }
+        public global::ZAI.ImageGenerationResponseContentFilterItem? Type156 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.AudioTranscriptionRequest? Type157 { get; set; }
+        public global::ZAI.ImageGenerationResponseContentFilterItemRole? Type157 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.AudioTranscriptionRequestModel? Type158 { get; set; }
+        public global::ZAI.AudioTranscriptionRequest? Type158 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.AudioTranscriptionResponse? Type159 { get; set; }
+        public global::ZAI.AudioTranscriptionRequestModel? Type159 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public long? Type160 { get; set; }
+        public global::ZAI.AudioTranscriptionResponse? Type160 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.AudioTranscriptionStreamResponse? Type161 { get; set; }
+        public long? Type161 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TokenizerRequest? Type162 { get; set; }
+        public global::ZAI.AudioTranscriptionStreamResponse? Type162 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TokenizerRequestModel? Type163 { get; set; }
+        public global::ZAI.TokenizerRequest? Type163 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TokenizerRequestMessageUserMessage? Type164 { get; set; }
+        public global::ZAI.TokenizerRequestModel? Type164 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TokenizerRequestMessageUserMessageRole? Type165 { get; set; }
+        public global::ZAI.TokenizerRequestMessageUserMessage? Type165 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TokenizerRequestMessageSystemMessage? Type166 { get; set; }
+        public global::ZAI.TokenizerRequestMessageUserMessageRole? Type166 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TokenizerRequestMessageSystemMessageRole? Type167 { get; set; }
+        public global::ZAI.TokenizerRequestMessageSystemMessage? Type167 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TokenizerRequestMessageAssistantMessage? Type168 { get; set; }
+        public global::ZAI.TokenizerRequestMessageSystemMessageRole? Type168 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TokenizerRequestMessageAssistantMessageRole? Type169 { get; set; }
+        public global::ZAI.TokenizerRequestMessageAssistantMessage? Type169 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TokenizerResponse? Type170 { get; set; }
+        public global::ZAI.TokenizerRequestMessageAssistantMessageRole? Type170 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TokenizerResponseUsage? Type171 { get; set; }
+        public global::ZAI.TokenizerResponse? Type171 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.WebSearchRequest? Type172 { get; set; }
+        public global::ZAI.TokenizerResponseUsage? Type172 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.WebSearchRequestSearchEngine? Type173 { get; set; }
+        public global::ZAI.WebSearchRequest? Type173 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.WebSearchRequestSearchRecencyFilter? Type174 { get; set; }
+        public global::ZAI.WebSearchRequestSearchEngine? Type174 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.WebSearchResponse? Type175 { get; set; }
+        public global::ZAI.WebSearchRequestSearchRecencyFilter? Type175 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TranslationAgentRequest? Type176 { get; set; }
+        public global::ZAI.WebSearchResponse? Type176 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TranslationAgentRequestAgentId? Type177 { get; set; }
+        public global::ZAI.TranslationAgentRequest? Type177 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.TranslationAgentRequestMessage>? Type178 { get; set; }
+        public global::ZAI.TranslationAgentRequestAgentId? Type178 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TranslationAgentRequestMessage? Type179 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.TranslationAgentRequestMessage>? Type179 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TranslationAgentRequestMessageRole? Type180 { get; set; }
+        public global::ZAI.TranslationAgentRequestMessage? Type180 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.TranslationAgentRequestMessageContentItem>? Type181 { get; set; }
+        public global::ZAI.TranslationAgentRequestMessageRole? Type181 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TranslationAgentRequestMessageContentItem? Type182 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.TranslationAgentRequestMessageContentItem>? Type182 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TranslationAgentRequestMessageContentItemType? Type183 { get; set; }
+        public global::ZAI.TranslationAgentRequestMessageContentItem? Type183 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TranslationAgentRequestCustomVariables? Type184 { get; set; }
+        public global::ZAI.TranslationAgentRequestMessageContentItemType? Type184 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TranslationAgentRequestCustomVariablesSourceLang? Type185 { get; set; }
+        public global::ZAI.TranslationAgentRequestCustomVariables? Type185 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TranslationAgentRequestCustomVariablesTargetLang? Type186 { get; set; }
+        public global::ZAI.TranslationAgentRequestCustomVariablesSourceLang? Type186 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TranslationAgentRequestCustomVariablesStrategy? Type187 { get; set; }
+        public global::ZAI.TranslationAgentRequestCustomVariablesTargetLang? Type187 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TranslationAgentRequestCustomVariablesStrategyConfig? Type188 { get; set; }
+        public global::ZAI.TranslationAgentRequestCustomVariablesStrategy? Type188 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TranslationAgentRequestCustomVariablesStrategyConfigGeneral? Type189 { get; set; }
+        public global::ZAI.TranslationAgentRequestCustomVariablesStrategyConfig? Type189 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TranslationAgentRequestCustomVariablesStrategyConfigCot? Type190 { get; set; }
+        public global::ZAI.TranslationAgentRequestCustomVariablesStrategyConfigGeneral? Type190 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TranslationAgentRequestCustomVariablesStrategyConfigCotReasonLang? Type191 { get; set; }
+        public global::ZAI.TranslationAgentRequestCustomVariablesStrategyConfigCot? Type191 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TranslationAgentResponse? Type192 { get; set; }
+        public global::ZAI.TranslationAgentRequestCustomVariablesStrategyConfigCotReasonLang? Type192 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.TranslationAgentResponseChoice>? Type193 { get; set; }
+        public global::ZAI.TranslationAgentResponse? Type193 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TranslationAgentResponseChoice? Type194 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.TranslationAgentResponseChoice>? Type194 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TranslationAgentResponseChoiceMessages? Type195 { get; set; }
+        public global::ZAI.TranslationAgentResponseChoice? Type195 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TranslationAgentResponseChoiceMessagesContent? Type196 { get; set; }
+        public global::ZAI.TranslationAgentResponseChoiceMessages? Type196 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.TranslationAgentResponseUsage? Type197 { get; set; }
+        public global::ZAI.TranslationAgentResponseChoiceMessagesContent? Type197 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.SpecialEffectsVideosAgentRequest? Type198 { get; set; }
+        public global::ZAI.TranslationAgentResponseUsage? Type198 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.SpecialEffectsVideosAgentRequestAgentId? Type199 { get; set; }
+        public global::ZAI.SpecialEffectsVideosAgentRequest? Type199 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.SpecialEffectsVideosAgentRequestMessage>? Type200 { get; set; }
+        public global::ZAI.SpecialEffectsVideosAgentRequestAgentId? Type200 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.SpecialEffectsVideosAgentRequestMessage? Type201 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.SpecialEffectsVideosAgentRequestMessage>? Type201 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.SpecialEffectsVideosAgentRequestMessageRole? Type202 { get; set; }
+        public global::ZAI.SpecialEffectsVideosAgentRequestMessage? Type202 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.SpecialEffectsVideosAgentRequestMessageContentItemText? Type203 { get; set; }
+        public global::ZAI.SpecialEffectsVideosAgentRequestMessageRole? Type203 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.SpecialEffectsVideosAgentRequestMessageContentItemTextType? Type204 { get; set; }
+        public global::ZAI.SpecialEffectsVideosAgentRequestMessageContentItemText? Type204 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.SpecialEffectsVideosAgentRequestMessageContentItemImageUrl? Type205 { get; set; }
+        public global::ZAI.SpecialEffectsVideosAgentRequestMessageContentItemTextType? Type205 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.SpecialEffectsVideosAgentRequestMessageContentItemImageUrlType? Type206 { get; set; }
+        public global::ZAI.SpecialEffectsVideosAgentRequestMessageContentItemImageUrl? Type206 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.SpecialEffectsVideosAgentRequestCustomVariables? Type207 { get; set; }
+        public global::ZAI.SpecialEffectsVideosAgentRequestMessageContentItemImageUrlType? Type207 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.SpecialEffectsVideosAgentRequestCustomVariablesTemplate? Type208 { get; set; }
+        public global::ZAI.SpecialEffectsVideosAgentRequestCustomVariables? Type208 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.SpecialEffectsVideosAgentResponse? Type209 { get; set; }
+        public global::ZAI.SpecialEffectsVideosAgentRequestCustomVariablesTemplate? Type209 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.SpecialEffectsVideosAgentResponseVariant1? Type210 { get; set; }
+        public global::ZAI.SpecialEffectsVideosAgentResponse? Type210 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.SpecialEffectsVideosAgentError? Type211 { get; set; }
+        public global::ZAI.SpecialEffectsVideosAgentResponseVariant1? Type211 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.SpecialEffectsVideosAgentErrorError? Type212 { get; set; }
+        public global::ZAI.SpecialEffectsVideosAgentError? Type212 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.GlmSlideAgentRequest? Type213 { get; set; }
+        public global::ZAI.SpecialEffectsVideosAgentErrorError? Type213 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.GlmSlideAgentRequestAgentId? Type214 { get; set; }
+        public global::ZAI.GlmSlideAgentRequest? Type214 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.GlmSlideAgentRequestMessage>? Type215 { get; set; }
+        public global::ZAI.GlmSlideAgentRequestAgentId? Type215 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.GlmSlideAgentRequestMessage? Type216 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.GlmSlideAgentRequestMessage>? Type216 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.GlmSlideAgentRequestMessageRole? Type217 { get; set; }
+        public global::ZAI.GlmSlideAgentRequestMessage? Type217 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.GlmSlideAgentRequestMessageContentItem>? Type218 { get; set; }
+        public global::ZAI.GlmSlideAgentRequestMessageRole? Type218 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.GlmSlideAgentRequestMessageContentItem? Type219 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.GlmSlideAgentRequestMessageContentItem>? Type219 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.GlmSlideAgentRequestMessageContentItemType? Type220 { get; set; }
+        public global::ZAI.GlmSlideAgentRequestMessageContentItem? Type220 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.GlmSlideAgentResponse? Type221 { get; set; }
+        public global::ZAI.GlmSlideAgentRequestMessageContentItemType? Type221 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.GlmSlideAgentResponseChoice>? Type222 { get; set; }
+        public global::ZAI.GlmSlideAgentResponse? Type222 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.GlmSlideAgentResponseChoice? Type223 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.GlmSlideAgentResponseChoice>? Type223 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.GlmSlideAgentResponseChoiceMessageItem>? Type224 { get; set; }
+        public global::ZAI.GlmSlideAgentResponseChoice? Type224 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.GlmSlideAgentResponseChoiceMessageItem? Type225 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.GlmSlideAgentResponseChoiceMessageItem>? Type225 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.GlmSlideAgentResponseChoiceMessageItemContentItem>? Type226 { get; set; }
+        public global::ZAI.GlmSlideAgentResponseChoiceMessageItem? Type226 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.GlmSlideAgentResponseChoiceMessageItemContentItem? Type227 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.GlmSlideAgentResponseChoiceMessageItemContentItem>? Type227 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.GlmSlideAgentResponseChoiceMessageItemContentItemObject? Type228 { get; set; }
+        public global::ZAI.GlmSlideAgentResponseChoiceMessageItemContentItem? Type228 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<double>? Type229 { get; set; }
+        public global::ZAI.GlmSlideAgentResponseChoiceMessageItemContentItemObject? Type229 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.GlmSlideAgentResponseError? Type230 { get; set; }
+        public global::System.Collections.Generic.IList<double>? Type230 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.CommonAgentResultRequest? Type231 { get; set; }
+        public global::ZAI.GlmSlideAgentResponseError? Type231 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.GlmSlideAgentConversationRequest? Type232 { get; set; }
+        public global::ZAI.CommonAgentResultRequest? Type232 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.GlmSlideAgentConversationRequestCustomVariables? Type233 { get; set; }
+        public global::ZAI.GlmSlideAgentConversationRequest? Type233 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.GlmSlideAgentConversationRequestCustomVariablesPage>? Type234 { get; set; }
+        public global::ZAI.GlmSlideAgentConversationRequestCustomVariables? Type234 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.GlmSlideAgentConversationRequestCustomVariablesPage? Type235 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.GlmSlideAgentConversationRequestCustomVariablesPage>? Type235 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.GlmSlideAgentConversationResponse? Type236 { get; set; }
+        public global::ZAI.GlmSlideAgentConversationRequestCustomVariablesPage? Type236 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.GlmSlideAgentConversationResponseChoice>? Type237 { get; set; }
+        public global::ZAI.GlmSlideAgentConversationResponse? Type237 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.GlmSlideAgentConversationResponseChoice? Type238 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.GlmSlideAgentConversationResponseChoice>? Type238 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.GlmSlideAgentConversationResponseChoiceMessageItem>? Type239 { get; set; }
+        public global::ZAI.GlmSlideAgentConversationResponseChoice? Type239 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.GlmSlideAgentConversationResponseChoiceMessageItem? Type240 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.GlmSlideAgentConversationResponseChoiceMessageItem>? Type240 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.GlmSlideAgentConversationResponseChoiceMessageItemContentItem>? Type241 { get; set; }
+        public global::ZAI.GlmSlideAgentConversationResponseChoiceMessageItem? Type241 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.GlmSlideAgentConversationResponseChoiceMessageItemContentItem? Type242 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.GlmSlideAgentConversationResponseChoiceMessageItemContentItem>? Type242 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.GlmSlideAgentConversationResponseError? Type243 { get; set; }
+        public global::ZAI.GlmSlideAgentConversationResponseChoiceMessageItemContentItem? Type243 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.CommonAgentResultResponse? Type244 { get; set; }
+        public global::ZAI.GlmSlideAgentConversationResponseError? Type244 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.CommonAgentResultResponseChoice>? Type245 { get; set; }
+        public global::ZAI.CommonAgentResultResponse? Type245 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.CommonAgentResultResponseChoice? Type246 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.CommonAgentResultResponseChoice>? Type246 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.CommonAgentResultResponseChoiceMessageItem>? Type247 { get; set; }
+        public global::ZAI.CommonAgentResultResponseChoice? Type247 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.CommonAgentResultResponseChoiceMessageItem? Type248 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.CommonAgentResultResponseChoiceMessageItem>? Type248 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.CommonAgentResultResponseChoiceMessageItemContentItem>? Type249 { get; set; }
+        public global::ZAI.CommonAgentResultResponseChoiceMessageItem? Type249 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.CommonAgentResultResponseChoiceMessageItemContentItem? Type250 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.CommonAgentResultResponseChoiceMessageItemContentItem>? Type250 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.LayoutParsingRequest? Type251 { get; set; }
+        public global::ZAI.CommonAgentResultResponseChoiceMessageItemContentItem? Type251 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.LayoutParsingRequestModel? Type252 { get; set; }
+        public global::ZAI.LayoutParsingRequest? Type252 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.LayoutParsingResponse? Type253 { get; set; }
+        public global::ZAI.LayoutParsingRequestModel? Type253 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<global::ZAI.LayoutDetail>>? Type254 { get; set; }
+        public global::ZAI.LayoutParsingResponse? Type254 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.LayoutDetail>? Type255 { get; set; }
+        public global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<global::ZAI.LayoutDetail>>? Type255 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.LayoutDetail? Type256 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.LayoutDetail>? Type256 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.DataInfo? Type257 { get; set; }
+        public global::ZAI.LayoutDetail? Type257 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.LayoutParsingResponseUsage? Type258 { get; set; }
+        public global::ZAI.DataInfo? Type258 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.LayoutParsingResponseUsagePromptTokensDetails? Type259 { get; set; }
+        public global::ZAI.LayoutParsingResponseUsage? Type259 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.LayoutDetailLabel? Type260 { get; set; }
+        public global::ZAI.LayoutParsingResponseUsagePromptTokensDetails? Type260 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::ZAI.PageInfo>? Type261 { get; set; }
+        public global::ZAI.LayoutDetailLabel? Type261 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.PageInfo? Type262 { get; set; }
+        public global::System.Collections.Generic.IList<global::ZAI.PageInfo>? Type262 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.BadRequestData? Type263 { get; set; }
+        public global::ZAI.PageInfo? Type263 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.UnauthorizedData? Type264 { get; set; }
+        public global::ZAI.BadRequestData? Type264 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.NotFoundData? Type265 { get; set; }
+        public global::ZAI.UnauthorizedData? Type265 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.Error? Type266 { get; set; }
+        public global::ZAI.NotFoundData? Type266 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.OneOf<global::ZAI.ChatCompletionTextRequest, global::ZAI.ChatCompletionVisionRequest>? Type267 { get; set; }
+        public global::ZAI.Error? Type267 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.CreatePaasV4FilesRequest? Type268 { get; set; }
+        public global::ZAI.OneOf<global::ZAI.ChatCompletionTextRequest, global::ZAI.ChatCompletionVisionRequest>? Type268 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.CreatePaasV4FilesRequestPurpose? Type269 { get; set; }
+        public global::ZAI.CreatePaasV4FilesRequest? Type269 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.OneOf<global::ZAI.TranslationAgentRequest, global::ZAI.SpecialEffectsVideosAgentRequest, global::ZAI.GlmSlideAgentRequest>? Type270 { get; set; }
+        public global::ZAI.CreatePaasV4FilesRequestPurpose? Type270 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.CreatePaasV4ChatCompletionsAcceptLanguage? Type271 { get; set; }
+        public global::ZAI.OneOf<global::ZAI.TranslationAgentRequest, global::ZAI.SpecialEffectsVideosAgentRequest, global::ZAI.GlmSlideAgentRequest>? Type271 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.CreatePaasV4VideosGenerationsAcceptLanguage? Type272 { get; set; }
+        public global::ZAI.CreatePaasV4ChatCompletionsAcceptLanguage? Type272 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.GetPaasV4AsyncResultAcceptLanguage? Type273 { get; set; }
+        public global::ZAI.CreatePaasV4VideosGenerationsAcceptLanguage? Type273 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.CreatePaasV4WebSearchAcceptLanguage? Type274 { get; set; }
+        public global::ZAI.GetPaasV4AsyncResultAcceptLanguage? Type274 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.CreateAgentsAcceptLanguage? Type275 { get; set; }
+        public global::ZAI.CreatePaasV4WebSearchAcceptLanguage? Type275 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.CreateAgentsAsyncResultAcceptLanguage? Type276 { get; set; }
+        public global::ZAI.CreateAgentsAcceptLanguage? Type276 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.CreateAgentsConversationAcceptLanguage? Type277 { get; set; }
+        public global::ZAI.CreateAgentsAsyncResultAcceptLanguage? Type277 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.OneOf<global::ZAI.AsyncVideoGenerationResponse, global::ZAI.AsyncImageGenerationResponse>? Type278 { get; set; }
+        public global::ZAI.CreateAgentsConversationAcceptLanguage? Type278 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.CreatePaasV4FilesResponse? Type279 { get; set; }
+        public global::ZAI.OneOf<global::ZAI.AsyncVideoGenerationResponse, global::ZAI.AsyncImageGenerationResponse>? Type279 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.OneOf<global::ZAI.TranslationAgentResponse, global::ZAI.SpecialEffectsVideosAgentResponse?, global::ZAI.GlmSlideAgentResponse>? Type280 { get; set; }
+        public global::ZAI.CreatePaasV4FilesResponse? Type280 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::ZAI.OneOf<global::ZAI.Error, global::ZAI.SpecialEffectsVideosAgentError>? Type281 { get; set; }
+        public global::ZAI.OneOf<global::ZAI.TranslationAgentResponse, global::ZAI.SpecialEffectsVideosAgentResponse?, global::ZAI.GlmSlideAgentResponse>? Type281 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::ZAI.OneOf<global::ZAI.Error, global::ZAI.SpecialEffectsVideosAgentError>? Type282 { get; set; }
 
         /// <summary>
         /// 

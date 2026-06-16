@@ -9,16 +9,16 @@ namespace ZAI
     public sealed partial class ChatCompletionTextRequest
     {
         /// <summary>
-        /// The model code to be called. GLM-5.1, GLM-5, GLM-5-Turbo are the latest flagship model series, foundational models specifically designed for agent applications.<br/>
-        /// Default Value: glm-5.1<br/>
-        /// Example: glm-5.1
+        /// The model code to be called. GLM-5.2, GLM-5.1, GLM-5-Turbo are the latest flagship model series, foundational models specifically designed for agent applications.<br/>
+        /// Default Value: glm-5.2<br/>
+        /// Example: glm-5.2
         /// </summary>
-        /// <default>global::ZAI.ChatCompletionTextRequestModel.Glm51</default>
-        /// <example>glm-5.1</example>
+        /// <default>global::ZAI.ChatCompletionTextRequestModel.Glm52</default>
+        /// <example>glm-5.2</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("model")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::ZAI.JsonConverters.ChatCompletionTextRequestModelJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::ZAI.ChatCompletionTextRequestModel Model { get; set; } = global::ZAI.ChatCompletionTextRequestModel.Glm51;
+        public required global::ZAI.ChatCompletionTextRequestModel Model { get; set; } = global::ZAI.ChatCompletionTextRequestModel.Glm52;
 
         /// <summary>
         /// The current conversation message list as the model’s prompt input, provided in JSON array format, e.g.,`{“role”: “user”, “content”: “Hello”}`. Possible message types include system messages, user messages, assistant messages, and tool messages. Note: The input must not consist of system messages or assistant messages only.
@@ -52,16 +52,26 @@ namespace ZAI
         public global::ZAI.ChatThinking? Thinking { get; set; }
 
         /// <summary>
-        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. The GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series default value is `1.0`, GLM-4.5 series default value is `0.6`, GLM-4-32B-0414-128K default value is `0.75`.<br/>
-        /// Default Value: 1<br/>
-        /// Example: 1
+        /// Controls the model's reasoning effort level, takes effect when `thinking` is enabled. Default is `max`. Only supported by `GLM-5.2`. For compatibility with other protocols, passing `none` or `minimal` will cause the model to skip thinking; `low` and `medium` will be mapped to `high`; `xhigh` will be mapped to `max`.<br/>
+        /// Default Value: max<br/>
+        /// Example: max
         /// </summary>
-        /// <example>1</example>
+        /// <example>max</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("reasoning_effort")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::ZAI.JsonConverters.ChatCompletionTextRequestReasoningEffortJsonConverter))]
+        public global::ZAI.ChatCompletionTextRequestReasoningEffort? ReasoningEffort { get; set; }
+
+        /// <summary>
+        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. The GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series default value is `1.0`, GLM-4.5 series default value is `0.6`, GLM-4-32B-0414-128K default value is `0.75`.<br/>
+        /// Default Value: 1F<br/>
+        /// Example: 1F
+        /// </summary>
+        /// <example>1F</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("temperature")]
         public float? Temperature { get; set; }
 
         /// <summary>
-        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. The GLM-5.1, GLM-5, GLM-4.7, GLM-4.6, GLM-4.5 series default value is `0.95`, GLM-4-32B-0414-128K default value is `0.9`.<br/>
+        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. The GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6, GLM-4.5 series default value is `0.95`, GLM-4-32B-0414-128K default value is `0.9`.<br/>
         /// Default Value: 0.95F<br/>
         /// Example: 0.95F
         /// </summary>
@@ -133,9 +143,9 @@ namespace ZAI
         /// Initializes a new instance of the <see cref="ChatCompletionTextRequest" /> class.
         /// </summary>
         /// <param name="model">
-        /// The model code to be called. GLM-5.1, GLM-5, GLM-5-Turbo are the latest flagship model series, foundational models specifically designed for agent applications.<br/>
-        /// Default Value: glm-5.1<br/>
-        /// Example: glm-5.1
+        /// The model code to be called. GLM-5.2, GLM-5.1, GLM-5-Turbo are the latest flagship model series, foundational models specifically designed for agent applications.<br/>
+        /// Default Value: glm-5.2<br/>
+        /// Example: glm-5.2
         /// </param>
         /// <param name="messages">
         /// The current conversation message list as the model’s prompt input, provided in JSON array format, e.g.,`{“role”: “user”, “content”: “Hello”}`. Possible message types include system messages, user messages, assistant messages, and tool messages. Note: The input must not consist of system messages or assistant messages only.
@@ -153,13 +163,18 @@ namespace ZAI
         /// <param name="thinking">
         /// Only supported by GLM-4.5 series and higher models. This parameter is used to control whether the model enable the chain of thought.
         /// </param>
+        /// <param name="reasoningEffort">
+        /// Controls the model's reasoning effort level, takes effect when `thinking` is enabled. Default is `max`. Only supported by `GLM-5.2`. For compatibility with other protocols, passing `none` or `minimal` will cause the model to skip thinking; `low` and `medium` will be mapped to `high`; `xhigh` will be mapped to `max`.<br/>
+        /// Default Value: max<br/>
+        /// Example: max
+        /// </param>
         /// <param name="temperature">
-        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. The GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series default value is `1.0`, GLM-4.5 series default value is `0.6`, GLM-4-32B-0414-128K default value is `0.75`.<br/>
-        /// Default Value: 1<br/>
-        /// Example: 1
+        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. The GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series default value is `1.0`, GLM-4.5 series default value is `0.6`, GLM-4-32B-0414-128K default value is `0.75`.<br/>
+        /// Default Value: 1F<br/>
+        /// Example: 1F
         /// </param>
         /// <param name="topP">
-        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. The GLM-5.1, GLM-5, GLM-4.7, GLM-4.6, GLM-4.5 series default value is `0.95`, GLM-4-32B-0414-128K default value is `0.9`.<br/>
+        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. The GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6, GLM-4.5 series default value is `0.95`, GLM-4-32B-0414-128K default value is `0.9`.<br/>
         /// Default Value: 0.95F<br/>
         /// Example: 0.95F
         /// </param>
@@ -199,6 +214,7 @@ namespace ZAI
             bool? doSample,
             bool? stream,
             global::ZAI.ChatThinking? thinking,
+            global::ZAI.ChatCompletionTextRequestReasoningEffort? reasoningEffort,
             float? temperature,
             float? topP,
             int? maxTokens,
@@ -215,6 +231,7 @@ namespace ZAI
             this.DoSample = doSample;
             this.Stream = stream;
             this.Thinking = thinking;
+            this.ReasoningEffort = reasoningEffort;
             this.Temperature = temperature;
             this.TopP = topP;
             this.MaxTokens = maxTokens;
