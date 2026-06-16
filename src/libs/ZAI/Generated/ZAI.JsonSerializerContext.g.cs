@@ -37,6 +37,10 @@ namespace ZAI
 
             typeof(global::ZAI.JsonConverters.ChatCompletionTextRequestMessageToolMessageRoleNullableJsonConverter),
 
+            typeof(global::ZAI.JsonConverters.ChatCompletionTextRequestReasoningEffortJsonConverter),
+
+            typeof(global::ZAI.JsonConverters.ChatCompletionTextRequestReasoningEffortNullableJsonConverter),
+
             typeof(global::ZAI.JsonConverters.ChatCompletionTextRequestToolChoiceJsonConverter),
 
             typeof(global::ZAI.JsonConverters.ChatCompletionTextRequestToolChoiceNullableJsonConverter),
@@ -446,6 +450,7 @@ namespace ZAI
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ChatCompletionTextRequestMessageToolMessage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ChatCompletionTextRequestMessageToolMessageRole), TypeInfoPropertyName = "ChatCompletionTextRequestMessageToolMessageRole2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ChatThinking))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ChatCompletionTextRequestReasoningEffort), TypeInfoPropertyName = "ChatCompletionTextRequestReasoningEffort2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(float))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::ZAI.AnyOf<global::ZAI.FunctionToolSchema, global::ZAI.RetrievalToolSchema, global::ZAI.WebSearchToolSchema>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.AnyOf<global::ZAI.FunctionToolSchema, global::ZAI.RetrievalToolSchema, global::ZAI.WebSearchToolSchema>), TypeInfoPropertyName = "AnyOfFunctionToolSchemaRetrievalToolSchemaWebSearchToolSchema2")]
