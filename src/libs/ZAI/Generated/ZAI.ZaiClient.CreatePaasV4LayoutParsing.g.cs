@@ -479,7 +479,7 @@ namespace ZAI
         /// Example: glm-ocr
         /// </param>
         /// <param name="file">
-        /// Image or PDF document to be recognized, supports URL and base64. Supported image formats: PDF, JPG, PNG. Single image ≤10MB, PDF ≤50MB, maximum support 100 pages<br/>
+        /// Image or PDF document to be recognized, supports URL and base64. Supported image formats: PDF, JPG, PNG. Single image ≤10MB, PDF ≤50MB, maximum support 30 pages<br/>
         /// Example: https://cdn.bigmodel.cn/static/logo/introduction.png
         /// </param>
         /// <param name="returnCropImages">
