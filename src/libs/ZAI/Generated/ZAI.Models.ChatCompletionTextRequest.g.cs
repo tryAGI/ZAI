@@ -80,7 +80,7 @@ namespace ZAI
         public float? TopP { get; set; }
 
         /// <summary>
-        /// The maximum number of tokens for model output, the GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series supports 128K maximum output, the GLM-4.5 series supports 96K maximum output, the GLM-4.6v series supports 32K maximum output, the GLM-4.5v series supports 16K maximum output, GLM-4-32B-0414-128K supports 16K maximum output.<br/>
+        /// The maximum number of tokens for model output, the GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series supports 128K maximum output, the GLM-4.5 series supports 96K maximum output, the GLM-4.6v series supports 32K maximum output, the GLM-4.5v series supports 16K maximum output, GLM-4-32B-0414-128K supports 16K maximum output.<br/>
         /// Example: 1024
         /// </summary>
         /// <example>1024</example>
@@ -179,7 +179,7 @@ namespace ZAI
         /// Example: 0.95F
         /// </param>
         /// <param name="maxTokens">
-        /// The maximum number of tokens for model output, the GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series supports 128K maximum output, the GLM-4.5 series supports 96K maximum output, the GLM-4.6v series supports 32K maximum output, the GLM-4.5v series supports 16K maximum output, GLM-4-32B-0414-128K supports 16K maximum output.<br/>
+        /// The maximum number of tokens for model output, the GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series supports 128K maximum output, the GLM-4.5 series supports 96K maximum output, the GLM-4.6v series supports 32K maximum output, the GLM-4.5v series supports 16K maximum output, GLM-4-32B-0414-128K supports 16K maximum output.<br/>
         /// Example: 1024
         /// </param>
         /// <param name="toolStream">
