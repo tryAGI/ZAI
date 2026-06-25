@@ -4,7 +4,7 @@
 namespace ZAI
 {
     /// <summary>
-    /// Whether to enable the chain of thought(When enabled, GLM-5.2 GLM-5.1 GLM-5 GLM-5-Turbo GLM-5V-Turbo GLM-4.7 GLM-4.5V will think compulsorily, while GLM-4.6, GLM-4.6V, GLM-4.5 and others will automatically determine whether to think), default: enabled<br/>
+    /// Whether to enable the chain of thought(When enabled, GLM-5.2 GLM-5.1 GLM-5 GLM-5-Turbo GLM-5V-Turbo GLM-4.6 GLM-4.5 and others will automatically determine whether to think, while GLM-4.7 and GLM-4.5V will think compulsorily), default: enabled<br/>
     /// Default Value: enabled
     /// </summary>
     public enum ChatThinkingType
