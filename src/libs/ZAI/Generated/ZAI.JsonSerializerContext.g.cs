@@ -650,7 +650,7 @@ namespace ZAI
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.GlmSlideAgentRequestMessage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.GlmSlideAgentRequestMessageRole), TypeInfoPropertyName = "GlmSlideAgentRequestMessageRole2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::ZAI.GlmSlideAgentRequestMessageContentItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.GlmSlideAgentRequestMessageContentItem), TypeInfoPropertyName = "GlmSlideAgentRequestMessageContentItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.GlmSlideAgentRequestMessageContentItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.GlmSlideAgentRequestMessageContentItemType), TypeInfoPropertyName = "GlmSlideAgentRequestMessageContentItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.GlmSlideAgentResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::ZAI.GlmSlideAgentResponseChoice>))]
