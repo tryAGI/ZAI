@@ -4,9 +4,9 @@
 namespace ZAI
 {
     /// <summary>
-    /// The model code to be called. GLM-5.2, GLM-5.1, GLM-5-Turbo are the latest flagship model series, foundational models specifically designed for agent applications.<br/>
-    /// Default Value: glm-5.2<br/>
-    /// Example: glm-5.2
+    /// The model code to be called. GLM-5.3, GLM-5.2, GLM-5.1, GLM-5-Turbo are the latest flagship model series, foundational models specifically designed for agent applications.<br/>
+    /// Default Value: glm-5.3<br/>
+    /// Example: glm-5.3
     /// </summary>
     public enum ChatCompletionTextRequestModel
     {
@@ -66,6 +66,10 @@ namespace ZAI
         /// 
         /// </summary>
         Glm52,
+        /// <summary>
+        /// 
+        /// </summary>
+        Glm53,
     }
 
     /// <summary>
@@ -94,6 +98,7 @@ namespace ZAI
                 ChatCompletionTextRequestModel.Glm5Turbo => "glm-5-turbo",
                 ChatCompletionTextRequestModel.Glm51 => "glm-5.1",
                 ChatCompletionTextRequestModel.Glm52 => "glm-5.2",
+                ChatCompletionTextRequestModel.Glm53 => "glm-5.3",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -118,6 +123,7 @@ namespace ZAI
                 "glm-5-turbo" => ChatCompletionTextRequestModel.Glm5Turbo,
                 "glm-5.1" => ChatCompletionTextRequestModel.Glm51,
                 "glm-5.2" => ChatCompletionTextRequestModel.Glm52,
+                "glm-5.3" => ChatCompletionTextRequestModel.Glm53,
                 _ => null,
             };
         }

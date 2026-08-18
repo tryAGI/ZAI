@@ -9,16 +9,16 @@ namespace ZAI
     public sealed partial class ChatCompletionTextRequest
     {
         /// <summary>
-        /// The model code to be called. GLM-5.2, GLM-5.1, GLM-5-Turbo are the latest flagship model series, foundational models specifically designed for agent applications.<br/>
-        /// Default Value: glm-5.2<br/>
-        /// Example: glm-5.2
+        /// The model code to be called. GLM-5.3, GLM-5.2, GLM-5.1, GLM-5-Turbo are the latest flagship model series, foundational models specifically designed for agent applications.<br/>
+        /// Default Value: glm-5.3<br/>
+        /// Example: glm-5.3
         /// </summary>
-        /// <default>global::ZAI.ChatCompletionTextRequestModel.Glm52</default>
-        /// <example>glm-5.2</example>
+        /// <default>global::ZAI.ChatCompletionTextRequestModel.Glm53</default>
+        /// <example>glm-5.3</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("model")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::ZAI.JsonConverters.ChatCompletionTextRequestModelJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::ZAI.ChatCompletionTextRequestModel Model { get; set; } = global::ZAI.ChatCompletionTextRequestModel.Glm52;
+        public required global::ZAI.ChatCompletionTextRequestModel Model { get; set; } = global::ZAI.ChatCompletionTextRequestModel.Glm53;
 
         /// <summary>
         /// The current conversation message list as the model’s prompt input, provided in JSON array format, e.g.,`{“role”: “user”, “content”: “Hello”}`. Possible message types include system messages, user messages, assistant messages, and tool messages. Note: The input must not consist of system messages or assistant messages only.
@@ -52,7 +52,7 @@ namespace ZAI
         public global::ZAI.ChatThinking? Thinking { get; set; }
 
         /// <summary>
-        /// Controls the model's reasoning effort level, takes effect when `thinking` is enabled. Default is `max`. Only supported by `GLM-5.2`. For compatibility with other protocols, passing `none` or `minimal` will cause the model to skip thinking; `low` and `medium` will be mapped to `high`; `xhigh` will be mapped to `max`.<br/>
+        /// Controls the model's reasoning effort level, takes effect when `thinking` is enabled. Default is `max`, supported by `GLM-5.2` and above. For the `GLM-5.3` model, only the `low` / `high` / `max` levels are supported. For the `GLM-5.2` model, for compatibility with other protocols, passing `none` or `minimal` will cause the model to skip thinking; `low` and `medium` will be mapped to `high`; `xhigh` will be mapped to `max`.<br/>
         /// Default Value: max<br/>
         /// Example: max
         /// </summary>
@@ -62,7 +62,7 @@ namespace ZAI
         public global::ZAI.ChatCompletionTextRequestReasoningEffort? ReasoningEffort { get; set; }
 
         /// <summary>
-        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. The GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series default value is `1.0`, GLM-4.5 series default value is `0.6`, GLM-4-32B-0414-128K default value is `0.75`.<br/>
+        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. The GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series default value is `1.0`, GLM-4.5 series default value is `0.6`, GLM-4-32B-0414-128K default value is `0.75`.<br/>
         /// Default Value: 1F<br/>
         /// Example: 1F
         /// </summary>
@@ -71,7 +71,7 @@ namespace ZAI
         public float? Temperature { get; set; }
 
         /// <summary>
-        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. The GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6, GLM-4.5 series default value is `0.95`, GLM-4-32B-0414-128K default value is `0.9`.<br/>
+        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. The GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6, GLM-4.5 series default value is `0.95`, GLM-4-32B-0414-128K default value is `0.9`.<br/>
         /// Default Value: 0.95F<br/>
         /// Example: 0.95F
         /// </summary>
@@ -80,7 +80,7 @@ namespace ZAI
         public float? TopP { get; set; }
 
         /// <summary>
-        /// The maximum number of tokens for model output, the GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series supports 128K maximum output, the GLM-4.5 series supports 96K maximum output, the GLM-4.6v series supports 32K maximum output, the GLM-4.5v series supports 16K maximum output, GLM-4-32B-0414-128K supports 16K maximum output.<br/>
+        /// The maximum number of tokens for model output, the GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series supports 128K maximum output, the GLM-4.5 series supports 96K maximum output, the GLM-4.6v series supports 32K maximum output, the GLM-4.5v series supports 16K maximum output, GLM-4-32B-0414-128K supports 16K maximum output.<br/>
         /// Example: 1024
         /// </summary>
         /// <example>1024</example>
@@ -88,7 +88,7 @@ namespace ZAI
         public int? MaxTokens { get; set; }
 
         /// <summary>
-        /// Whether to enable streaming response for Function Calls. Default value is false. Only supported by GLM-4.6 and above. Refer the [Stream Tool Call](/guides/tools/stream-tool)<br/>
+        /// Whether to enable streaming response for Function Calls. Default value is false. Only supported by the GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-5-Turbo, GLM-4.7, and GLM-4.6 series. Refer to the [Stream Tool Call](/guides/tools/stream-tool)<br/>
         /// Default Value: false<br/>
         /// Example: false
         /// </summary>
@@ -116,7 +116,7 @@ namespace ZAI
         public global::System.Collections.Generic.IList<string>? Stop { get; set; }
 
         /// <summary>
-        /// Specifies the response format of the model. Defaults to text. Supports two formats:{ "type": "text" } plain text mode, returns natural language text, { "type": "json_object" } JSON mode, returns valid JSON data. When using JSON mode, it’s recommended to clearly request JSON output in the prompt.
+        /// Specifies the response format of the model. Defaults to text. Only text models support this field. `type` converges to three values: `text` (plain text output), `json_object` (JSON output).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("response_format")]
         public global::ZAI.ChatCompletionTextRequestResponseFormat? ResponseFormat { get; set; }
@@ -143,9 +143,9 @@ namespace ZAI
         /// Initializes a new instance of the <see cref="ChatCompletionTextRequest" /> class.
         /// </summary>
         /// <param name="model">
-        /// The model code to be called. GLM-5.2, GLM-5.1, GLM-5-Turbo are the latest flagship model series, foundational models specifically designed for agent applications.<br/>
-        /// Default Value: glm-5.2<br/>
-        /// Example: glm-5.2
+        /// The model code to be called. GLM-5.3, GLM-5.2, GLM-5.1, GLM-5-Turbo are the latest flagship model series, foundational models specifically designed for agent applications.<br/>
+        /// Default Value: glm-5.3<br/>
+        /// Example: glm-5.3
         /// </param>
         /// <param name="messages">
         /// The current conversation message list as the model’s prompt input, provided in JSON array format, e.g.,`{“role”: “user”, “content”: “Hello”}`. Possible message types include system messages, user messages, assistant messages, and tool messages. Note: The input must not consist of system messages or assistant messages only.
@@ -164,26 +164,26 @@ namespace ZAI
         /// Only supported by GLM-4.5 series and higher models. This parameter is used to control whether the model enable the chain of thought.
         /// </param>
         /// <param name="reasoningEffort">
-        /// Controls the model's reasoning effort level, takes effect when `thinking` is enabled. Default is `max`. Only supported by `GLM-5.2`. For compatibility with other protocols, passing `none` or `minimal` will cause the model to skip thinking; `low` and `medium` will be mapped to `high`; `xhigh` will be mapped to `max`.<br/>
+        /// Controls the model's reasoning effort level, takes effect when `thinking` is enabled. Default is `max`, supported by `GLM-5.2` and above. For the `GLM-5.3` model, only the `low` / `high` / `max` levels are supported. For the `GLM-5.2` model, for compatibility with other protocols, passing `none` or `minimal` will cause the model to skip thinking; `low` and `medium` will be mapped to `high`; `xhigh` will be mapped to `max`.<br/>
         /// Default Value: max<br/>
         /// Example: max
         /// </param>
         /// <param name="temperature">
-        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. The GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series default value is `1.0`, GLM-4.5 series default value is `0.6`, GLM-4-32B-0414-128K default value is `0.75`.<br/>
+        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. The GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series default value is `1.0`, GLM-4.5 series default value is `0.6`, GLM-4-32B-0414-128K default value is `0.75`.<br/>
         /// Default Value: 1F<br/>
         /// Example: 1F
         /// </param>
         /// <param name="topP">
-        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. The GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6, GLM-4.5 series default value is `0.95`, GLM-4-32B-0414-128K default value is `0.9`.<br/>
+        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. The GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6, GLM-4.5 series default value is `0.95`, GLM-4-32B-0414-128K default value is `0.9`.<br/>
         /// Default Value: 0.95F<br/>
         /// Example: 0.95F
         /// </param>
         /// <param name="maxTokens">
-        /// The maximum number of tokens for model output, the GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series supports 128K maximum output, the GLM-4.5 series supports 96K maximum output, the GLM-4.6v series supports 32K maximum output, the GLM-4.5v series supports 16K maximum output, GLM-4-32B-0414-128K supports 16K maximum output.<br/>
+        /// The maximum number of tokens for model output, the GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series supports 128K maximum output, the GLM-4.5 series supports 96K maximum output, the GLM-4.6v series supports 32K maximum output, the GLM-4.5v series supports 16K maximum output, GLM-4-32B-0414-128K supports 16K maximum output.<br/>
         /// Example: 1024
         /// </param>
         /// <param name="toolStream">
-        /// Whether to enable streaming response for Function Calls. Default value is false. Only supported by GLM-4.6 and above. Refer the [Stream Tool Call](/guides/tools/stream-tool)<br/>
+        /// Whether to enable streaming response for Function Calls. Default value is false. Only supported by the GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-5-Turbo, GLM-4.7, and GLM-4.6 series. Refer to the [Stream Tool Call](/guides/tools/stream-tool)<br/>
         /// Default Value: false<br/>
         /// Example: false
         /// </param>
@@ -197,7 +197,7 @@ namespace ZAI
         /// Stop word list. Generation stops when the model encounters any specified string. Currently, only one stop word is supported, in the format ["stop_word1"].
         /// </param>
         /// <param name="responseFormat">
-        /// Specifies the response format of the model. Defaults to text. Supports two formats:{ "type": "text" } plain text mode, returns natural language text, { "type": "json_object" } JSON mode, returns valid JSON data. When using JSON mode, it’s recommended to clearly request JSON output in the prompt.
+        /// Specifies the response format of the model. Defaults to text. Only text models support this field. `type` converges to three values: `text` (plain text output), `json_object` (JSON output).
         /// </param>
         /// <param name="requestId">
         /// Passed by the user side, needs to be unique; used to distinguish each request, 6–64 characters. If not provided by the user side, the platform will generate one by default.
