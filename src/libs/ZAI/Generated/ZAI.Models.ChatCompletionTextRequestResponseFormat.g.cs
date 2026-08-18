@@ -4,7 +4,7 @@
 namespace ZAI
 {
     /// <summary>
-    /// Specifies the response format of the model. Defaults to text. Supports two formats:{ "type": "text" } plain text mode, returns natural language text, { "type": "json_object" } JSON mode, returns valid JSON data. When using JSON mode, it’s recommended to clearly request JSON output in the prompt.
+    /// Specifies the response format of the model. Defaults to text. Only text models support this field. `type` converges to three values: `text` (plain text output), `json_object` (JSON output).
     /// </summary>
     public sealed partial class ChatCompletionTextRequestResponseFormat
     {
