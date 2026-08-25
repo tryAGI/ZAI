@@ -225,7 +225,7 @@ namespace ZAI
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"[{string.Join(",", global::System.Linq.Enumerable.Select(request.Hotwords, x => x))}]"),
+                                    content: new global::System.Net.Http.StringContent($"[{string.Join(",", global::System.Linq.Enumerable.Select(request.Hotwords!, x => x))}]"),
                                     name: "\"hotwords\"");
 
                             }
@@ -833,7 +833,7 @@ namespace ZAI
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"[{string.Join(",", global::System.Linq.Enumerable.Select(request.Hotwords, x => x))}]"),
+                                    content: new global::System.Net.Http.StringContent($"[{string.Join(",", global::System.Linq.Enumerable.Select(request.Hotwords!, x => x))}]"),
                                     name: "\"hotwords\"");
 
                             }
@@ -1370,7 +1370,7 @@ namespace ZAI
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"[{string.Join(",", global::System.Linq.Enumerable.Select(request.Hotwords, x => x))}]"),
+                                    content: new global::System.Net.Http.StringContent($"[{string.Join(",", global::System.Linq.Enumerable.Select(request.Hotwords!, x => x))}]"),
                                     name: "\"hotwords\"");
 
                             }
