@@ -52,7 +52,7 @@ namespace ZAI
         public global::ZAI.ChatThinking? Thinking { get; set; }
 
         /// <summary>
-        /// Controls the model's reasoning effort level, takes effect when `thinking` is enabled. Default is `max`, supported by `GLM-5.2` and above. For the `GLM-5.3` model, only the `low` / `high` / `max` levels are supported. For the `GLM-5.2` model, for compatibility with other protocols, passing `none` or `minimal` will cause the model to skip thinking; `low` and `medium` will be mapped to `high`; `xhigh` will be mapped to `max`.<br/>
+        /// Controls the model's reasoning effort level, takes effect when `thinking` is enabled. Default is `max`, supported by `GLM-5.2` and above. For the `GLM-5.3` `GLM-5.3-FLASH` model, only the `low` / `high` / `max` levels are supported. For the `GLM-5.2` model, for compatibility with other protocols, passing `none` or `minimal` will cause the model to skip thinking; `low` and `medium` will be mapped to `high`; `xhigh` will be mapped to `max`.<br/>
         /// Default Value: max<br/>
         /// Example: max
         /// </summary>
@@ -164,7 +164,7 @@ namespace ZAI
         /// Only supported by GLM-4.5 series and higher models. This parameter is used to control whether the model enable the chain of thought.
         /// </param>
         /// <param name="reasoningEffort">
-        /// Controls the model's reasoning effort level, takes effect when `thinking` is enabled. Default is `max`, supported by `GLM-5.2` and above. For the `GLM-5.3` model, only the `low` / `high` / `max` levels are supported. For the `GLM-5.2` model, for compatibility with other protocols, passing `none` or `minimal` will cause the model to skip thinking; `low` and `medium` will be mapped to `high`; `xhigh` will be mapped to `max`.<br/>
+        /// Controls the model's reasoning effort level, takes effect when `thinking` is enabled. Default is `max`, supported by `GLM-5.2` and above. For the `GLM-5.3` `GLM-5.3-FLASH` model, only the `low` / `high` / `max` levels are supported. For the `GLM-5.2` model, for compatibility with other protocols, passing `none` or `minimal` will cause the model to skip thinking; `low` and `medium` will be mapped to `high`; `xhigh` will be mapped to `max`.<br/>
         /// Default Value: max<br/>
         /// Example: max
         /// </param>

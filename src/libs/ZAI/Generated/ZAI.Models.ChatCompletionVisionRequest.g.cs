@@ -9,16 +9,16 @@ namespace ZAI
     public sealed partial class ChatCompletionVisionRequest
     {
         /// <summary>
-        /// The model code to be called. GLM-5V-Turbo are the new generation of visual reasoning models. `AutoGLM-Phone-Multilingual` is mobile intelligent assistant model.<br/>
-        /// Default Value: glm-5v-turbo<br/>
-        /// Example: glm-5v-turbo
+        /// The model code to be called. The `GLM-5.3-Flash` series supports visual understanding, delivering excellent multimodal comprehension and tool calling capabilities.<br/>
+        /// Default Value: glm-5.3-flash<br/>
+        /// Example: glm-5.3-flash
         /// </summary>
-        /// <default>global::ZAI.ChatCompletionVisionRequestModel.Glm5vTurbo</default>
-        /// <example>glm-5v-turbo</example>
+        /// <default>global::ZAI.ChatCompletionVisionRequestModel.Glm53Flash</default>
+        /// <example>glm-5.3-flash</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("model")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::ZAI.JsonConverters.ChatCompletionVisionRequestModelJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::ZAI.ChatCompletionVisionRequestModel Model { get; set; } = global::ZAI.ChatCompletionVisionRequestModel.Glm5vTurbo;
+        public required global::ZAI.ChatCompletionVisionRequestModel Model { get; set; } = global::ZAI.ChatCompletionVisionRequestModel.Glm53Flash;
 
         /// <summary>
         /// The current conversation message list as the model’s prompt input, provided in JSON array format, e.g.,`{“role”: “user”, “content”: “Hello”}`. Possible message types include system messages, user messages. Note: The input must not consist of system or assistant messages only.
@@ -52,25 +52,35 @@ namespace ZAI
         public global::ZAI.ChatThinking? Thinking { get; set; }
 
         /// <summary>
-        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. The GLM-5V-Turbo, GLM-4.6V, GLM-4.5V series default value is `0.8`, the autoglm-phone-multilingual default value is `0.0`.<br/>
-        /// Default Value: 0.8F<br/>
-        /// Example: 0.8F
+        /// Controls the model's reasoning effort level, takes effect when `thinking` is enabled. Default is `max`.<br/>
+        /// Default Value: max<br/>
+        /// Example: max
         /// </summary>
-        /// <example>0.8F</example>
+        /// <example>max</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("reasoning_effort")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::ZAI.JsonConverters.ChatCompletionVisionRequestReasoningEffortJsonConverter))]
+        public global::ZAI.ChatCompletionVisionRequestReasoningEffort? ReasoningEffort { get; set; }
+
+        /// <summary>
+        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. For `GLM-5.3-Flash` the default value is `1.0`; the GLM-5V-Turbo, GLM-4.6V, GLM-4.5V series default value is `0.8`; the autoglm-phone-multilingual default value is `0.0`.<br/>
+        /// Default Value: 1F<br/>
+        /// Example: 1F
+        /// </summary>
+        /// <example>1F</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("temperature")]
         public float? Temperature { get; set; }
 
         /// <summary>
-        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`, value range is: `[0.01, 1.0]`. The GLM-5V-Turbo, GLM-4.6V, GLM-4.5V series default value is `0.6`, the autoglm-phone-multilingual default value is `0.85`.<br/>
-        /// Default Value: 0.6F<br/>
-        /// Example: 0.6F
+        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. For `GLM-5.3-Flash` the default value is `0.95`; the GLM-5V-Turbo, GLM-4.6V, GLM-4.5V series default value is `0.6`; the autoglm-phone-multilingual default value is `0.85`.<br/>
+        /// Default Value: 0.95F<br/>
+        /// Example: 0.95F
         /// </summary>
-        /// <example>0.6F</example>
+        /// <example>0.95F</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("top_p")]
         public float? TopP { get; set; }
 
         /// <summary>
-        /// The maximum number of tokens for model output, the GLM-5V-Turbo supports 128K maximum output, GLM-4.6V series supports 32K maximum output, the GLM-4.5V series supports 16K maximum output, the autoglm-phone-multilingual supports 4K maximum output.<br/>
+        /// The maximum number of tokens for model output. `GLM-5.3-Flash` and GLM-5V-Turbo support a maximum output length of 128K, the GLM-4.6V series supports 32K, the GLM-4.5V series supports 16K, and autoglm-phone-multilingual supports 4K. It is recommended to set it to no less than 1024.<br/>
         /// Example: 1024
         /// </summary>
         /// <example>1024</example>
@@ -78,7 +88,7 @@ namespace ZAI
         public int? MaxTokens { get; set; }
 
         /// <summary>
-        /// A list of tools the model may call. Only support by GLM-4.6V series and autoglm-phone-multilingual. Use this to provide a list of functions the model may generate JSON inputs for. A max of 128 functions are supported.
+        /// A list of tools the model may call. Only supported by `GLM-5.3-Flash`, the GLM-4.6V series, and autoglm-phone-multilingual. Use this to provide a list of functions the model may generate JSON inputs for. A max of 128 functions are supported.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tools")]
         public global::System.Collections.Generic.IList<global::ZAI.FunctionToolSchema>? Tools { get; set; }
@@ -118,9 +128,9 @@ namespace ZAI
         /// Initializes a new instance of the <see cref="ChatCompletionVisionRequest" /> class.
         /// </summary>
         /// <param name="model">
-        /// The model code to be called. GLM-5V-Turbo are the new generation of visual reasoning models. `AutoGLM-Phone-Multilingual` is mobile intelligent assistant model.<br/>
-        /// Default Value: glm-5v-turbo<br/>
-        /// Example: glm-5v-turbo
+        /// The model code to be called. The `GLM-5.3-Flash` series supports visual understanding, delivering excellent multimodal comprehension and tool calling capabilities.<br/>
+        /// Default Value: glm-5.3-flash<br/>
+        /// Example: glm-5.3-flash
         /// </param>
         /// <param name="messages">
         /// The current conversation message list as the model’s prompt input, provided in JSON array format, e.g.,`{“role”: “user”, “content”: “Hello”}`. Possible message types include system messages, user messages. Note: The input must not consist of system or assistant messages only.
@@ -138,22 +148,27 @@ namespace ZAI
         /// <param name="thinking">
         /// Only supported by GLM-4.5 series and higher models. This parameter is used to control whether the model enable the chain of thought.
         /// </param>
+        /// <param name="reasoningEffort">
+        /// Controls the model's reasoning effort level, takes effect when `thinking` is enabled. Default is `max`.<br/>
+        /// Default Value: max<br/>
+        /// Example: max
+        /// </param>
         /// <param name="temperature">
-        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. The GLM-5V-Turbo, GLM-4.6V, GLM-4.5V series default value is `0.8`, the autoglm-phone-multilingual default value is `0.0`.<br/>
-        /// Default Value: 0.8F<br/>
-        /// Example: 0.8F
+        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. For `GLM-5.3-Flash` the default value is `1.0`; the GLM-5V-Turbo, GLM-4.6V, GLM-4.5V series default value is `0.8`; the autoglm-phone-multilingual default value is `0.0`.<br/>
+        /// Default Value: 1F<br/>
+        /// Example: 1F
         /// </param>
         /// <param name="topP">
-        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`, value range is: `[0.01, 1.0]`. The GLM-5V-Turbo, GLM-4.6V, GLM-4.5V series default value is `0.6`, the autoglm-phone-multilingual default value is `0.85`.<br/>
-        /// Default Value: 0.6F<br/>
-        /// Example: 0.6F
+        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. For `GLM-5.3-Flash` the default value is `0.95`; the GLM-5V-Turbo, GLM-4.6V, GLM-4.5V series default value is `0.6`; the autoglm-phone-multilingual default value is `0.85`.<br/>
+        /// Default Value: 0.95F<br/>
+        /// Example: 0.95F
         /// </param>
         /// <param name="maxTokens">
-        /// The maximum number of tokens for model output, the GLM-5V-Turbo supports 128K maximum output, GLM-4.6V series supports 32K maximum output, the GLM-4.5V series supports 16K maximum output, the autoglm-phone-multilingual supports 4K maximum output.<br/>
+        /// The maximum number of tokens for model output. `GLM-5.3-Flash` and GLM-5V-Turbo support a maximum output length of 128K, the GLM-4.6V series supports 32K, the GLM-4.5V series supports 16K, and autoglm-phone-multilingual supports 4K. It is recommended to set it to no less than 1024.<br/>
         /// Example: 1024
         /// </param>
         /// <param name="tools">
-        /// A list of tools the model may call. Only support by GLM-4.6V series and autoglm-phone-multilingual. Use this to provide a list of functions the model may generate JSON inputs for. A max of 128 functions are supported.
+        /// A list of tools the model may call. Only supported by `GLM-5.3-Flash`, the GLM-4.6V series, and autoglm-phone-multilingual. Use this to provide a list of functions the model may generate JSON inputs for. A max of 128 functions are supported.
         /// </param>
         /// <param name="toolChoice">
         /// Controls how the model selects a tool.
@@ -176,6 +191,7 @@ namespace ZAI
             bool? doSample,
             bool? stream,
             global::ZAI.ChatThinking? thinking,
+            global::ZAI.ChatCompletionVisionRequestReasoningEffort? reasoningEffort,
             float? temperature,
             float? topP,
             int? maxTokens,
@@ -190,6 +206,7 @@ namespace ZAI
             this.DoSample = doSample;
             this.Stream = stream;
             this.Thinking = thinking;
+            this.ReasoningEffort = reasoningEffort;
             this.Temperature = temperature;
             this.TopP = topP;
             this.MaxTokens = maxTokens;
