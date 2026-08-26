@@ -4,9 +4,9 @@
 namespace ZAI
 {
     /// <summary>
-    /// The model code to be called. GLM-5V-Turbo are the new generation of visual reasoning models. `AutoGLM-Phone-Multilingual` is mobile intelligent assistant model.<br/>
-    /// Default Value: glm-5v-turbo<br/>
-    /// Example: glm-5v-turbo
+    /// The model code to be called. The `GLM-5.3-Flash` series supports visual understanding, delivering excellent multimodal comprehension and tool calling capabilities.<br/>
+    /// Default Value: glm-5.3-flash<br/>
+    /// Example: glm-5.3-flash
     /// </summary>
     public enum ChatCompletionVisionRequestModel
     {
@@ -33,6 +33,10 @@ namespace ZAI
         /// <summary>
         /// 
         /// </summary>
+        Glm53Flash,
+        /// <summary>
+        /// 
+        /// </summary>
         Glm5vTurbo,
     }
 
@@ -53,6 +57,7 @@ namespace ZAI
                 ChatCompletionVisionRequestModel.Glm46v => "glm-4.6v",
                 ChatCompletionVisionRequestModel.Glm46vFlash => "glm-4.6v-flash",
                 ChatCompletionVisionRequestModel.Glm46vFlashx => "glm-4.6v-flashx",
+                ChatCompletionVisionRequestModel.Glm53Flash => "glm-5.3-flash",
                 ChatCompletionVisionRequestModel.Glm5vTurbo => "glm-5v-turbo",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -69,6 +74,7 @@ namespace ZAI
                 "glm-4.6v" => ChatCompletionVisionRequestModel.Glm46v,
                 "glm-4.6v-flash" => ChatCompletionVisionRequestModel.Glm46vFlash,
                 "glm-4.6v-flashx" => ChatCompletionVisionRequestModel.Glm46vFlashx,
+                "glm-5.3-flash" => ChatCompletionVisionRequestModel.Glm53Flash,
                 "glm-5v-turbo" => ChatCompletionVisionRequestModel.Glm5vTurbo,
                 _ => null,
             };

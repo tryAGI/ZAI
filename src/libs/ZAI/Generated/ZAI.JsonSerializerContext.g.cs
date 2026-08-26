@@ -65,6 +65,10 @@ namespace ZAI
 
             typeof(global::ZAI.JsonConverters.ChatCompletionVisionRequestMessageAssistantMessageRoleNullableJsonConverter),
 
+            typeof(global::ZAI.JsonConverters.ChatCompletionVisionRequestReasoningEffortJsonConverter),
+
+            typeof(global::ZAI.JsonConverters.ChatCompletionVisionRequestReasoningEffortNullableJsonConverter),
+
             typeof(global::ZAI.JsonConverters.ChatCompletionVisionRequestToolChoiceJsonConverter),
 
             typeof(global::ZAI.JsonConverters.ChatCompletionVisionRequestToolChoiceNullableJsonConverter),
@@ -474,6 +478,7 @@ namespace ZAI
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ChatCompletionVisionRequestMessageSystemMessageRole), TypeInfoPropertyName = "ChatCompletionVisionRequestMessageSystemMessageRole2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ChatCompletionVisionRequestMessageAssistantMessage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ChatCompletionVisionRequestMessageAssistantMessageRole), TypeInfoPropertyName = "ChatCompletionVisionRequestMessageAssistantMessageRole2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ChatCompletionVisionRequestReasoningEffort), TypeInfoPropertyName = "ChatCompletionVisionRequestReasoningEffort2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::ZAI.FunctionToolSchema>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ChatCompletionVisionRequestToolChoice), TypeInfoPropertyName = "ChatCompletionVisionRequestToolChoice2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.MultimodalContentItem), TypeInfoPropertyName = "MultimodalContentItem2")]
