@@ -5,12 +5,12 @@
 namespace ZAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct MultimodalContentItem : global::System.IEquatable<MultimodalContentItem>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::ZAI.MultimodalContentItemText? Text { get; init; }
@@ -19,7 +19,7 @@ namespace ZAI
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Text))]
@@ -27,7 +27,7 @@ namespace ZAI
         public bool IsText => Text != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickText(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::ZAI.MultimodalContentItemText PickText() => IsText
             ? Text!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::ZAI.MultimodalContentItemImage? Image { get; init; }
@@ -56,7 +56,7 @@ namespace ZAI
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Image))]
@@ -64,7 +64,7 @@ namespace ZAI
         public bool IsImage => Image != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickImage(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::ZAI.MultimodalContentItemImage PickImage() => IsImage
             ? Image!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Image' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::ZAI.MultimodalContentItemAudio? Audio { get; init; }
@@ -93,7 +93,7 @@ namespace ZAI
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Audio))]
@@ -101,7 +101,7 @@ namespace ZAI
         public bool IsAudio => Audio != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAudio(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::ZAI.MultimodalContentItemAudio PickAudio() => IsAudio
             ? Audio!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Audio' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::ZAI.MultimodalContentItemVideo? Video { get; init; }
@@ -130,7 +130,7 @@ namespace ZAI
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Video))]
@@ -138,7 +138,7 @@ namespace ZAI
         public bool IsVideo => Video != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickVideo(
 #if NET6_0_OR_GREATER
@@ -151,14 +151,14 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::ZAI.MultimodalContentItemVideo PickVideo() => IsVideo
             ? Video!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Video' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::ZAI.MultimodalContentItemFile? File { get; init; }
@@ -167,7 +167,7 @@ namespace ZAI
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(File))]
@@ -175,7 +175,7 @@ namespace ZAI
         public bool IsFile => File != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFile(
 #if NET6_0_OR_GREATER
@@ -188,23 +188,23 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::ZAI.MultimodalContentItemFile PickFile() => IsFile
             ? File!
             : throw new global::System.InvalidOperationException($"Expected union variant 'File' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator MultimodalContentItem(global::ZAI.MultimodalContentItemText value) => new MultimodalContentItem((global::ZAI.MultimodalContentItemText?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::ZAI.MultimodalContentItemText?(MultimodalContentItem @this) => @this.Text;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MultimodalContentItem(global::ZAI.MultimodalContentItemText? value)
         {
@@ -212,22 +212,22 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static MultimodalContentItem FromText(global::ZAI.MultimodalContentItemText? value) => new MultimodalContentItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator MultimodalContentItem(global::ZAI.MultimodalContentItemImage value) => new MultimodalContentItem((global::ZAI.MultimodalContentItemImage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::ZAI.MultimodalContentItemImage?(MultimodalContentItem @this) => @this.Image;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MultimodalContentItem(global::ZAI.MultimodalContentItemImage? value)
         {
@@ -235,22 +235,22 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static MultimodalContentItem FromImage(global::ZAI.MultimodalContentItemImage? value) => new MultimodalContentItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator MultimodalContentItem(global::ZAI.MultimodalContentItemAudio value) => new MultimodalContentItem((global::ZAI.MultimodalContentItemAudio?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::ZAI.MultimodalContentItemAudio?(MultimodalContentItem @this) => @this.Audio;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MultimodalContentItem(global::ZAI.MultimodalContentItemAudio? value)
         {
@@ -258,22 +258,22 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static MultimodalContentItem FromAudio(global::ZAI.MultimodalContentItemAudio? value) => new MultimodalContentItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator MultimodalContentItem(global::ZAI.MultimodalContentItemVideo value) => new MultimodalContentItem((global::ZAI.MultimodalContentItemVideo?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::ZAI.MultimodalContentItemVideo?(MultimodalContentItem @this) => @this.Video;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MultimodalContentItem(global::ZAI.MultimodalContentItemVideo? value)
         {
@@ -281,22 +281,22 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static MultimodalContentItem FromVideo(global::ZAI.MultimodalContentItemVideo? value) => new MultimodalContentItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator MultimodalContentItem(global::ZAI.MultimodalContentItemFile value) => new MultimodalContentItem((global::ZAI.MultimodalContentItemFile?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::ZAI.MultimodalContentItemFile?(MultimodalContentItem @this) => @this.File;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MultimodalContentItem(global::ZAI.MultimodalContentItemFile? value)
         {
@@ -304,12 +304,12 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static MultimodalContentItem FromFile(global::ZAI.MultimodalContentItemFile? value) => new MultimodalContentItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MultimodalContentItem(
             global::ZAI.MultimodalContentItemText? text,
@@ -327,29 +327,29 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             File as object ??
             Video as object ??
             Audio as object ??
             Image as object ??
-            Text as object 
+            Text as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Text?.ToString() ??
             Image?.ToString() ??
             Audio?.ToString() ??
             Video?.ToString() ??
-            File?.ToString() 
+            File?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -357,7 +357,7 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::ZAI.MultimodalContentItemText, TResult>? text = null,
@@ -397,7 +397,7 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::ZAI.MultimodalContentItemText>? text = null,
@@ -439,7 +439,7 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::ZAI.MultimodalContentItemText>? text = null,
@@ -477,7 +477,7 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -504,7 +504,7 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(MultimodalContentItem other)
         {
@@ -513,12 +513,12 @@ namespace ZAI
                 global::System.Collections.Generic.EqualityComparer<global::ZAI.MultimodalContentItemImage?>.Default.Equals(Image, other.Image) &&
                 global::System.Collections.Generic.EqualityComparer<global::ZAI.MultimodalContentItemAudio?>.Default.Equals(Audio, other.Audio) &&
                 global::System.Collections.Generic.EqualityComparer<global::ZAI.MultimodalContentItemVideo?>.Default.Equals(Video, other.Video) &&
-                global::System.Collections.Generic.EqualityComparer<global::ZAI.MultimodalContentItemFile?>.Default.Equals(File, other.File) 
+                global::System.Collections.Generic.EqualityComparer<global::ZAI.MultimodalContentItemFile?>.Default.Equals(File, other.File)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(MultimodalContentItem obj1, MultimodalContentItem obj2)
         {
@@ -526,7 +526,7 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(MultimodalContentItem obj1, MultimodalContentItem obj2)
         {
@@ -534,7 +534,7 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

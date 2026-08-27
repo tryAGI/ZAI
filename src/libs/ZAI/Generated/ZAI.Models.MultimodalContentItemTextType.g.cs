@@ -10,7 +10,7 @@ namespace ZAI
     public enum MultimodalContentItemTextType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Text,
     }

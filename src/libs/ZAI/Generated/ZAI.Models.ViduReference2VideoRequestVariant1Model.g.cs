@@ -9,7 +9,7 @@ namespace ZAI
     public enum ViduReference2VideoRequestVariant1Model
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vidu2Reference,
     }

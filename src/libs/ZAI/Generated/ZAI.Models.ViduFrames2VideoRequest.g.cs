@@ -5,12 +5,12 @@
 namespace ZAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ViduFrames2VideoRequest : global::System.IEquatable<ViduFrames2VideoRequest>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::ZAI.ViduFrames2VideoRequestVariant1? ViduFrames2VideoRequestVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace ZAI
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ViduFrames2VideoRequestVariant1))]
@@ -27,7 +27,7 @@ namespace ZAI
         public bool IsViduFrames2VideoRequestVariant1 => ViduFrames2VideoRequestVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickViduFrames2VideoRequestVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::ZAI.ViduFrames2VideoRequestVariant1 PickViduFrames2VideoRequestVariant1() => IsViduFrames2VideoRequestVariant1
             ? ViduFrames2VideoRequestVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ViduFrames2VideoRequestVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::ZAI.VideoCommonRequest? Common { get; init; }
@@ -56,7 +56,7 @@ namespace ZAI
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Common))]
@@ -64,7 +64,7 @@ namespace ZAI
         public bool IsCommon => Common != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCommon(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::ZAI.VideoCommonRequest PickCommon() => IsCommon
             ? Common!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Common' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ViduFrames2VideoRequest(global::ZAI.ViduFrames2VideoRequestVariant1 value) => new ViduFrames2VideoRequest((global::ZAI.ViduFrames2VideoRequestVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::ZAI.ViduFrames2VideoRequestVariant1?(ViduFrames2VideoRequest @this) => @this.ViduFrames2VideoRequestVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ViduFrames2VideoRequest(global::ZAI.ViduFrames2VideoRequestVariant1? value)
         {
@@ -101,22 +101,22 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ViduFrames2VideoRequest FromViduFrames2VideoRequestVariant1(global::ZAI.ViduFrames2VideoRequestVariant1? value) => new ViduFrames2VideoRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ViduFrames2VideoRequest(global::ZAI.VideoCommonRequest value) => new ViduFrames2VideoRequest((global::ZAI.VideoCommonRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::ZAI.VideoCommonRequest?(ViduFrames2VideoRequest @this) => @this.Common;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ViduFrames2VideoRequest(global::ZAI.VideoCommonRequest? value)
         {
@@ -124,12 +124,12 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ViduFrames2VideoRequest FromCommon(global::ZAI.VideoCommonRequest? value) => new ViduFrames2VideoRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ViduFrames2VideoRequest(
             global::ZAI.ViduFrames2VideoRequestVariant1? viduFrames2VideoRequestVariant1,
@@ -141,23 +141,23 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Common as object ??
-            ViduFrames2VideoRequestVariant1 as object 
+            ViduFrames2VideoRequestVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             ViduFrames2VideoRequestVariant1?.ToString() ??
-            Common?.ToString() 
+            Common?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::ZAI.ViduFrames2VideoRequestVariant1, TResult>? viduFrames2VideoRequestVariant1 = null,
@@ -190,7 +190,7 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::ZAI.ViduFrames2VideoRequestVariant1>? viduFrames2VideoRequestVariant1 = null,
@@ -214,7 +214,7 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::ZAI.ViduFrames2VideoRequestVariant1>? viduFrames2VideoRequestVariant1 = null,
@@ -237,7 +237,7 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ViduFrames2VideoRequest other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::ZAI.ViduFrames2VideoRequestVariant1?>.Default.Equals(ViduFrames2VideoRequestVariant1, other.ViduFrames2VideoRequestVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::ZAI.VideoCommonRequest?>.Default.Equals(Common, other.Common) 
+                global::System.Collections.Generic.EqualityComparer<global::ZAI.VideoCommonRequest?>.Default.Equals(Common, other.Common)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ViduFrames2VideoRequest obj1, ViduFrames2VideoRequest obj2)
         {
@@ -277,7 +277,7 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ViduFrames2VideoRequest obj1, ViduFrames2VideoRequest obj2)
         {
@@ -285,7 +285,7 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

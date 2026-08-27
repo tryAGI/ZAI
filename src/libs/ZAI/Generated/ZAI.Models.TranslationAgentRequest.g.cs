@@ -4,7 +4,7 @@
 namespace ZAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TranslationAgentRequest
     {
@@ -29,7 +29,7 @@ namespace ZAI
         public required global::System.Collections.Generic.IList<global::ZAI.TranslationAgentRequestMessage> Messages { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("custom_variables")]
         public global::ZAI.TranslationAgentRequestCustomVariables? CustomVariables { get; set; }

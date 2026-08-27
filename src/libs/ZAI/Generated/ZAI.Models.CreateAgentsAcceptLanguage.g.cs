@@ -11,7 +11,7 @@ namespace ZAI
     public enum CreateAgentsAcceptLanguage
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnUS_en,
     }

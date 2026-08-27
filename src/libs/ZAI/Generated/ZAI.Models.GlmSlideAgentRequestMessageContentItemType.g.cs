@@ -9,7 +9,7 @@ namespace ZAI
     public enum GlmSlideAgentRequestMessageContentItemType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Text,
     }

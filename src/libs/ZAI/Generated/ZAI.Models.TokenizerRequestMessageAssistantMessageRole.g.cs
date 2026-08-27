@@ -10,7 +10,7 @@ namespace ZAI
     public enum TokenizerRequestMessageAssistantMessageRole
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Assistant,
     }

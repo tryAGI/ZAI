@@ -4,7 +4,7 @@
 namespace ZAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ChatCompletionTextRequestMessageToolMessage
     {
@@ -18,7 +18,7 @@ namespace ZAI
         public global::ZAI.ChatCompletionTextRequestMessageToolMessageRole Role { get; set; } = global::ZAI.ChatCompletionTextRequestMessageToolMessageRole.Tool;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("content")]
         [global::System.Text.Json.Serialization.JsonRequired]

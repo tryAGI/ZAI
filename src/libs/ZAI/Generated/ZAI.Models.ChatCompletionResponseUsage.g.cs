@@ -21,7 +21,7 @@ namespace ZAI
         public double? CompletionTokens { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("prompt_tokens_details")]
         public global::ZAI.ChatCompletionResponseUsagePromptTokensDetails? PromptTokensDetails { get; set; }

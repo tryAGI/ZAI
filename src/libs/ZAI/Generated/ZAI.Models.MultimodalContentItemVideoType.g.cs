@@ -10,7 +10,7 @@ namespace ZAI
     public enum MultimodalContentItemVideoType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VideoUrl,
     }

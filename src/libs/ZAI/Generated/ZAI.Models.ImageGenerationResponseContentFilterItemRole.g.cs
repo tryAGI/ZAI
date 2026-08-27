@@ -9,15 +9,15 @@ namespace ZAI
     public enum ImageGenerationResponseContentFilterItemRole
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Assistant,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         History,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
     }

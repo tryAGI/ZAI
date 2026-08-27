@@ -10,7 +10,7 @@ namespace ZAI
     public enum TokenizerRequestMessageSystemMessageRole
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         System,
     }

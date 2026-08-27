@@ -757,16 +757,17 @@
                 "properties": {
                   "purpose": {
                     "type": "string",
-                    "description": "Upload purpose (agent)",
-                    "default": "agent",
+                    "description": "Upload purpose",
+                    "default": "user_data",
                     "enum": [
+                      "user_data",
                       "agent"
                     ]
                   },
                   "file": {
                     "type": "string",
                     "format": "binary",
-                    "description": "File to upload. Limit to `100MB`. Allowed formats: `pdf`, `doc`, `xlsx`, `ppt`, `txt`, `jpg`, `png`."
+                    "description": "File to upload. `agent` limit to `100MB`, `user_data` limit to `1T`. `agent` allowed formats: `pdf`, `doc`, `xlsx`, `ppt`, `txt`, `jpg`, `png`, `user_data` allowed formats: `pptx`, `ppt`, `docx`, `doc`, `xlsx`, `xls`, `pdf`."
                   }
                 },
                 "required": [
@@ -1922,6 +1923,31 @@
               }
             },
             "required": ["type", "file_url"],
+            "additionalProperties": false
+          },
+          {
+            "title": "File ID",
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["file"],
+                "description": "Content type is file ID, only GLM-5.3-Flash supported, get the ID via the [File Upload API](/api-reference/agents/file-upload) ",
+                "default": "file"
+              },
+              "file": {
+                "type": "object",
+                "properties": {
+                  "file_id": {
+                    "type": "string",
+                    "description": "The ID returned by the file upload API."
+                  }
+                },
+                "required": ["file_id"],
+                "additionalProperties": false
+              }
+            },
+            "required": ["type", "file"],
             "additionalProperties": false
           }
         ]

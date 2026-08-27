@@ -10,7 +10,7 @@ namespace ZAI
     public enum VisionMultimodalContentItemTextType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Text,
     }

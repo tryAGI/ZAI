@@ -11,63 +11,63 @@ namespace ZAI
     public enum ChatCompletionTextRequestModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm432b0414128k,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm45,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm45Air,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm45Airx,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm45Flash,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm45X,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm46,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm47,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm47Flash,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm47Flashx,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm5,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm5Turbo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm51,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm52,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm53,
     }

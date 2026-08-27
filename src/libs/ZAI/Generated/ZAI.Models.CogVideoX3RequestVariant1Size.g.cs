@@ -22,7 +22,7 @@ namespace ZAI
         /// </summary>
         x1280x720,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1920x1080,
         /// <summary>

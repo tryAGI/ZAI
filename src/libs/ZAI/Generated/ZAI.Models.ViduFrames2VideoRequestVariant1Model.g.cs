@@ -9,11 +9,11 @@ namespace ZAI
     public enum ViduFrames2VideoRequestVariant1Model
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vidu2StartEnd,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Viduq1StartEnd,
     }

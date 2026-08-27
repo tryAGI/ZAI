@@ -7,7 +7,7 @@
 namespace ZAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
@@ -112,6 +112,10 @@ namespace ZAI
             typeof(global::ZAI.JsonConverters.VisionMultimodalContentItemFileTypeJsonConverter),
 
             typeof(global::ZAI.JsonConverters.VisionMultimodalContentItemFileTypeNullableJsonConverter),
+
+            typeof(global::ZAI.JsonConverters.VisionMultimodalContentItemFileIdTypeJsonConverter),
+
+            typeof(global::ZAI.JsonConverters.VisionMultimodalContentItemFileIdTypeNullableJsonConverter),
 
             typeof(global::ZAI.JsonConverters.ChatThinkingTypeJsonConverter),
 
@@ -508,6 +512,9 @@ namespace ZAI
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.VisionMultimodalContentItemFile))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.VisionMultimodalContentItemFileType), TypeInfoPropertyName = "VisionMultimodalContentItemFileType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.VisionMultimodalContentItemFileFileUrl))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.VisionMultimodalContentItemFileId))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.VisionMultimodalContentItemFileIdType), TypeInfoPropertyName = "VisionMultimodalContentItemFileIdType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.VisionMultimodalContentItemFileIdFile))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ChatThinkingType), TypeInfoPropertyName = "ChatThinkingType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.WebSearchToolSchemaType), TypeInfoPropertyName = "WebSearchToolSchemaType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.WebSearchObject))]

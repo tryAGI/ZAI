@@ -9,15 +9,15 @@ namespace ZAI
     public enum ChatCompletionTextRequestMessageAssistantMessageToolCallType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Function,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Retrieval,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WebSearch,
     }

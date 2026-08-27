@@ -4,7 +4,7 @@
 namespace ZAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GlmSlideAgentResponse
     {
@@ -33,7 +33,7 @@ namespace ZAI
         public global::System.Collections.Generic.IList<global::ZAI.GlmSlideAgentResponseChoice>? Choices { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("error")]
         public global::ZAI.GlmSlideAgentResponseError? Error { get; set; }

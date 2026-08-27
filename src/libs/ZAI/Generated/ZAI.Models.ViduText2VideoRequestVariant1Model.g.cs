@@ -9,7 +9,7 @@ namespace ZAI
     public enum ViduText2VideoRequestVariant1Model
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Viduq1Text,
     }

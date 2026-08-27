@@ -10,7 +10,7 @@ namespace ZAI
     public enum ChatCompletionVisionRequestMessageSystemMessageRole
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         System,
     }

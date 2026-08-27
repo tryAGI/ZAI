@@ -9,7 +9,7 @@ namespace ZAI
     public enum SpecialEffectsVideosAgentRequestMessageContentItemImageUrlType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImageUrl,
     }

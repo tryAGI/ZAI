@@ -10,11 +10,11 @@ namespace ZAI
     public enum CreateImageRequestModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cogview4250304,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GlmImage,
     }

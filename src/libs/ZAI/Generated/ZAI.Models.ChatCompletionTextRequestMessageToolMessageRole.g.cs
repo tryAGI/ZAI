@@ -10,7 +10,7 @@ namespace ZAI
     public enum ChatCompletionTextRequestMessageToolMessageRole
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tool,
     }

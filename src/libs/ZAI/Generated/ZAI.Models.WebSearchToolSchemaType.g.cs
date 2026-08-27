@@ -9,7 +9,7 @@ namespace ZAI
     public enum WebSearchToolSchemaType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WebSearch,
     }
