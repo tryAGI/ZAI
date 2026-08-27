@@ -4,28 +4,29 @@
 namespace ZAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreatePaasV4FilesRequest
     {
         /// <summary>
-        /// Upload purpose (agent)<br/>
-        /// Default Value: agent
+        /// Upload purpose<br/>
+        /// Default Value: user_data
         /// </summary>
-        /// <default>global::ZAI.CreatePaasV4FilesRequestPurpose.Agent</default>
+        /// <default>global::ZAI.CreatePaasV4FilesRequestPurpose.UserData</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("purpose")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::ZAI.JsonConverters.CreatePaasV4FilesRequestPurposeJsonConverter))]
-        public global::ZAI.CreatePaasV4FilesRequestPurpose Purpose { get; set; } = global::ZAI.CreatePaasV4FilesRequestPurpose.Agent;
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::ZAI.CreatePaasV4FilesRequestPurpose Purpose { get; set; } = global::ZAI.CreatePaasV4FilesRequestPurpose.UserData;
 
         /// <summary>
-        /// File to upload. Limit to `100MB`. Allowed formats: `pdf`, `doc`, `xlsx`, `ppt`, `txt`, `jpg`, `png`.
+        /// File to upload. `agent` limit to `100MB`, `user_data` limit to `1T`. `agent` allowed formats: `pdf`, `doc`, `xlsx`, `ppt`, `txt`, `jpg`, `png`, `user_data` allowed formats: `pptx`, `ppt`, `docx`, `doc`, `xlsx`, `xls`, `pdf`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("file")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required byte[] File { get; set; }
 
         /// <summary>
-        /// File to upload. Limit to `100MB`. Allowed formats: `pdf`, `doc`, `xlsx`, `ppt`, `txt`, `jpg`, `png`.
+        /// File to upload. `agent` limit to `100MB`, `user_data` limit to `1T`. `agent` allowed formats: `pdf`, `doc`, `xlsx`, `ppt`, `txt`, `jpg`, `png`, `user_data` allowed formats: `pptx`, `ppt`, `docx`, `doc`, `xlsx`, `xls`, `pdf`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("filename")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -40,23 +41,23 @@ namespace ZAI
         /// <summary>
         /// Initializes a new instance of the <see cref="CreatePaasV4FilesRequest" /> class.
         /// </summary>
+        /// <param name="purpose">
+        /// Upload purpose<br/>
+        /// Default Value: user_data
+        /// </param>
         /// <param name="file">
-        /// File to upload. Limit to `100MB`. Allowed formats: `pdf`, `doc`, `xlsx`, `ppt`, `txt`, `jpg`, `png`.
+        /// File to upload. `agent` limit to `100MB`, `user_data` limit to `1T`. `agent` allowed formats: `pdf`, `doc`, `xlsx`, `ppt`, `txt`, `jpg`, `png`, `user_data` allowed formats: `pptx`, `ppt`, `docx`, `doc`, `xlsx`, `xls`, `pdf`.
         /// </param>
         /// <param name="filename">
-        /// File to upload. Limit to `100MB`. Allowed formats: `pdf`, `doc`, `xlsx`, `ppt`, `txt`, `jpg`, `png`.
-        /// </param>
-        /// <param name="purpose">
-        /// Upload purpose (agent)<br/>
-        /// Default Value: agent
+        /// File to upload. `agent` limit to `100MB`, `user_data` limit to `1T`. `agent` allowed formats: `pdf`, `doc`, `xlsx`, `ppt`, `txt`, `jpg`, `png`, `user_data` allowed formats: `pptx`, `ppt`, `docx`, `doc`, `xlsx`, `xls`, `pdf`.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreatePaasV4FilesRequest(
+            global::ZAI.CreatePaasV4FilesRequestPurpose purpose,
             byte[] file,
-            string filename,
-            global::ZAI.CreatePaasV4FilesRequestPurpose purpose = global::ZAI.CreatePaasV4FilesRequestPurpose.Agent)
+            string filename)
         {
             this.Purpose = purpose;
             this.File = file ?? throw new global::System.ArgumentNullException(nameof(file));

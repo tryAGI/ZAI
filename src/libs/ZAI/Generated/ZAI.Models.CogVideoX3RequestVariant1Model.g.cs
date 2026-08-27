@@ -9,7 +9,7 @@ namespace ZAI
     public enum CogVideoX3RequestVariant1Model
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cogvideox3,
     }

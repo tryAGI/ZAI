@@ -4,7 +4,7 @@
 namespace ZAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class WebSearchToolSchema
     {
@@ -17,7 +17,7 @@ namespace ZAI
         public global::ZAI.WebSearchToolSchemaType Type { get; set; } = global::ZAI.WebSearchToolSchemaType.WebSearch;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("web_search")]
         [global::System.Text.Json.Serialization.JsonRequired]

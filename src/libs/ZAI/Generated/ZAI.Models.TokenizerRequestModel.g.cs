@@ -11,15 +11,15 @@ namespace ZAI
     public enum TokenizerRequestModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm45,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm46,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm46v,
     }

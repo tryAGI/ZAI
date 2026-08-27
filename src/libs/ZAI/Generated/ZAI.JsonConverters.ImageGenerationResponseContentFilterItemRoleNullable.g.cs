@@ -20,7 +20,7 @@ namespace ZAI.JsonConverters
                     {
                         return global::ZAI.ImageGenerationResponseContentFilterItemRoleExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

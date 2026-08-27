@@ -5,12 +5,12 @@
 namespace ZAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct CogVideoX3Request : global::System.IEquatable<CogVideoX3Request>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::ZAI.CogVideoX3RequestVariant1? CogVideoX3RequestVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace ZAI
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CogVideoX3RequestVariant1))]
@@ -27,7 +27,7 @@ namespace ZAI
         public bool IsCogVideoX3RequestVariant1 => CogVideoX3RequestVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCogVideoX3RequestVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::ZAI.CogVideoX3RequestVariant1 PickCogVideoX3RequestVariant1() => IsCogVideoX3RequestVariant1
             ? CogVideoX3RequestVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'CogVideoX3RequestVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::ZAI.VideoCommonRequest? Common { get; init; }
@@ -56,7 +56,7 @@ namespace ZAI
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Common))]
@@ -64,7 +64,7 @@ namespace ZAI
         public bool IsCommon => Common != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCommon(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::ZAI.VideoCommonRequest PickCommon() => IsCommon
             ? Common!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Common' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CogVideoX3Request(global::ZAI.CogVideoX3RequestVariant1 value) => new CogVideoX3Request((global::ZAI.CogVideoX3RequestVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::ZAI.CogVideoX3RequestVariant1?(CogVideoX3Request @this) => @this.CogVideoX3RequestVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CogVideoX3Request(global::ZAI.CogVideoX3RequestVariant1? value)
         {
@@ -101,22 +101,22 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CogVideoX3Request FromCogVideoX3RequestVariant1(global::ZAI.CogVideoX3RequestVariant1? value) => new CogVideoX3Request(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CogVideoX3Request(global::ZAI.VideoCommonRequest value) => new CogVideoX3Request((global::ZAI.VideoCommonRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::ZAI.VideoCommonRequest?(CogVideoX3Request @this) => @this.Common;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CogVideoX3Request(global::ZAI.VideoCommonRequest? value)
         {
@@ -124,12 +124,12 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CogVideoX3Request FromCommon(global::ZAI.VideoCommonRequest? value) => new CogVideoX3Request(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CogVideoX3Request(
             global::ZAI.CogVideoX3RequestVariant1? cogVideoX3RequestVariant1,
@@ -141,23 +141,23 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Common as object ??
-            CogVideoX3RequestVariant1 as object 
+            CogVideoX3RequestVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             CogVideoX3RequestVariant1?.ToString() ??
-            Common?.ToString() 
+            Common?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::ZAI.CogVideoX3RequestVariant1, TResult>? cogVideoX3RequestVariant1 = null,
@@ -190,7 +190,7 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::ZAI.CogVideoX3RequestVariant1>? cogVideoX3RequestVariant1 = null,
@@ -214,7 +214,7 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::ZAI.CogVideoX3RequestVariant1>? cogVideoX3RequestVariant1 = null,
@@ -237,7 +237,7 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(CogVideoX3Request other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::ZAI.CogVideoX3RequestVariant1?>.Default.Equals(CogVideoX3RequestVariant1, other.CogVideoX3RequestVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::ZAI.VideoCommonRequest?>.Default.Equals(Common, other.Common) 
+                global::System.Collections.Generic.EqualityComparer<global::ZAI.VideoCommonRequest?>.Default.Equals(Common, other.Common)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(CogVideoX3Request obj1, CogVideoX3Request obj2)
         {
@@ -277,7 +277,7 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(CogVideoX3Request obj1, CogVideoX3Request obj2)
         {
@@ -285,7 +285,7 @@ namespace ZAI
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -4,7 +4,7 @@
 namespace ZAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ChatCompletionResponseChoice
     {
@@ -15,7 +15,7 @@ namespace ZAI
         public int? Index { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("message")]
         public global::ZAI.ChatCompletionResponseMessage? Message { get; set; }

@@ -17,23 +17,23 @@ namespace ZAI
     public enum WebSearchObjectSearchRecencyFilter
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NoLimit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OneDay,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OneMonth,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OneWeek,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OneYear,
     }

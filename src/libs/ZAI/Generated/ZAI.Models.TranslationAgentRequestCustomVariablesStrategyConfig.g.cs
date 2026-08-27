@@ -9,7 +9,7 @@ namespace ZAI
     public sealed partial class TranslationAgentRequestCustomVariablesStrategyConfig
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("general")]
         public global::ZAI.TranslationAgentRequestCustomVariablesStrategyConfigGeneral? General { get; set; }

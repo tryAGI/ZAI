@@ -10,7 +10,7 @@ namespace ZAI
     public enum AsyncCreateImageRequestModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GlmImage,
     }

@@ -20,7 +20,7 @@ namespace ZAI.JsonConverters
                     {
                         return global::ZAI.ChatCompletionVisionRequestModelExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

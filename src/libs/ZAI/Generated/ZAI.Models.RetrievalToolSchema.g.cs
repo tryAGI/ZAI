@@ -4,7 +4,7 @@
 namespace ZAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class RetrievalToolSchema
     {
@@ -17,7 +17,7 @@ namespace ZAI
         public global::ZAI.RetrievalToolSchemaType Type { get; set; } = global::ZAI.RetrievalToolSchemaType.Retrieval;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("retrieval")]
         [global::System.Text.Json.Serialization.JsonRequired]

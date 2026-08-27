@@ -9,11 +9,11 @@ namespace ZAI
     public enum MultimodalContentItemAudioInputAudioFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mp3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Wav,
     }

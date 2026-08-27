@@ -20,7 +20,7 @@ namespace ZAI.JsonConverters
                     {
                         return global::ZAI.MultimodalContentItemVideoTypeExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

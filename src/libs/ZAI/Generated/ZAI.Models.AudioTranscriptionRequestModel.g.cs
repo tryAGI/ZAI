@@ -10,7 +10,7 @@ namespace ZAI
     public enum AudioTranscriptionRequestModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GlmAsr2512,
     }

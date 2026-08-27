@@ -10,7 +10,7 @@ namespace ZAI
     public enum ChatThinkingType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Disabled,
         /// <summary>

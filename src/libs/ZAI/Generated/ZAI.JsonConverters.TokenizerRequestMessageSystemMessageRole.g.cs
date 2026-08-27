@@ -20,7 +20,7 @@ namespace ZAI.JsonConverters
                     {
                         return global::ZAI.TokenizerRequestMessageSystemMessageRoleExtensions.ToEnum(stringValue) ?? default;
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

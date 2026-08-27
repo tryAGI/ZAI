@@ -10,7 +10,7 @@ namespace ZAI
     public enum MultimodalContentItemImageType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImageUrl,
     }

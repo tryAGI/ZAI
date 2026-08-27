@@ -18,7 +18,7 @@ namespace ZAI
         public global::ZAI.ChatCompletionTextRequestMessageAssistantMessageRole Role { get; set; } = global::ZAI.ChatCompletionTextRequestMessageAssistantMessageRole.Assistant;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("content")]
         public string? Content { get; set; }

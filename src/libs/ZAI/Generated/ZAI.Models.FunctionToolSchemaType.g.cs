@@ -9,7 +9,7 @@ namespace ZAI
     public enum FunctionToolSchemaType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Function,
     }

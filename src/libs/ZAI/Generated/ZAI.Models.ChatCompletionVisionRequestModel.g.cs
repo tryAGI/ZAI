@@ -11,31 +11,31 @@ namespace ZAI
     public enum ChatCompletionVisionRequestModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AutoglmPhoneMultilingual,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm45v,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm46v,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm46vFlash,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm46vFlashx,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm53Flash,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glm5vTurbo,
     }

@@ -11,7 +11,7 @@ namespace ZAI
     public enum CreatePaasV4WebSearchAcceptLanguage
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnUS_en,
     }

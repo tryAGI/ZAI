@@ -9,7 +9,7 @@ namespace ZAI
     public enum SpecialEffectsVideosAgentRequestMessageContentItemTextType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Text,
     }

@@ -10,7 +10,7 @@ namespace ZAI
     public enum MultimodalContentItemAudioType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InputAudio,
     }

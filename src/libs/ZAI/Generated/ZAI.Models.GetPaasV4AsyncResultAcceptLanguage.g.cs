@@ -11,7 +11,7 @@ namespace ZAI
     public enum GetPaasV4AsyncResultAcceptLanguage
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnUS_en,
     }

@@ -9,7 +9,7 @@ namespace ZAI
     public enum RetrievalToolSchemaType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Retrieval,
     }

@@ -4,7 +4,7 @@
 namespace ZAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SpecialEffectsVideosAgentError
     {
@@ -21,7 +21,7 @@ namespace ZAI
         public string? AgentId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("error")]
         public global::ZAI.SpecialEffectsVideosAgentErrorError? Error { get; set; }

@@ -9,7 +9,7 @@ namespace ZAI
     public enum ChatCompletionTextRequestToolChoice
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Auto,
     }

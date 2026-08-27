@@ -10,7 +10,7 @@ namespace ZAI
     public enum VisionMultimodalContentItemVideoType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VideoUrl,
     }
