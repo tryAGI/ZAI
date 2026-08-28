@@ -4,7 +4,7 @@
 namespace ZAI
 {
     /// <summary>
-    /// The model code to be called. GLM-5.3, GLM-5.2, GLM-5.1, GLM-5-Turbo are the latest flagship model series, foundational models specifically designed for agent applications.<br/>
+    /// The model code to be called. GLM-5.3, GLM-5.2, GLM-5.1 are the latest flagship model series, foundational models specifically designed for agent applications.<br/>
     /// Default Value: glm-5.3<br/>
     /// Example: glm-5.3
     /// </summary>
@@ -57,10 +57,6 @@ namespace ZAI
         /// <summary>
         ///
         /// </summary>
-        Glm5Turbo,
-        /// <summary>
-        ///
-        /// </summary>
         Glm51,
         /// <summary>
         ///
@@ -95,7 +91,6 @@ namespace ZAI
                 ChatCompletionTextRequestModel.Glm47Flash => "glm-4.7-flash",
                 ChatCompletionTextRequestModel.Glm47Flashx => "glm-4.7-flashx",
                 ChatCompletionTextRequestModel.Glm5 => "glm-5",
-                ChatCompletionTextRequestModel.Glm5Turbo => "glm-5-turbo",
                 ChatCompletionTextRequestModel.Glm51 => "glm-5.1",
                 ChatCompletionTextRequestModel.Glm52 => "glm-5.2",
                 ChatCompletionTextRequestModel.Glm53 => "glm-5.3",
@@ -120,7 +115,6 @@ namespace ZAI
                 "glm-4.7-flash" => ChatCompletionTextRequestModel.Glm47Flash,
                 "glm-4.7-flashx" => ChatCompletionTextRequestModel.Glm47Flashx,
                 "glm-5" => ChatCompletionTextRequestModel.Glm5,
-                "glm-5-turbo" => ChatCompletionTextRequestModel.Glm5Turbo,
                 "glm-5.1" => ChatCompletionTextRequestModel.Glm51,
                 "glm-5.2" => ChatCompletionTextRequestModel.Glm52,
                 "glm-5.3" => ChatCompletionTextRequestModel.Glm53,

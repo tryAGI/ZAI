@@ -4,15 +4,15 @@
 namespace ZAI
 {
     /// <summary>
-    /// Content type is file URL, not support passing both the `file_url` and `image_url` or `video_url` parameters at the same time.<br/>
-    /// Default Value: file_url
+    /// Content type is file. New unified file type, compatible with the legacy `file_url` type but not recommended for new scenarios. Not support passing both the `file` and `image_url` or `video_url` parameters at the same time.<br/>
+    /// Default Value: file
     /// </summary>
     public enum VisionMultimodalContentItemFileType
     {
         /// <summary>
         ///
         /// </summary>
-        FileUrl,
+        File,
     }
 
     /// <summary>
@@ -27,7 +27,7 @@ namespace ZAI
         {
             return value switch
             {
-                VisionMultimodalContentItemFileType.FileUrl => "file_url",
+                VisionMultimodalContentItemFileType.File => "file",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -38,7 +38,7 @@ namespace ZAI
         {
             return value switch
             {
-                "file_url" => VisionMultimodalContentItemFileType.FileUrl,
+                "file" => VisionMultimodalContentItemFileType.File,
                 _ => null,
             };
         }
