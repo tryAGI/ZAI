@@ -156,43 +156,6 @@ namespace ZAI
         public global::ZAI.VisionMultimodalContentItemFile PickFile() => IsFile
             ? File!
             : throw new global::System.InvalidOperationException($"Expected union variant 'File' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::ZAI.VisionMultimodalContentItemFileId? FileId { get; init; }
-#else
-        public global::ZAI.VisionMultimodalContentItemFileId? FileId { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FileId))]
-#endif
-        public bool IsFileId => FileId != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickFileId(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::ZAI.VisionMultimodalContentItemFileId? value)
-        {
-            value = FileId;
-            return IsFileId;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::ZAI.VisionMultimodalContentItemFileId PickFileId() => IsFileId
-            ? FileId!
-            : throw new global::System.InvalidOperationException($"Expected union variant 'FileId' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -288,49 +251,23 @@ namespace ZAI
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator VisionMultimodalContentItem(global::ZAI.VisionMultimodalContentItemFileId value) => new VisionMultimodalContentItem((global::ZAI.VisionMultimodalContentItemFileId?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::ZAI.VisionMultimodalContentItemFileId?(VisionMultimodalContentItem @this) => @this.FileId;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public VisionMultimodalContentItem(global::ZAI.VisionMultimodalContentItemFileId? value)
-        {
-            FileId = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static VisionMultimodalContentItem FromFileId(global::ZAI.VisionMultimodalContentItemFileId? value) => new VisionMultimodalContentItem(value);
-
-        /// <summary>
-        ///
-        /// </summary>
         public VisionMultimodalContentItem(
             global::ZAI.VisionMultimodalContentItemText? text,
             global::ZAI.VisionMultimodalContentItemImage? image,
             global::ZAI.VisionMultimodalContentItemVideo? video,
-            global::ZAI.VisionMultimodalContentItemFile? file,
-            global::ZAI.VisionMultimodalContentItemFileId? fileId
+            global::ZAI.VisionMultimodalContentItemFile? file
             )
         {
             Text = text;
             Image = image;
             Video = video;
             File = file;
-            FileId = fileId;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            FileId as object ??
             File as object ??
             Video as object ??
             Image as object ??
@@ -344,8 +281,7 @@ namespace ZAI
             Text?.ToString() ??
             Image?.ToString() ??
             Video?.ToString() ??
-            File?.ToString() ??
-            FileId?.ToString()
+            File?.ToString()
             ;
 
         /// <summary>
@@ -353,7 +289,7 @@ namespace ZAI
         /// </summary>
         public bool Validate()
         {
-            return IsText && !IsImage && !IsVideo && !IsFile && !IsFileId || !IsText && IsImage && !IsVideo && !IsFile && !IsFileId || !IsText && !IsImage && IsVideo && !IsFile && !IsFileId || !IsText && !IsImage && !IsVideo && IsFile && !IsFileId || !IsText && !IsImage && !IsVideo && !IsFile && IsFileId;
+            return IsText && !IsImage && !IsVideo && !IsFile || !IsText && IsImage && !IsVideo && !IsFile || !IsText && !IsImage && IsVideo && !IsFile || !IsText && !IsImage && !IsVideo && IsFile;
         }
 
         /// <summary>
@@ -364,7 +300,6 @@ namespace ZAI
             global::System.Func<global::ZAI.VisionMultimodalContentItemImage, TResult>? image = null,
             global::System.Func<global::ZAI.VisionMultimodalContentItemVideo, TResult>? video = null,
             global::System.Func<global::ZAI.VisionMultimodalContentItemFile, TResult>? file = null,
-            global::System.Func<global::ZAI.VisionMultimodalContentItemFileId, TResult>? fileId = null,
             bool validate = true)
         {
             if (validate)
@@ -388,10 +323,6 @@ namespace ZAI
             {
                 return file(File!);
             }
-            else if (IsFileId && fileId != null)
-            {
-                return fileId(FileId!);
-            }
 
             return default(TResult);
         }
@@ -407,8 +338,6 @@ namespace ZAI
             global::System.Action<global::ZAI.VisionMultimodalContentItemVideo>? video = null,
 
             global::System.Action<global::ZAI.VisionMultimodalContentItemFile>? file = null,
-
-            global::System.Action<global::ZAI.VisionMultimodalContentItemFileId>? fileId = null,
             bool validate = true)
         {
             if (validate)
@@ -431,10 +360,6 @@ namespace ZAI
             else if (IsFile)
             {
                 file?.Invoke(File!);
-            }
-            else if (IsFileId)
-            {
-                fileId?.Invoke(FileId!);
             }
         }
 
@@ -446,7 +371,6 @@ namespace ZAI
             global::System.Action<global::ZAI.VisionMultimodalContentItemImage>? image = null,
             global::System.Action<global::ZAI.VisionMultimodalContentItemVideo>? video = null,
             global::System.Action<global::ZAI.VisionMultimodalContentItemFile>? file = null,
-            global::System.Action<global::ZAI.VisionMultimodalContentItemFileId>? fileId = null,
             bool validate = true)
         {
             if (validate)
@@ -469,10 +393,6 @@ namespace ZAI
             else if (IsFile)
             {
                 file?.Invoke(File!);
-            }
-            else if (IsFileId)
-            {
-                fileId?.Invoke(FileId!);
             }
         }
 
@@ -491,8 +411,6 @@ namespace ZAI
                 typeof(global::ZAI.VisionMultimodalContentItemVideo),
                 File,
                 typeof(global::ZAI.VisionMultimodalContentItemFile),
-                FileId,
-                typeof(global::ZAI.VisionMultimodalContentItemFileId),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -512,8 +430,7 @@ namespace ZAI
                 global::System.Collections.Generic.EqualityComparer<global::ZAI.VisionMultimodalContentItemText?>.Default.Equals(Text, other.Text) &&
                 global::System.Collections.Generic.EqualityComparer<global::ZAI.VisionMultimodalContentItemImage?>.Default.Equals(Image, other.Image) &&
                 global::System.Collections.Generic.EqualityComparer<global::ZAI.VisionMultimodalContentItemVideo?>.Default.Equals(Video, other.Video) &&
-                global::System.Collections.Generic.EqualityComparer<global::ZAI.VisionMultimodalContentItemFile?>.Default.Equals(File, other.File) &&
-                global::System.Collections.Generic.EqualityComparer<global::ZAI.VisionMultimodalContentItemFileId?>.Default.Equals(FileId, other.FileId)
+                global::System.Collections.Generic.EqualityComparer<global::ZAI.VisionMultimodalContentItemFile?>.Default.Equals(File, other.File)
                 ;
         }
 

@@ -9,7 +9,7 @@ namespace ZAI
     public sealed partial class ChatCompletionTextRequest
     {
         /// <summary>
-        /// The model code to be called. GLM-5.3, GLM-5.2, GLM-5.1, GLM-5-Turbo are the latest flagship model series, foundational models specifically designed for agent applications.<br/>
+        /// The model code to be called. GLM-5.3, GLM-5.2, GLM-5.1 are the latest flagship model series, foundational models specifically designed for agent applications.<br/>
         /// Default Value: glm-5.3<br/>
         /// Example: glm-5.3
         /// </summary>
@@ -88,7 +88,7 @@ namespace ZAI
         public int? MaxTokens { get; set; }
 
         /// <summary>
-        /// Whether to enable streaming response for Function Calls. Default value is false. Only supported by the GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-5-Turbo, GLM-4.7, and GLM-4.6 series. Refer to the [Stream Tool Call](/guides/tools/stream-tool)<br/>
+        /// Whether to enable streaming response for Function Calls. Default value is false. Only supported by the GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, and GLM-4.6 series. Refer to the [Stream Tool Call](/guides/tools/stream-tool)<br/>
         /// Default Value: false<br/>
         /// Example: false
         /// </summary>
@@ -143,7 +143,7 @@ namespace ZAI
         /// Initializes a new instance of the <see cref="ChatCompletionTextRequest" /> class.
         /// </summary>
         /// <param name="model">
-        /// The model code to be called. GLM-5.3, GLM-5.2, GLM-5.1, GLM-5-Turbo are the latest flagship model series, foundational models specifically designed for agent applications.<br/>
+        /// The model code to be called. GLM-5.3, GLM-5.2, GLM-5.1 are the latest flagship model series, foundational models specifically designed for agent applications.<br/>
         /// Default Value: glm-5.3<br/>
         /// Example: glm-5.3
         /// </param>
@@ -183,7 +183,7 @@ namespace ZAI
         /// Example: 1024
         /// </param>
         /// <param name="toolStream">
-        /// Whether to enable streaming response for Function Calls. Default value is false. Only supported by the GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-5-Turbo, GLM-4.7, and GLM-4.6 series. Refer to the [Stream Tool Call](/guides/tools/stream-tool)<br/>
+        /// Whether to enable streaming response for Function Calls. Default value is false. Only supported by the GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, and GLM-4.6 series. Refer to the [Stream Tool Call](/guides/tools/stream-tool)<br/>
         /// Default Value: false<br/>
         /// Example: false
         /// </param>

@@ -34,10 +34,6 @@ namespace ZAI
         ///
         /// </summary>
         Glm53Flash,
-        /// <summary>
-        ///
-        /// </summary>
-        Glm5vTurbo,
     }
 
     /// <summary>
@@ -58,7 +54,6 @@ namespace ZAI
                 ChatCompletionVisionRequestModel.Glm46vFlash => "glm-4.6v-flash",
                 ChatCompletionVisionRequestModel.Glm46vFlashx => "glm-4.6v-flashx",
                 ChatCompletionVisionRequestModel.Glm53Flash => "glm-5.3-flash",
-                ChatCompletionVisionRequestModel.Glm5vTurbo => "glm-5v-turbo",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -75,7 +70,6 @@ namespace ZAI
                 "glm-4.6v-flash" => ChatCompletionVisionRequestModel.Glm46vFlash,
                 "glm-4.6v-flashx" => ChatCompletionVisionRequestModel.Glm46vFlashx,
                 "glm-5.3-flash" => ChatCompletionVisionRequestModel.Glm53Flash,
-                "glm-5v-turbo" => ChatCompletionVisionRequestModel.Glm5vTurbo,
                 _ => null,
             };
         }

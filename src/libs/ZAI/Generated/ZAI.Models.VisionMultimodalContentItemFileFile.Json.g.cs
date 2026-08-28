@@ -2,7 +2,7 @@
 
 namespace ZAI
 {
-    public sealed partial class MultimodalContentItemText
+    public sealed partial class VisionMultimodalContentItemFileFile
     {
         /// <summary>
         /// Serializes the current instance to a JSON string using the provided JsonSerializerContext.
@@ -47,20 +47,20 @@ namespace ZAI
         /// <summary>
         /// Deserializes a JSON string using the provided JsonSerializerContext.
         /// </summary>
-        public static global::ZAI.MultimodalContentItemText? FromJson(
+        public static global::ZAI.VisionMultimodalContentItemFileFile? FromJson(
             string json,
             global::System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext)
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::ZAI.MultimodalContentItemText),
-                jsonSerializerContext) as global::ZAI.MultimodalContentItemText;
+                typeof(global::ZAI.VisionMultimodalContentItemFileFile),
+                jsonSerializerContext) as global::ZAI.VisionMultimodalContentItemFileFile;
         }
 
         /// <summary>
         /// Deserializes a JSON string using the generated default JsonSerializerContext.
         /// </summary>
-        public static global::ZAI.MultimodalContentItemText? FromJson(
+        public static global::ZAI.VisionMultimodalContentItemFileFile? FromJson(
             string json)
         {
             return FromJson(
@@ -75,7 +75,7 @@ namespace ZAI
         [global::System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]
         [global::System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]
 #endif
-        public static global::ZAI.MultimodalContentItemText? FromJson(
+        public static global::ZAI.VisionMultimodalContentItemFileFile? FromJson(
             string json,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
@@ -86,7 +86,7 @@ namespace ZAI
                     global::ZAI.SourceGenerationContext.Default);
             }
 
-            return global::System.Text.Json.JsonSerializer.Deserialize<global::ZAI.MultimodalContentItemText>(
+            return global::System.Text.Json.JsonSerializer.Deserialize<global::ZAI.VisionMultimodalContentItemFileFile>(
                 json,
                 jsonSerializerOptions);
         }
@@ -94,20 +94,20 @@ namespace ZAI
         /// <summary>
         /// Deserializes a JSON stream using the provided JsonSerializerContext.
         /// </summary>
-        public static async global::System.Threading.Tasks.ValueTask<global::ZAI.MultimodalContentItemText?> FromJsonStreamAsync(
+        public static async global::System.Threading.Tasks.ValueTask<global::ZAI.VisionMultimodalContentItemFileFile?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext)
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::ZAI.MultimodalContentItemText),
-                jsonSerializerContext).ConfigureAwait(false)) as global::ZAI.MultimodalContentItemText;
+                typeof(global::ZAI.VisionMultimodalContentItemFileFile),
+                jsonSerializerContext).ConfigureAwait(false)) as global::ZAI.VisionMultimodalContentItemFileFile;
         }
 
         /// <summary>
         /// Deserializes a JSON stream using the generated default JsonSerializerContext.
         /// </summary>
-        public static global::System.Threading.Tasks.ValueTask<global::ZAI.MultimodalContentItemText?> FromJsonStreamAsync(
+        public static global::System.Threading.Tasks.ValueTask<global::ZAI.VisionMultimodalContentItemFileFile?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream)
         {
             return FromJsonStreamAsync(
@@ -122,7 +122,7 @@ namespace ZAI
         [global::System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]
         [global::System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]
 #endif
-        public static global::System.Threading.Tasks.ValueTask<global::ZAI.MultimodalContentItemText?> FromJsonStreamAsync(
+        public static global::System.Threading.Tasks.ValueTask<global::ZAI.VisionMultimodalContentItemFileFile?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
@@ -133,7 +133,7 @@ namespace ZAI
                     global::ZAI.SourceGenerationContext.Default);
             }
 
-            return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::ZAI.MultimodalContentItemText?>(
+            return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::ZAI.VisionMultimodalContentItemFileFile?>(
                 jsonStream,
                 jsonSerializerOptions);
         }

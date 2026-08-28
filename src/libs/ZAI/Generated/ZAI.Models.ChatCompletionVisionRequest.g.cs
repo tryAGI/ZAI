@@ -62,7 +62,7 @@ namespace ZAI
         public global::ZAI.ChatCompletionVisionRequestReasoningEffort? ReasoningEffort { get; set; }
 
         /// <summary>
-        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. For `GLM-5.3-Flash` the default value is `1.0`; the GLM-5V-Turbo, GLM-4.6V, GLM-4.5V series default value is `0.8`; the autoglm-phone-multilingual default value is `0.0`.<br/>
+        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. For `GLM-5.3-Flash` the default value is `1.0`; the GLM-4.6V, GLM-4.5V series default value is `0.8`; the autoglm-phone-multilingual default value is `0.0`.<br/>
         /// Default Value: 1F<br/>
         /// Example: 1F
         /// </summary>
@@ -71,7 +71,7 @@ namespace ZAI
         public float? Temperature { get; set; }
 
         /// <summary>
-        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. For `GLM-5.3-Flash` the default value is `0.95`; the GLM-5V-Turbo, GLM-4.6V, GLM-4.5V series default value is `0.6`; the autoglm-phone-multilingual default value is `0.85`.<br/>
+        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. For `GLM-5.3-Flash` the default value is `0.95`; the GLM-4.6V, GLM-4.5V series default value is `0.6`; the autoglm-phone-multilingual default value is `0.85`.<br/>
         /// Default Value: 0.95F<br/>
         /// Example: 0.95F
         /// </summary>
@@ -80,7 +80,7 @@ namespace ZAI
         public float? TopP { get; set; }
 
         /// <summary>
-        /// The maximum number of tokens for model output. `GLM-5.3-Flash` and GLM-5V-Turbo support a maximum output length of 128K, the GLM-4.6V series supports 32K, the GLM-4.5V series supports 16K, and autoglm-phone-multilingual supports 4K. It is recommended to set it to no less than 1024.<br/>
+        /// The maximum number of tokens for model output. `GLM-5.3-Flash` supports a maximum output length of 128K, the GLM-4.6V series supports 32K, the GLM-4.5V series supports 16K, and autoglm-phone-multilingual supports 4K. It is recommended to set it to no less than 1024.<br/>
         /// Example: 1024
         /// </summary>
         /// <example>1024</example>
@@ -154,17 +154,17 @@ namespace ZAI
         /// Example: max
         /// </param>
         /// <param name="temperature">
-        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. For `GLM-5.3-Flash` the default value is `1.0`; the GLM-5V-Turbo, GLM-4.6V, GLM-4.5V series default value is `0.8`; the autoglm-phone-multilingual default value is `0.0`.<br/>
+        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. For `GLM-5.3-Flash` the default value is `1.0`; the GLM-4.6V, GLM-4.5V series default value is `0.8`; the autoglm-phone-multilingual default value is `0.0`.<br/>
         /// Default Value: 1F<br/>
         /// Example: 1F
         /// </param>
         /// <param name="topP">
-        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. For `GLM-5.3-Flash` the default value is `0.95`; the GLM-5V-Turbo, GLM-4.6V, GLM-4.5V series default value is `0.6`; the autoglm-phone-multilingual default value is `0.85`.<br/>
+        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. For `GLM-5.3-Flash` the default value is `0.95`; the GLM-4.6V, GLM-4.5V series default value is `0.6`; the autoglm-phone-multilingual default value is `0.85`.<br/>
         /// Default Value: 0.95F<br/>
         /// Example: 0.95F
         /// </param>
         /// <param name="maxTokens">
-        /// The maximum number of tokens for model output. `GLM-5.3-Flash` and GLM-5V-Turbo support a maximum output length of 128K, the GLM-4.6V series supports 32K, the GLM-4.5V series supports 16K, and autoglm-phone-multilingual supports 4K. It is recommended to set it to no less than 1024.<br/>
+        /// The maximum number of tokens for model output. `GLM-5.3-Flash` supports a maximum output length of 128K, the GLM-4.6V series supports 32K, the GLM-4.5V series supports 16K, and autoglm-phone-multilingual supports 4K. It is recommended to set it to no less than 1024.<br/>
         /// Example: 1024
         /// </param>
         /// <param name="tools">

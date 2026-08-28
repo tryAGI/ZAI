@@ -73,30 +73,6 @@ namespace ZAI
 
             typeof(global::ZAI.JsonConverters.ChatCompletionVisionRequestToolChoiceNullableJsonConverter),
 
-            typeof(global::ZAI.JsonConverters.MultimodalContentItemTextTypeJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.MultimodalContentItemTextTypeNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.MultimodalContentItemImageTypeJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.MultimodalContentItemImageTypeNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.MultimodalContentItemAudioTypeJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.MultimodalContentItemAudioTypeNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.MultimodalContentItemAudioInputAudioFormatJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.MultimodalContentItemAudioInputAudioFormatNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.MultimodalContentItemVideoTypeJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.MultimodalContentItemVideoTypeNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.MultimodalContentItemFileTypeJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.MultimodalContentItemFileTypeNullableJsonConverter),
-
             typeof(global::ZAI.JsonConverters.VisionMultimodalContentItemTextTypeJsonConverter),
 
             typeof(global::ZAI.JsonConverters.VisionMultimodalContentItemTextTypeNullableJsonConverter),
@@ -112,10 +88,6 @@ namespace ZAI
             typeof(global::ZAI.JsonConverters.VisionMultimodalContentItemFileTypeJsonConverter),
 
             typeof(global::ZAI.JsonConverters.VisionMultimodalContentItemFileTypeNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.VisionMultimodalContentItemFileIdTypeJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.VisionMultimodalContentItemFileIdTypeNullableJsonConverter),
 
             typeof(global::ZAI.JsonConverters.ChatThinkingTypeJsonConverter),
 
@@ -160,74 +132,6 @@ namespace ZAI
             typeof(global::ZAI.JsonConverters.CogVideoX3RequestVariant1SizeJsonConverter),
 
             typeof(global::ZAI.JsonConverters.CogVideoX3RequestVariant1SizeNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduText2VideoRequestVariant1ModelJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduText2VideoRequestVariant1ModelNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduText2VideoRequestVariant1StyleJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduText2VideoRequestVariant1StyleNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduText2VideoRequestVariant1AspectRatioJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduText2VideoRequestVariant1AspectRatioNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduText2VideoRequestVariant1SizeJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduText2VideoRequestVariant1SizeNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduText2VideoRequestVariant1MovementAmplitudeJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduText2VideoRequestVariant1MovementAmplitudeNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduImage2VideoRequestVariant1ModelJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduImage2VideoRequestVariant1ModelNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduImage2VideoRequestVariant1SizeViduq1ImageJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduImage2VideoRequestVariant1SizeViduq1ImageNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduImage2VideoRequestVariant1SizeViduq2ImageJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduImage2VideoRequestVariant1SizeViduq2ImageNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduImage2VideoRequestVariant1MovementAmplitudeJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduImage2VideoRequestVariant1MovementAmplitudeNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduFrames2VideoRequestVariant1ModelJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduFrames2VideoRequestVariant1ModelNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduFrames2VideoRequestVariant1SizeViduq1StartEndJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduFrames2VideoRequestVariant1SizeViduq1StartEndNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduFrames2VideoRequestVariant1SizeVidu2StartEndJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduFrames2VideoRequestVariant1SizeVidu2StartEndNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduFrames2VideoRequestVariant1MovementAmplitudeJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduFrames2VideoRequestVariant1MovementAmplitudeNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduReference2VideoRequestVariant1ModelJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduReference2VideoRequestVariant1ModelNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduReference2VideoRequestVariant1AspectRatioJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduReference2VideoRequestVariant1AspectRatioNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduReference2VideoRequestVariant1SizeJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduReference2VideoRequestVariant1SizeNullableJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduReference2VideoRequestVariant1MovementAmplitudeJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduReference2VideoRequestVariant1MovementAmplitudeNullableJsonConverter),
 
             typeof(global::ZAI.JsonConverters.AsyncCreateImageRequestModelJsonConverter),
 
@@ -377,19 +281,9 @@ namespace ZAI
 
             typeof(global::ZAI.JsonConverters.CreateAgentsConversationAcceptLanguageNullableJsonConverter),
 
-            typeof(global::ZAI.JsonConverters.MultimodalContentItemJsonConverter),
-
             typeof(global::ZAI.JsonConverters.VisionMultimodalContentItemJsonConverter),
 
             typeof(global::ZAI.JsonConverters.CogVideoX3RequestJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduText2VideoRequestJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduImage2VideoRequestJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduFrames2VideoRequestJsonConverter),
-
-            typeof(global::ZAI.JsonConverters.ViduReference2VideoRequestJsonConverter),
 
             typeof(global::ZAI.JsonConverters.SpecialEffectsVideosAgentResponseJsonConverter),
 
@@ -403,12 +297,6 @@ namespace ZAI
 
             typeof(global::ZAI.JsonConverters.OneOfJsonConverter<string, byte[]>),
 
-            typeof(global::ZAI.JsonConverters.OneOfJsonConverter<string, byte[]>),
-
-            typeof(global::ZAI.JsonConverters.OneOfJsonConverter<global::ZAI.ViduImage2VideoRequestVariant1SizeViduq1Image?, global::ZAI.ViduImage2VideoRequestVariant1SizeViduq2Image?>),
-
-            typeof(global::ZAI.JsonConverters.OneOfJsonConverter<global::ZAI.ViduFrames2VideoRequestVariant1SizeViduq1StartEnd?, global::ZAI.ViduFrames2VideoRequestVariant1SizeVidu2StartEnd?>),
-
             typeof(global::ZAI.JsonConverters.OneOfJsonConverter<global::ZAI.TokenizerRequestMessageUserMessage, global::ZAI.TokenizerRequestMessageSystemMessage, global::ZAI.TokenizerRequestMessageAssistantMessage>),
 
             typeof(global::ZAI.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::ZAI.VisionMultimodalContentItem>, string>),
@@ -416,8 +304,6 @@ namespace ZAI
             typeof(global::ZAI.JsonConverters.OneOfJsonConverter<global::ZAI.SpecialEffectsVideosAgentRequestMessageContentItemText, global::ZAI.SpecialEffectsVideosAgentRequestMessageContentItemImageUrl>),
 
             typeof(global::ZAI.JsonConverters.OneOfJsonConverter<global::ZAI.ChatCompletionTextRequest, global::ZAI.ChatCompletionVisionRequest>),
-
-            typeof(global::ZAI.JsonConverters.OneOfJsonConverter<global::ZAI.CogVideoX3Request?, global::ZAI.ViduText2VideoRequest?, global::ZAI.ViduImage2VideoRequest?, global::ZAI.ViduFrames2VideoRequest?, global::ZAI.ViduReference2VideoRequest?>),
 
             typeof(global::ZAI.JsonConverters.OneOfJsonConverter<global::ZAI.TranslationAgentRequest, global::ZAI.SpecialEffectsVideosAgentRequest, global::ZAI.GlmSlideAgentRequest>),
 
@@ -485,22 +371,6 @@ namespace ZAI
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ChatCompletionVisionRequestReasoningEffort), TypeInfoPropertyName = "ChatCompletionVisionRequestReasoningEffort2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::ZAI.FunctionToolSchema>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ChatCompletionVisionRequestToolChoice), TypeInfoPropertyName = "ChatCompletionVisionRequestToolChoice2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.MultimodalContentItem), TypeInfoPropertyName = "MultimodalContentItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.MultimodalContentItemText))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.MultimodalContentItemTextType), TypeInfoPropertyName = "MultimodalContentItemTextType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.MultimodalContentItemImage))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.MultimodalContentItemImageType), TypeInfoPropertyName = "MultimodalContentItemImageType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.MultimodalContentItemImageImageUrl))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.MultimodalContentItemAudio))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.MultimodalContentItemAudioType), TypeInfoPropertyName = "MultimodalContentItemAudioType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.MultimodalContentItemAudioInputAudio))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.MultimodalContentItemAudioInputAudioFormat), TypeInfoPropertyName = "MultimodalContentItemAudioInputAudioFormat2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.MultimodalContentItemVideo))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.MultimodalContentItemVideoType), TypeInfoPropertyName = "MultimodalContentItemVideoType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.MultimodalContentItemVideoVideoUrl))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.MultimodalContentItemFile))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.MultimodalContentItemFileType), TypeInfoPropertyName = "MultimodalContentItemFileType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.MultimodalContentItemFileFileUrl))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.VisionMultimodalContentItemText))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.VisionMultimodalContentItemTextType), TypeInfoPropertyName = "VisionMultimodalContentItemTextType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.VisionMultimodalContentItemImage))]
@@ -511,10 +381,7 @@ namespace ZAI
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.VisionMultimodalContentItemVideoVideoUrl))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.VisionMultimodalContentItemFile))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.VisionMultimodalContentItemFileType), TypeInfoPropertyName = "VisionMultimodalContentItemFileType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.VisionMultimodalContentItemFileFileUrl))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.VisionMultimodalContentItemFileId))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.VisionMultimodalContentItemFileIdType), TypeInfoPropertyName = "VisionMultimodalContentItemFileIdType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.VisionMultimodalContentItemFileIdFile))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.VisionMultimodalContentItemFileFile))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ChatThinkingType), TypeInfoPropertyName = "ChatThinkingType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.WebSearchToolSchemaType), TypeInfoPropertyName = "WebSearchToolSchemaType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.WebSearchObject))]
@@ -549,33 +416,6 @@ namespace ZAI
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(byte[]))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.CogVideoX3RequestVariant1Size), TypeInfoPropertyName = "CogVideoX3RequestVariant1Size2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.VideoCommonRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduText2VideoRequest), TypeInfoPropertyName = "ViduText2VideoRequest2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduText2VideoRequestVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduText2VideoRequestVariant1Model), TypeInfoPropertyName = "ViduText2VideoRequestVariant1Model2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduText2VideoRequestVariant1Style), TypeInfoPropertyName = "ViduText2VideoRequestVariant1Style2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduText2VideoRequestVariant1AspectRatio), TypeInfoPropertyName = "ViduText2VideoRequestVariant1AspectRatio2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduText2VideoRequestVariant1Size), TypeInfoPropertyName = "ViduText2VideoRequestVariant1Size2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduText2VideoRequestVariant1MovementAmplitude), TypeInfoPropertyName = "ViduText2VideoRequestVariant1MovementAmplitude2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduImage2VideoRequest), TypeInfoPropertyName = "ViduImage2VideoRequest2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduImage2VideoRequestVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduImage2VideoRequestVariant1Model), TypeInfoPropertyName = "ViduImage2VideoRequestVariant1Model2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.OneOf<global::ZAI.ViduImage2VideoRequestVariant1SizeViduq1Image?, global::ZAI.ViduImage2VideoRequestVariant1SizeViduq2Image?>), TypeInfoPropertyName = "OneOfViduImage2VideoRequestVariant1SizeViduq1ImageViduImage2VideoRequestVariant1SizeViduq2Image2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduImage2VideoRequestVariant1SizeViduq1Image), TypeInfoPropertyName = "ViduImage2VideoRequestVariant1SizeViduq1Image2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduImage2VideoRequestVariant1SizeViduq2Image), TypeInfoPropertyName = "ViduImage2VideoRequestVariant1SizeViduq2Image2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduImage2VideoRequestVariant1MovementAmplitude), TypeInfoPropertyName = "ViduImage2VideoRequestVariant1MovementAmplitude2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduFrames2VideoRequest), TypeInfoPropertyName = "ViduFrames2VideoRequest2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduFrames2VideoRequestVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduFrames2VideoRequestVariant1Model), TypeInfoPropertyName = "ViduFrames2VideoRequestVariant1Model2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.OneOf<global::ZAI.ViduFrames2VideoRequestVariant1SizeViduq1StartEnd?, global::ZAI.ViduFrames2VideoRequestVariant1SizeVidu2StartEnd?>), TypeInfoPropertyName = "OneOfViduFrames2VideoRequestVariant1SizeViduq1StartEndViduFrames2VideoRequestVariant1SizeVidu2StartEnd2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduFrames2VideoRequestVariant1SizeViduq1StartEnd), TypeInfoPropertyName = "ViduFrames2VideoRequestVariant1SizeViduq1StartEnd2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduFrames2VideoRequestVariant1SizeVidu2StartEnd), TypeInfoPropertyName = "ViduFrames2VideoRequestVariant1SizeVidu2StartEnd2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduFrames2VideoRequestVariant1MovementAmplitude), TypeInfoPropertyName = "ViduFrames2VideoRequestVariant1MovementAmplitude2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduReference2VideoRequest), TypeInfoPropertyName = "ViduReference2VideoRequest2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduReference2VideoRequestVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduReference2VideoRequestVariant1Model), TypeInfoPropertyName = "ViduReference2VideoRequestVariant1Model2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduReference2VideoRequestVariant1AspectRatio), TypeInfoPropertyName = "ViduReference2VideoRequestVariant1AspectRatio2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduReference2VideoRequestVariant1Size), TypeInfoPropertyName = "ViduReference2VideoRequestVariant1Size2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.ViduReference2VideoRequestVariant1MovementAmplitude), TypeInfoPropertyName = "ViduReference2VideoRequestVariant1MovementAmplitude2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.AsyncResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.AsyncCreateImageRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.AsyncCreateImageRequestModel), TypeInfoPropertyName = "AsyncCreateImageRequestModel2")]
@@ -711,7 +551,6 @@ namespace ZAI
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.NotFoundData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.Error))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.OneOf<global::ZAI.ChatCompletionTextRequest, global::ZAI.ChatCompletionVisionRequest>), TypeInfoPropertyName = "OneOfChatCompletionTextRequestChatCompletionVisionRequest2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.OneOf<global::ZAI.CogVideoX3Request?, global::ZAI.ViduText2VideoRequest?, global::ZAI.ViduImage2VideoRequest?, global::ZAI.ViduFrames2VideoRequest?, global::ZAI.ViduReference2VideoRequest?>), TypeInfoPropertyName = "OneOfCogVideoX3RequestViduText2VideoRequestViduImage2VideoRequestViduFrames2VideoRequestViduReference2VideoRequest2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.CreatePaasV4FilesRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.CreatePaasV4FilesRequestPurpose), TypeInfoPropertyName = "CreatePaasV4FilesRequestPurpose2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.OneOf<global::ZAI.TranslationAgentRequest, global::ZAI.SpecialEffectsVideosAgentRequest, global::ZAI.GlmSlideAgentRequest>), TypeInfoPropertyName = "OneOfTranslationAgentRequestSpecialEffectsVideosAgentRequestGlmSlideAgentRequest2")]
@@ -730,7 +569,6 @@ namespace ZAI
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.OneOf<global::ZAI.ChatCompletionVisionRequestMessageUserMessage, global::ZAI.ChatCompletionVisionRequestMessageSystemMessage, global::ZAI.ChatCompletionVisionRequestMessageAssistantMessage>?), TypeInfoPropertyName = "ChatCompletionVisionRequestMessageAssistantMessage_51e5b68790c6bf6d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.OneOf<global::ZAI.TokenizerRequestMessageUserMessage, global::ZAI.TokenizerRequestMessageSystemMessage, global::ZAI.TokenizerRequestMessageAssistantMessage>?), TypeInfoPropertyName = "TokenizerRequestMessageAssistantMessage_e137f001fef9025b")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.OneOf<global::ZAI.SpecialEffectsVideosAgentRequestMessageContentItemText, global::ZAI.SpecialEffectsVideosAgentRequestMessageContentItemImageUrl>?), TypeInfoPropertyName = "SpecialEffectsVideosAgentRequestMessageContentItemImageUrl_18cc3b2916008645")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::ZAI.OneOf<global::ZAI.CogVideoX3Request?, global::ZAI.ViduText2VideoRequest?, global::ZAI.ViduImage2VideoRequest?, global::ZAI.ViduFrames2VideoRequest?, global::ZAI.ViduReference2VideoRequest?>?), TypeInfoPropertyName = "ViduReference2VideoRequest_be462ac2034622a9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::ZAI.OneOf<global::ZAI.ChatCompletionTextRequestMessageUserMessage, global::ZAI.ChatCompletionTextRequestMessageSystemMessage, global::ZAI.ChatCompletionTextRequestMessageAssistantMessage, global::ZAI.ChatCompletionTextRequestMessageToolMessage>>), TypeInfoPropertyName = "ChatCompletionTextRequestMessageToolMessage_d0ac140de832b39e")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::ZAI.ChatCompletionTextRequestMessageAssistantMessageToolCall>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::ZAI.AnyOf<global::ZAI.FunctionToolSchema, global::ZAI.RetrievalToolSchema, global::ZAI.WebSearchToolSchema>>))]

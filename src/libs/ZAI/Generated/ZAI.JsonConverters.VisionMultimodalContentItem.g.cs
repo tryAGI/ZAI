@@ -46,26 +46,23 @@ namespace ZAI.JsonConverters
             if (__jsonProps.Contains("video_url")) __score2++;
             if (__jsonProps.Contains("video_url.url")) __score2++;
             var __score3 = 0;
-            if (__jsonProps.Contains("file_url")) __score3++;
-            if (__jsonProps.Contains("file_url.url")) __score3++;
+            if (__jsonProps.Contains("file")) __score3++;
+            if (__jsonProps.Contains("file.file_data")) __score3++;
+            if (__jsonProps.Contains("file.file_id")) __score3++;
+            if (__jsonProps.Contains("file.file_url")) __score3++;
+            if (__jsonProps.Contains("file.filename")) __score3++;
             if (__jsonProps.Contains("type")) __score3++;
-            var __score4 = 0;
-            if (__jsonProps.Contains("file")) __score4++;
-            if (__jsonProps.Contains("file.file_id")) __score4++;
-            if (__jsonProps.Contains("type")) __score4++;
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
             if (__score1 > __bestScore) { __bestScore = __score1; __bestIndex = 1; }
             if (__score2 > __bestScore) { __bestScore = __score2; __bestIndex = 2; }
             if (__score3 > __bestScore) { __bestScore = __score3; __bestIndex = 3; }
-            if (__score4 > __bestScore) { __bestScore = __score4; __bestIndex = 4; }
 
             global::ZAI.VisionMultimodalContentItemText? text = default;
             global::ZAI.VisionMultimodalContentItemImage? image = default;
             global::ZAI.VisionMultimodalContentItemVideo? video = default;
             global::ZAI.VisionMultimodalContentItemFile? file = default;
-            global::ZAI.VisionMultimodalContentItemFileId? fileId = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -128,24 +125,9 @@ namespace ZAI.JsonConverters
                     {
                     }
                 }
-                else if (__bestIndex == 4)
-                {
-                    try
-                    {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::ZAI.VisionMultimodalContentItemFileId), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::ZAI.VisionMultimodalContentItemFileId> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::ZAI.VisionMultimodalContentItemFileId).Name}");
-                        fileId = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
-                    }
-                    catch (global::System.Text.Json.JsonException)
-                    {
-                    }
-                    catch (global::System.InvalidOperationException)
-                    {
-                    }
-                }
             }
 
-            if (text == null && image == null && video == null && file == null && fileId == null)
+            if (text == null && image == null && video == null && file == null)
             {
                 try
                 {
@@ -162,7 +144,7 @@ namespace ZAI.JsonConverters
                 }
             }
 
-            if (text == null && image == null && video == null && file == null && fileId == null)
+            if (text == null && image == null && video == null && file == null)
             {
                 try
                 {
@@ -179,7 +161,7 @@ namespace ZAI.JsonConverters
                 }
             }
 
-            if (text == null && image == null && video == null && file == null && fileId == null)
+            if (text == null && image == null && video == null && file == null)
             {
                 try
                 {
@@ -196,7 +178,7 @@ namespace ZAI.JsonConverters
                 }
             }
 
-            if (text == null && image == null && video == null && file == null && fileId == null)
+            if (text == null && image == null && video == null && file == null)
             {
                 try
                 {
@@ -213,23 +195,6 @@ namespace ZAI.JsonConverters
                 }
             }
 
-            if (text == null && image == null && video == null && file == null && fileId == null)
-            {
-                try
-                {
-
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::ZAI.VisionMultimodalContentItemFileId), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::ZAI.VisionMultimodalContentItemFileId> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::ZAI.VisionMultimodalContentItemFileId).Name}");
-                    fileId = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
-                }
-                catch (global::System.Text.Json.JsonException)
-                {
-                }
-                catch (global::System.InvalidOperationException)
-                {
-                }
-            }
-
             var __value = new global::ZAI.VisionMultimodalContentItem(
                 text,
 
@@ -237,9 +202,7 @@ namespace ZAI.JsonConverters
 
                 video,
 
-                file,
-
-                fileId
+                file
                 );
 
             return __value;
@@ -277,12 +240,6 @@ namespace ZAI.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::ZAI.VisionMultimodalContentItemFile), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::ZAI.VisionMultimodalContentItemFile?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::ZAI.VisionMultimodalContentItemFile).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.File!, typeInfo);
-            }
-            else if (value.IsFileId)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::ZAI.VisionMultimodalContentItemFileId), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::ZAI.VisionMultimodalContentItemFileId?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::ZAI.VisionMultimodalContentItemFileId).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FileId!, typeInfo);
             }
         }
     }

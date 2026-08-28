@@ -28,12 +28,12 @@ namespace ZAI
         partial void PrepareCreatePaasV4VideosGenerationsArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::ZAI.CreatePaasV4VideosGenerationsAcceptLanguage? acceptLanguage,
-            global::ZAI.OneOf<global::ZAI.CogVideoX3Request?, global::ZAI.ViduText2VideoRequest?, global::ZAI.ViduImage2VideoRequest?, global::ZAI.ViduFrames2VideoRequest?, global::ZAI.ViduReference2VideoRequest?> request);
+            global::ZAI.CogVideoX3Request request);
         partial void PrepareCreatePaasV4VideosGenerationsRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             global::ZAI.CreatePaasV4VideosGenerationsAcceptLanguage? acceptLanguage,
-            global::ZAI.OneOf<global::ZAI.CogVideoX3Request?, global::ZAI.ViduText2VideoRequest?, global::ZAI.ViduImage2VideoRequest?, global::ZAI.ViduFrames2VideoRequest?, global::ZAI.ViduReference2VideoRequest?> request);
+            global::ZAI.CogVideoX3Request request);
         partial void ProcessCreatePaasV4VideosGenerationsResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -44,8 +44,7 @@ namespace ZAI
             ref string content);
 
         /// <summary>
-        /// CogVideoX is a video generation large model developed by Z.AI, equipped with powerful video generation capabilities. Simply inputting text or images allows for effortless video creation.<br/>
-        /// Vidu: A high-performance video large model that combines high consistency and high dynamism, with precise semantic understanding and exceptional reasoning speed.
+        /// CogVideoX is a video generation large model developed by Z.AI, equipped with powerful video generation capabilities. Simply inputting text or images allows for effortless video creation.
         /// </summary>
         /// <param name="acceptLanguage">
         /// Config desired response language for HTTP requests.<br/>
@@ -58,7 +57,7 @@ namespace ZAI
         /// <exception cref="global::ZAI.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::ZAI.VideoResponse> CreatePaasV4VideosGenerationsAsync(
 
-            global::ZAI.OneOf<global::ZAI.CogVideoX3Request?, global::ZAI.ViduText2VideoRequest?, global::ZAI.ViduImage2VideoRequest?, global::ZAI.ViduFrames2VideoRequest?, global::ZAI.ViduReference2VideoRequest?> request,
+            global::ZAI.CogVideoX3Request request,
             global::ZAI.CreatePaasV4VideosGenerationsAcceptLanguage? acceptLanguage = default,
             global::ZAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -74,8 +73,7 @@ namespace ZAI
             return __response.Body;
         }
         /// <summary>
-        /// CogVideoX is a video generation large model developed by Z.AI, equipped with powerful video generation capabilities. Simply inputting text or images allows for effortless video creation.<br/>
-        /// Vidu: A high-performance video large model that combines high consistency and high dynamism, with precise semantic understanding and exceptional reasoning speed.
+        /// CogVideoX is a video generation large model developed by Z.AI, equipped with powerful video generation capabilities. Simply inputting text or images allows for effortless video creation.
         /// </summary>
         /// <param name="acceptLanguage">
         /// Config desired response language for HTTP requests.<br/>
@@ -88,11 +86,13 @@ namespace ZAI
         /// <exception cref="global::ZAI.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::ZAI.AutoSDKHttpResponse<global::ZAI.VideoResponse>> CreatePaasV4VideosGenerationsAsResponseAsync(
 
-            global::ZAI.OneOf<global::ZAI.CogVideoX3Request?, global::ZAI.ViduText2VideoRequest?, global::ZAI.ViduImage2VideoRequest?, global::ZAI.ViduFrames2VideoRequest?, global::ZAI.ViduReference2VideoRequest?> request,
+            global::ZAI.CogVideoX3Request request,
             global::ZAI.CreatePaasV4VideosGenerationsAcceptLanguage? acceptLanguage = default,
             global::ZAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            request = request ?? throw new global::System.ArgumentNullException(nameof(request));
+
             PrepareArguments(
                 client: HttpClient);
             PrepareCreatePaasV4VideosGenerationsArguments(
@@ -492,8 +492,7 @@ namespace ZAI
             }
         }
         /// <summary>
-        /// CogVideoX is a video generation large model developed by Z.AI, equipped with powerful video generation capabilities. Simply inputting text or images allows for effortless video creation.<br/>
-        /// Vidu: A high-performance video large model that combines high consistency and high dynamism, with precise semantic understanding and exceptional reasoning speed.
+        /// CogVideoX is a video generation large model developed by Z.AI, equipped with powerful video generation capabilities. Simply inputting text or images allows for effortless video creation.
         /// </summary>
         /// <param name="acceptLanguage">
         /// Config desired response language for HTTP requests.<br/>
@@ -508,7 +507,7 @@ namespace ZAI
             global::ZAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::ZAI.OneOf<global::ZAI.CogVideoX3Request?, global::ZAI.ViduText2VideoRequest?, global::ZAI.ViduImage2VideoRequest?, global::ZAI.ViduFrames2VideoRequest?, global::ZAI.ViduReference2VideoRequest?>
+            var __request = new global::ZAI.CogVideoX3Request
             {
             };
 
