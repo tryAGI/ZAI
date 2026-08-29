@@ -91,8 +91,6 @@ namespace ZAI
             global::ZAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            request = request ?? throw new global::System.ArgumentNullException(nameof(request));
-
             PrepareArguments(
                 client: HttpClient);
             PrepareCreatePaasV4VideosGenerationsArguments(
