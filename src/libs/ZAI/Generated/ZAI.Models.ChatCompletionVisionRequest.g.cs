@@ -10,15 +10,15 @@ namespace ZAI
     {
         /// <summary>
         /// The model code to be called. The `GLM-5.3-Flash` series supports visual understanding, delivering excellent multimodal comprehension and tool calling capabilities.<br/>
-        /// Default Value: glm-5.3-flash<br/>
-        /// Example: glm-5.3-flash
+        /// Default Value: glm-5.3-flashx<br/>
+        /// Example: glm-5.3-flashx
         /// </summary>
-        /// <default>global::ZAI.ChatCompletionVisionRequestModel.Glm53Flash</default>
-        /// <example>glm-5.3-flash</example>
+        /// <default>global::ZAI.ChatCompletionVisionRequestModel.Glm53Flashx</default>
+        /// <example>glm-5.3-flashx</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("model")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::ZAI.JsonConverters.ChatCompletionVisionRequestModelJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::ZAI.ChatCompletionVisionRequestModel Model { get; set; } = global::ZAI.ChatCompletionVisionRequestModel.Glm53Flash;
+        public required global::ZAI.ChatCompletionVisionRequestModel Model { get; set; } = global::ZAI.ChatCompletionVisionRequestModel.Glm53Flashx;
 
         /// <summary>
         /// The current conversation message list as the model’s prompt input, provided in JSON array format, e.g.,`{“role”: “user”, “content”: “Hello”}`. Possible message types include system messages, user messages. Note: The input must not consist of system or assistant messages only.
@@ -62,7 +62,7 @@ namespace ZAI
         public global::ZAI.ChatCompletionVisionRequestReasoningEffort? ReasoningEffort { get; set; }
 
         /// <summary>
-        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. For `GLM-5.3-Flash` the default value is `1.0`; the GLM-4.6V, GLM-4.5V series default value is `0.8`; the autoglm-phone-multilingual default value is `0.0`.<br/>
+        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. For `GLM-5.3-Flash` series the default value is `1.0`; the GLM-4.6V, GLM-4.5V series default value is `0.8`; the autoglm-phone-multilingual default value is `0.0`.<br/>
         /// Default Value: 1F<br/>
         /// Example: 1F
         /// </summary>
@@ -71,7 +71,7 @@ namespace ZAI
         public float? Temperature { get; set; }
 
         /// <summary>
-        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. For `GLM-5.3-Flash` the default value is `0.95`; the GLM-4.6V, GLM-4.5V series default value is `0.6`; the autoglm-phone-multilingual default value is `0.85`.<br/>
+        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. For `GLM-5.3-Flash` series the default value is `0.95`; the GLM-4.6V, GLM-4.5V series default value is `0.6`; the autoglm-phone-multilingual default value is `0.85`.<br/>
         /// Default Value: 0.95F<br/>
         /// Example: 0.95F
         /// </summary>
@@ -80,7 +80,7 @@ namespace ZAI
         public float? TopP { get; set; }
 
         /// <summary>
-        /// The maximum number of tokens for model output. `GLM-5.3-Flash` supports a maximum output length of 128K, the GLM-4.6V series supports 32K, the GLM-4.5V series supports 16K, and autoglm-phone-multilingual supports 4K. It is recommended to set it to no less than 1024.<br/>
+        /// The maximum number of tokens for model output. `GLM-5.3-Flash` series supports a maximum output length of 128K, the GLM-4.6V series supports 32K, the GLM-4.5V series supports 16K, and autoglm-phone-multilingual supports 4K. It is recommended to set it to no less than 1024.<br/>
         /// Example: 1024
         /// </summary>
         /// <example>1024</example>
@@ -88,7 +88,7 @@ namespace ZAI
         public int? MaxTokens { get; set; }
 
         /// <summary>
-        /// A list of tools the model may call. Only supported by `GLM-5.3-Flash`, the GLM-4.6V series, and autoglm-phone-multilingual. Use this to provide a list of functions the model may generate JSON inputs for. A max of 128 functions are supported.
+        /// A list of tools the model may call. Only supported by `GLM-5.3-Flash` series, the GLM-4.6V series, and autoglm-phone-multilingual. Use this to provide a list of functions the model may generate JSON inputs for. A max of 128 functions are supported.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tools")]
         public global::System.Collections.Generic.IList<global::ZAI.FunctionToolSchema>? Tools { get; set; }
@@ -129,8 +129,8 @@ namespace ZAI
         /// </summary>
         /// <param name="model">
         /// The model code to be called. The `GLM-5.3-Flash` series supports visual understanding, delivering excellent multimodal comprehension and tool calling capabilities.<br/>
-        /// Default Value: glm-5.3-flash<br/>
-        /// Example: glm-5.3-flash
+        /// Default Value: glm-5.3-flashx<br/>
+        /// Example: glm-5.3-flashx
         /// </param>
         /// <param name="messages">
         /// The current conversation message list as the model’s prompt input, provided in JSON array format, e.g.,`{“role”: “user”, “content”: “Hello”}`. Possible message types include system messages, user messages. Note: The input must not consist of system or assistant messages only.
@@ -154,21 +154,21 @@ namespace ZAI
         /// Example: max
         /// </param>
         /// <param name="temperature">
-        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. For `GLM-5.3-Flash` the default value is `1.0`; the GLM-4.6V, GLM-4.5V series default value is `0.8`; the autoglm-phone-multilingual default value is `0.0`.<br/>
+        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. For `GLM-5.3-Flash` series the default value is `1.0`; the GLM-4.6V, GLM-4.5V series default value is `0.8`; the autoglm-phone-multilingual default value is `0.0`.<br/>
         /// Default Value: 1F<br/>
         /// Example: 1F
         /// </param>
         /// <param name="topP">
-        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. For `GLM-5.3-Flash` the default value is `0.95`; the GLM-4.6V, GLM-4.5V series default value is `0.6`; the autoglm-phone-multilingual default value is `0.85`.<br/>
+        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. For `GLM-5.3-Flash` series the default value is `0.95`; the GLM-4.6V, GLM-4.5V series default value is `0.6`; the autoglm-phone-multilingual default value is `0.85`.<br/>
         /// Default Value: 0.95F<br/>
         /// Example: 0.95F
         /// </param>
         /// <param name="maxTokens">
-        /// The maximum number of tokens for model output. `GLM-5.3-Flash` supports a maximum output length of 128K, the GLM-4.6V series supports 32K, the GLM-4.5V series supports 16K, and autoglm-phone-multilingual supports 4K. It is recommended to set it to no less than 1024.<br/>
+        /// The maximum number of tokens for model output. `GLM-5.3-Flash` series supports a maximum output length of 128K, the GLM-4.6V series supports 32K, the GLM-4.5V series supports 16K, and autoglm-phone-multilingual supports 4K. It is recommended to set it to no less than 1024.<br/>
         /// Example: 1024
         /// </param>
         /// <param name="tools">
-        /// A list of tools the model may call. Only supported by `GLM-5.3-Flash`, the GLM-4.6V series, and autoglm-phone-multilingual. Use this to provide a list of functions the model may generate JSON inputs for. A max of 128 functions are supported.
+        /// A list of tools the model may call. Only supported by `GLM-5.3-Flash` series, the GLM-4.6V series, and autoglm-phone-multilingual. Use this to provide a list of functions the model may generate JSON inputs for. A max of 128 functions are supported.
         /// </param>
         /// <param name="toolChoice">
         /// Controls how the model selects a tool.
