@@ -9,13 +9,13 @@ namespace ZAI
     public sealed partial class VisionMultimodalContentItemFileFile
     {
         /// <summary>
-        /// The ID returned by the [File Upload API](/api-reference/agents/file-upload), only GLM-5.3-Flash supported.
+        /// The ID returned by the [File Upload API](/api-reference/agents/file-upload), only GLM-5.3-Flash series supported.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("file_id")]
         public string? FileId { get; set; }
 
         /// <summary>
-        /// File URL address. Only GLM-5.3-Flash, GLM-4.6V, GLM-4.5V supported. Supports formats such as pdf, txt, word, jsonl, xlsx, pptx, with a maximum of 50.
+        /// File URL address. Only GLM-5.3-Flash series, GLM-4.6V, GLM-4.5V supported. Supports formats such as pdf, txt, word, jsonl, xlsx, pptx, with a maximum of 50.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("file_url")]
         public string? FileUrl { get; set; }
@@ -42,10 +42,10 @@ namespace ZAI
         /// Initializes a new instance of the <see cref="VisionMultimodalContentItemFileFile" /> class.
         /// </summary>
         /// <param name="fileId">
-        /// The ID returned by the [File Upload API](/api-reference/agents/file-upload), only GLM-5.3-Flash supported.
+        /// The ID returned by the [File Upload API](/api-reference/agents/file-upload), only GLM-5.3-Flash series supported.
         /// </param>
         /// <param name="fileUrl">
-        /// File URL address. Only GLM-5.3-Flash, GLM-4.6V, GLM-4.5V supported. Supports formats such as pdf, txt, word, jsonl, xlsx, pptx, with a maximum of 50.
+        /// File URL address. Only GLM-5.3-Flash series, GLM-4.6V, GLM-4.5V supported. Supports formats such as pdf, txt, word, jsonl, xlsx, pptx, with a maximum of 50.
         /// </param>
         /// <param name="fileData">
         /// Base64 file content in the format `data:&lt;MIME&gt;;base64,&lt;BASE64_DATA&gt;`.

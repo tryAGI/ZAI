@@ -5,8 +5,8 @@ namespace ZAI
 {
     /// <summary>
     /// The model code to be called. The `GLM-5.3-Flash` series supports visual understanding, delivering excellent multimodal comprehension and tool calling capabilities.<br/>
-    /// Default Value: glm-5.3-flash<br/>
-    /// Example: glm-5.3-flash
+    /// Default Value: glm-5.3-flashx<br/>
+    /// Example: glm-5.3-flashx
     /// </summary>
     public enum ChatCompletionVisionRequestModel
     {
@@ -34,6 +34,10 @@ namespace ZAI
         ///
         /// </summary>
         Glm53Flash,
+        /// <summary>
+        ///
+        /// </summary>
+        Glm53Flashx,
     }
 
     /// <summary>
@@ -54,6 +58,7 @@ namespace ZAI
                 ChatCompletionVisionRequestModel.Glm46vFlash => "glm-4.6v-flash",
                 ChatCompletionVisionRequestModel.Glm46vFlashx => "glm-4.6v-flashx",
                 ChatCompletionVisionRequestModel.Glm53Flash => "glm-5.3-flash",
+                ChatCompletionVisionRequestModel.Glm53Flashx => "glm-5.3-flashx",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -70,6 +75,7 @@ namespace ZAI
                 "glm-4.6v-flash" => ChatCompletionVisionRequestModel.Glm46vFlash,
                 "glm-4.6v-flashx" => ChatCompletionVisionRequestModel.Glm46vFlashx,
                 "glm-5.3-flash" => ChatCompletionVisionRequestModel.Glm53Flash,
+                "glm-5.3-flashx" => ChatCompletionVisionRequestModel.Glm53Flashx,
                 _ => null,
             };
         }
