@@ -70,7 +70,7 @@ namespace ZAI.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::ZAI.SpecialEffectsVideosAgentResponseVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::ZAI.SpecialEffectsVideosAgentResponseVariant1?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::ZAI.SpecialEffectsVideosAgentResponseVariant1).Name}");
-                var __element0 = global::System.Text.Json.JsonSerializer.SerializeToElement(value.SpecialEffectsVideosAgentResponseVariant1!, typeInfo);
+                var __element0 = global::System.Text.Json.JsonSerializer.SerializeToElement(value.PickSpecialEffectsVideosAgentResponseVariant1(), typeInfo);
                 if (__element0.ValueKind != global::System.Text.Json.JsonValueKind.Object)
                 {
                     throw new global::System.Text.Json.JsonException("AllOf values must serialize as JSON objects.");
@@ -88,7 +88,7 @@ namespace ZAI.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::ZAI.SpecialEffectsVideosAgentError), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::ZAI.SpecialEffectsVideosAgentError?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::ZAI.SpecialEffectsVideosAgentError).Name}");
-                var __element1 = global::System.Text.Json.JsonSerializer.SerializeToElement(value.Error!, typeInfo);
+                var __element1 = global::System.Text.Json.JsonSerializer.SerializeToElement(value.PickError(), typeInfo);
                 if (__element1.ValueKind != global::System.Text.Json.JsonValueKind.Object)
                 {
                     throw new global::System.Text.Json.JsonException("AllOf values must serialize as JSON objects.");

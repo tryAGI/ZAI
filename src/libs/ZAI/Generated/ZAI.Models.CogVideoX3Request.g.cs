@@ -42,8 +42,8 @@ namespace ZAI
         /// <summary>
         ///
         /// </summary>
-        public global::ZAI.CogVideoX3RequestVariant1 PickCogVideoX3RequestVariant1() => IsCogVideoX3RequestVariant1
-            ? CogVideoX3RequestVariant1!
+        public global::ZAI.CogVideoX3RequestVariant1 PickCogVideoX3RequestVariant1() => CogVideoX3RequestVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CogVideoX3RequestVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace ZAI
         /// <summary>
         ///
         /// </summary>
-        public global::ZAI.VideoCommonRequest PickCommon() => IsCommon
-            ? Common!
+        public global::ZAI.VideoCommonRequest PickCommon() => Common is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Common' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace ZAI
                 Validate();
             }
 
-            if (IsCogVideoX3RequestVariant1 && cogVideoX3RequestVariant1 != null)
+            if (CogVideoX3RequestVariant1 is { } __value0 && cogVideoX3RequestVariant1 != null)
             {
-                return cogVideoX3RequestVariant1(CogVideoX3RequestVariant1!);
+                return cogVideoX3RequestVariant1(__value0);
             }
-            else if (IsCommon && common != null)
+            else if (Common is { } __value1 && common != null)
             {
-                return common(Common!);
+                return common(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace ZAI
                 Validate();
             }
 
-            if (IsCogVideoX3RequestVariant1)
+            if (CogVideoX3RequestVariant1 is { } __value0)
             {
-                cogVideoX3RequestVariant1?.Invoke(CogVideoX3RequestVariant1!);
+                cogVideoX3RequestVariant1?.Invoke(__value0);
             }
-            else if (IsCommon)
+            else if (Common is { } __value1)
             {
-                common?.Invoke(Common!);
+                common?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace ZAI
                 Validate();
             }
 
-            if (IsCogVideoX3RequestVariant1)
+            if (CogVideoX3RequestVariant1 is { } __value0)
             {
-                cogVideoX3RequestVariant1?.Invoke(CogVideoX3RequestVariant1!);
+                cogVideoX3RequestVariant1?.Invoke(__value0);
             }
-            else if (IsCommon)
+            else if (Common is { } __value1)
             {
-                common?.Invoke(Common!);
+                common?.Invoke(__value1);
             }
         }
 
