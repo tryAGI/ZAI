@@ -42,8 +42,8 @@ namespace ZAI
         /// <summary>
         ///
         /// </summary>
-        public global::ZAI.SpecialEffectsVideosAgentResponseVariant1 PickSpecialEffectsVideosAgentResponseVariant1() => IsSpecialEffectsVideosAgentResponseVariant1
-            ? SpecialEffectsVideosAgentResponseVariant1!
+        public global::ZAI.SpecialEffectsVideosAgentResponseVariant1 PickSpecialEffectsVideosAgentResponseVariant1() => SpecialEffectsVideosAgentResponseVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SpecialEffectsVideosAgentResponseVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace ZAI
         /// <summary>
         ///
         /// </summary>
-        public global::ZAI.SpecialEffectsVideosAgentError PickError() => IsError
-            ? Error!
+        public global::ZAI.SpecialEffectsVideosAgentError PickError() => Error is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Error' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace ZAI
                 Validate();
             }
 
-            if (IsSpecialEffectsVideosAgentResponseVariant1 && specialEffectsVideosAgentResponseVariant1 != null)
+            if (SpecialEffectsVideosAgentResponseVariant1 is { } __value0 && specialEffectsVideosAgentResponseVariant1 != null)
             {
-                return specialEffectsVideosAgentResponseVariant1(SpecialEffectsVideosAgentResponseVariant1!);
+                return specialEffectsVideosAgentResponseVariant1(__value0);
             }
-            else if (IsError && error != null)
+            else if (Error is { } __value1 && error != null)
             {
-                return error(Error!);
+                return error(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace ZAI
                 Validate();
             }
 
-            if (IsSpecialEffectsVideosAgentResponseVariant1)
+            if (SpecialEffectsVideosAgentResponseVariant1 is { } __value0)
             {
-                specialEffectsVideosAgentResponseVariant1?.Invoke(SpecialEffectsVideosAgentResponseVariant1!);
+                specialEffectsVideosAgentResponseVariant1?.Invoke(__value0);
             }
-            else if (IsError)
+            else if (Error is { } __value1)
             {
-                error?.Invoke(Error!);
+                error?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace ZAI
                 Validate();
             }
 
-            if (IsSpecialEffectsVideosAgentResponseVariant1)
+            if (SpecialEffectsVideosAgentResponseVariant1 is { } __value0)
             {
-                specialEffectsVideosAgentResponseVariant1?.Invoke(SpecialEffectsVideosAgentResponseVariant1!);
+                specialEffectsVideosAgentResponseVariant1?.Invoke(__value0);
             }
-            else if (IsError)
+            else if (Error is { } __value1)
             {
-                error?.Invoke(Error!);
+                error?.Invoke(__value1);
             }
         }
 

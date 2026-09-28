@@ -221,25 +221,25 @@ namespace ZAI.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::ZAI.VisionMultimodalContentItemText), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::ZAI.VisionMultimodalContentItemText?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::ZAI.VisionMultimodalContentItemText).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Text!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickText(), typeInfo);
             }
             else if (value.IsImage)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::ZAI.VisionMultimodalContentItemImage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::ZAI.VisionMultimodalContentItemImage?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::ZAI.VisionMultimodalContentItemImage).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Image!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickImage(), typeInfo);
             }
             else if (value.IsVideo)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::ZAI.VisionMultimodalContentItemVideo), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::ZAI.VisionMultimodalContentItemVideo?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::ZAI.VisionMultimodalContentItemVideo).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Video!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickVideo(), typeInfo);
             }
             else if (value.IsFile)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::ZAI.VisionMultimodalContentItemFile), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::ZAI.VisionMultimodalContentItemFile?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::ZAI.VisionMultimodalContentItemFile).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.File!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFile(), typeInfo);
             }
         }
     }
