@@ -12,10 +12,6 @@ namespace ZAI
         /// <summary>
         ///
         /// </summary>
-        Cogview4250304,
-        /// <summary>
-        ///
-        /// </summary>
         GlmImage,
     }
 
@@ -31,7 +27,6 @@ namespace ZAI
         {
             return value switch
             {
-                CreateImageRequestModel.Cogview4250304 => "cogview-4-250304",
                 CreateImageRequestModel.GlmImage => "glm-image",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -43,7 +38,6 @@ namespace ZAI
         {
             return value switch
             {
-                "cogview-4-250304" => CreateImageRequestModel.Cogview4250304,
                 "glm-image" => CreateImageRequestModel.GlmImage,
                 _ => null,
             };

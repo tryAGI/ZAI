@@ -46,7 +46,7 @@ namespace ZAI
         public bool? Stream { get; set; }
 
         /// <summary>
-        /// Only supported by GLM-4.5 series and higher models. This parameter is used to control whether the model enable the chain of thought.
+        /// Only supported by GLM-4.6 series and higher models. This parameter is used to control whether the model enable the chain of thought.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("thinking")]
         public global::ZAI.ChatThinking? Thinking { get; set; }
@@ -62,7 +62,7 @@ namespace ZAI
         public global::ZAI.ChatCompletionTextRequestReasoningEffort? ReasoningEffort { get; set; }
 
         /// <summary>
-        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. The GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series default value is `1.0`, GLM-4.5 series default value is `0.6`, GLM-4-32B-0414-128K default value is `0.75`.<br/>
+        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. The GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series default value is `1.0`<br/>
         /// Default Value: 1F<br/>
         /// Example: 1F
         /// </summary>
@@ -71,7 +71,7 @@ namespace ZAI
         public float? Temperature { get; set; }
 
         /// <summary>
-        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. The GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6, GLM-4.5 series default value is `0.95`, GLM-4-32B-0414-128K default value is `0.9`.<br/>
+        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. The GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series default value is `0.95`.<br/>
         /// Default Value: 0.95F<br/>
         /// Example: 0.95F
         /// </summary>
@@ -80,7 +80,7 @@ namespace ZAI
         public float? TopP { get; set; }
 
         /// <summary>
-        /// The maximum number of tokens for model output, the GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series supports 128K maximum output, the GLM-4.5 series supports 96K maximum output, the GLM-4.6v series supports 32K maximum output, the GLM-4.5v series supports 16K maximum output, GLM-4-32B-0414-128K supports 16K maximum output.<br/>
+        /// The maximum number of tokens for model output, the GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series supports 128K maximum output.<br/>
         /// Example: 1024
         /// </summary>
         /// <example>1024</example>
@@ -161,7 +161,7 @@ namespace ZAI
         /// Example: false
         /// </param>
         /// <param name="thinking">
-        /// Only supported by GLM-4.5 series and higher models. This parameter is used to control whether the model enable the chain of thought.
+        /// Only supported by GLM-4.6 series and higher models. This parameter is used to control whether the model enable the chain of thought.
         /// </param>
         /// <param name="reasoningEffort">
         /// Controls the model's reasoning effort level, takes effect when `thinking` is enabled. Default is `max`, supported by `GLM-5.2` and above. For the `GLM-5.3` `GLM-5.3-FLASH` model, only the `low` / `high` / `max` levels are supported. For the `GLM-5.2` model, for compatibility with other protocols, passing `none` or `minimal` will cause the model to skip thinking; `low` and `medium` will be mapped to `high`; `xhigh` will be mapped to `max`.<br/>
@@ -169,17 +169,17 @@ namespace ZAI
         /// Example: max
         /// </param>
         /// <param name="temperature">
-        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. The GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series default value is `1.0`, GLM-4.5 series default value is `0.6`, GLM-4-32B-0414-128K default value is `0.75`.<br/>
+        /// Sampling temperature, controls the randomness of the output, must be a positive number within the range: `[0.0, 1.0]`. The GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series default value is `1.0`<br/>
         /// Default Value: 1F<br/>
         /// Example: 1F
         /// </param>
         /// <param name="topP">
-        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. The GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6, GLM-4.5 series default value is `0.95`, GLM-4-32B-0414-128K default value is `0.9`.<br/>
+        /// Another method of temperature sampling, value range is: `[0.01, 1.0]`. The GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series default value is `0.95`.<br/>
         /// Default Value: 0.95F<br/>
         /// Example: 0.95F
         /// </param>
         /// <param name="maxTokens">
-        /// The maximum number of tokens for model output, the GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series supports 128K maximum output, the GLM-4.5 series supports 96K maximum output, the GLM-4.6v series supports 32K maximum output, the GLM-4.5v series supports 16K maximum output, GLM-4-32B-0414-128K supports 16K maximum output.<br/>
+        /// The maximum number of tokens for model output, the GLM-5.3, GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series supports 128K maximum output.<br/>
         /// Example: 1024
         /// </param>
         /// <param name="toolStream">
