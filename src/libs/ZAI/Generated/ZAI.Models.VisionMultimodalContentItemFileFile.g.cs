@@ -15,7 +15,7 @@ namespace ZAI
         public string? FileId { get; set; }
 
         /// <summary>
-        /// File URL address. Only GLM-5.3-Flash series, GLM-4.6V, GLM-4.5V supported. Supports formats such as pdf, txt, word, jsonl, xlsx, pptx, with a maximum of 50.
+        /// File URL address. Only GLM-5.3-Flash series. Supports formats such as pdf, txt, word, jsonl, xlsx, pptx, with a maximum of 50.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("file_url")]
         public string? FileUrl { get; set; }
@@ -45,7 +45,7 @@ namespace ZAI
         /// The ID returned by the [File Upload API](/api-reference/agents/file-upload), only GLM-5.3-Flash series supported.
         /// </param>
         /// <param name="fileUrl">
-        /// File URL address. Only GLM-5.3-Flash series, GLM-4.6V, GLM-4.5V supported. Supports formats such as pdf, txt, word, jsonl, xlsx, pptx, with a maximum of 50.
+        /// File URL address. Only GLM-5.3-Flash series. Supports formats such as pdf, txt, word, jsonl, xlsx, pptx, with a maximum of 50.
         /// </param>
         /// <param name="fileData">
         /// Base64 file content in the format `data:&lt;MIME&gt;;base64,&lt;BASE64_DATA&gt;`.

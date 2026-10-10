@@ -9,7 +9,7 @@ namespace ZAI
     public sealed partial class VisionMultimodalContentItemImageImageUrl
     {
         /// <summary>
-        /// Image URL or Base64 encoding. Image size limit is under 5M per image, with pixels not exceeding 6000*6000. GLM-5V GLM4.6V series are limited to 150 sheets, GLM4.5V limit 50 sheets. Supports jpg, png, jpeg formats.
+        /// Image URL or Base64 encoding. Image size limit is under 5M per image, with pixels not exceeding 6000*6000. GLM-5V are limited to 150 sheets.Supports jpg, png, jpeg formats.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("url")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -25,7 +25,7 @@ namespace ZAI
         /// Initializes a new instance of the <see cref="VisionMultimodalContentItemImageImageUrl" /> class.
         /// </summary>
         /// <param name="url">
-        /// Image URL or Base64 encoding. Image size limit is under 5M per image, with pixels not exceeding 6000*6000. GLM-5V GLM4.6V series are limited to 150 sheets, GLM4.5V limit 50 sheets. Supports jpg, png, jpeg formats.
+        /// Image URL or Base64 encoding. Image size limit is under 5M per image, with pixels not exceeding 6000*6000. GLM-5V are limited to 150 sheets.Supports jpg, png, jpeg formats.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

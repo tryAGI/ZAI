@@ -15,8 +15,7 @@ namespace ZAI
         /// <example>glm-image</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("model")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::ZAI.JsonConverters.CreateImageRequestModelJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::ZAI.CreateImageRequestModel Model { get; set; }
+        public global::ZAI.CreateImageRequestModel Model { get; set; }
 
         /// <summary>
         /// The text description of the image to be generated.<br/>
@@ -60,13 +59,13 @@ namespace ZAI
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateImageRequest" /> class.
         /// </summary>
-        /// <param name="model">
-        /// Model code<br/>
-        /// Example: glm-image
-        /// </param>
         /// <param name="prompt">
         /// The text description of the image to be generated.<br/>
         /// Example: A cute little kitten.
+        /// </param>
+        /// <param name="model">
+        /// Model code<br/>
+        /// Example: glm-image
         /// </param>
         /// <param name="quality">
         /// The quality of the generated image. `glm-image` default is `hd`, others model is `standard`. `hd`: Generates a more detailed and rich image with higher overall consistency, but takes about `20` seconds. `standard`: Generates an image quickly, suitable for scenarios with higher requirements for generation speed, takes about `5-10` seconds.<br/>
@@ -85,8 +84,8 @@ namespace ZAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateImageRequest(
-            global::ZAI.CreateImageRequestModel model,
             string prompt,
+            global::ZAI.CreateImageRequestModel model,
             global::ZAI.CreateImageRequestQuality? quality,
             string? size,
             string? userId)

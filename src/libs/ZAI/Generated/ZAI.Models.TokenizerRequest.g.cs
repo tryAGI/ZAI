@@ -17,8 +17,7 @@ namespace ZAI
         /// <example>glm-4.6</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("model")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::ZAI.JsonConverters.TokenizerRequestModelJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::ZAI.TokenizerRequestModel Model { get; set; } = global::ZAI.TokenizerRequestModel.Glm46;
+        public global::ZAI.TokenizerRequestModel Model { get; set; } = global::ZAI.TokenizerRequestModel.Glm46;
 
         /// <summary>
         /// The current conversation message list as the model’s prompt input, provided in JSON array format, e.g.,`{“role”: “user”, “content”: “Hello”}`. Possible message types include system messages, user messages. Note: The input must not consist of system or assistant messages only.
@@ -54,11 +53,6 @@ namespace ZAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TokenizerRequest" /> class.
         /// </summary>
-        /// <param name="model">
-        /// The model code to be called.<br/>
-        /// Default Value: glm-4.6<br/>
-        /// Example: glm-4.6
-        /// </param>
         /// <param name="messages">
         /// The current conversation message list as the model’s prompt input, provided in JSON array format, e.g.,`{“role”: “user”, “content”: “Hello”}`. Possible message types include system messages, user messages. Note: The input must not consist of system or assistant messages only.
         /// </param>
@@ -71,15 +65,20 @@ namespace ZAI
         /// <param name="userId">
         /// Unique ID for the end user, 6–128 characters. Avoid using sensitive information.
         /// </param>
+        /// <param name="model">
+        /// The model code to be called.<br/>
+        /// Default Value: glm-4.6<br/>
+        /// Example: glm-4.6
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TokenizerRequest(
-            global::ZAI.TokenizerRequestModel model,
             global::System.Collections.Generic.IList<global::ZAI.OneOf<global::ZAI.TokenizerRequestMessageUserMessage, global::ZAI.TokenizerRequestMessageSystemMessage, global::ZAI.TokenizerRequestMessageAssistantMessage>> messages,
             global::System.Collections.Generic.IList<global::ZAI.FunctionToolSchema>? tools,
             string? requestId,
-            string? userId)
+            string? userId,
+            global::ZAI.TokenizerRequestModel model = global::ZAI.TokenizerRequestModel.Glm46)
         {
             this.Model = model;
             this.Messages = messages ?? throw new global::System.ArgumentNullException(nameof(messages));

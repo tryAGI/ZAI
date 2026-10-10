@@ -13,15 +13,7 @@ namespace ZAI
         /// <summary>
         ///
         /// </summary>
-        Glm45,
-        /// <summary>
-        ///
-        /// </summary>
         Glm46,
-        /// <summary>
-        ///
-        /// </summary>
-        Glm46v,
     }
 
     /// <summary>
@@ -36,9 +28,7 @@ namespace ZAI
         {
             return value switch
             {
-                TokenizerRequestModel.Glm45 => "glm-4.5",
                 TokenizerRequestModel.Glm46 => "glm-4.6",
-                TokenizerRequestModel.Glm46v => "glm-4.6v",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -49,9 +39,7 @@ namespace ZAI
         {
             return value switch
             {
-                "glm-4.5" => TokenizerRequestModel.Glm45,
                 "glm-4.6" => TokenizerRequestModel.Glm46,
-                "glm-4.6v" => TokenizerRequestModel.Glm46v,
                 _ => null,
             };
         }

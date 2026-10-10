@@ -13,26 +13,6 @@ namespace ZAI
         /// <summary>
         ///
         /// </summary>
-        AutoglmPhoneMultilingual,
-        /// <summary>
-        ///
-        /// </summary>
-        Glm45v,
-        /// <summary>
-        ///
-        /// </summary>
-        Glm46v,
-        /// <summary>
-        ///
-        /// </summary>
-        Glm46vFlash,
-        /// <summary>
-        ///
-        /// </summary>
-        Glm46vFlashx,
-        /// <summary>
-        ///
-        /// </summary>
         Glm53Flash,
         /// <summary>
         ///
@@ -52,11 +32,6 @@ namespace ZAI
         {
             return value switch
             {
-                ChatCompletionVisionRequestModel.AutoglmPhoneMultilingual => "autoglm-phone-multilingual",
-                ChatCompletionVisionRequestModel.Glm45v => "glm-4.5v",
-                ChatCompletionVisionRequestModel.Glm46v => "glm-4.6v",
-                ChatCompletionVisionRequestModel.Glm46vFlash => "glm-4.6v-flash",
-                ChatCompletionVisionRequestModel.Glm46vFlashx => "glm-4.6v-flashx",
                 ChatCompletionVisionRequestModel.Glm53Flash => "glm-5.3-flash",
                 ChatCompletionVisionRequestModel.Glm53Flashx => "glm-5.3-flashx",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -69,11 +44,6 @@ namespace ZAI
         {
             return value switch
             {
-                "autoglm-phone-multilingual" => ChatCompletionVisionRequestModel.AutoglmPhoneMultilingual,
-                "glm-4.5v" => ChatCompletionVisionRequestModel.Glm45v,
-                "glm-4.6v" => ChatCompletionVisionRequestModel.Glm46v,
-                "glm-4.6v-flash" => ChatCompletionVisionRequestModel.Glm46vFlash,
-                "glm-4.6v-flashx" => ChatCompletionVisionRequestModel.Glm46vFlashx,
                 "glm-5.3-flash" => ChatCompletionVisionRequestModel.Glm53Flash,
                 "glm-5.3-flashx" => ChatCompletionVisionRequestModel.Glm53Flashx,
                 _ => null,

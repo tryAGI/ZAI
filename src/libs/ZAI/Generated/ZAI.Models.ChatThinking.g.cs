@@ -4,12 +4,12 @@
 namespace ZAI
 {
     /// <summary>
-    /// Only supported by GLM-4.5 series and higher models. This parameter is used to control whether the model enable the chain of thought.
+    /// Only supported by GLM-4.6 series and higher models. This parameter is used to control whether the model enable the chain of thought.
     /// </summary>
     public sealed partial class ChatThinking
     {
         /// <summary>
-        /// Whether to enable the chain of thought(`GLM-5.3` `GLM-5.3-FLASH` series can only be enabled, and the thinking depth is controlled by `reasoning_effort`; for other models, when enabled, GLM-5.2 GLM-5.1 GLM-5 GLM-4.6 GLM-4.5 and others will automatically determine whether to think, while GLM-4.7 and GLM-4.5V will think compulsorily), default: enabled<br/>
+        /// Whether to enable the chain of thought(`GLM-5.3` `GLM-5.3-FLASH` series can only be enabled, and the thinking depth is controlled by `reasoning_effort`; for other models, when enabled, GLM-5.2 GLM-5.1 GLM-5 GLM-4.6 and others will automatically determine whether to think, while GLM-4.7 will think compulsorily), default: enabled<br/>
         /// Default Value: enabled
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
@@ -38,7 +38,7 @@ namespace ZAI
         /// Initializes a new instance of the <see cref="ChatThinking" /> class.
         /// </summary>
         /// <param name="type">
-        /// Whether to enable the chain of thought(`GLM-5.3` `GLM-5.3-FLASH` series can only be enabled, and the thinking depth is controlled by `reasoning_effort`; for other models, when enabled, GLM-5.2 GLM-5.1 GLM-5 GLM-4.6 GLM-4.5 and others will automatically determine whether to think, while GLM-4.7 and GLM-4.5V will think compulsorily), default: enabled<br/>
+        /// Whether to enable the chain of thought(`GLM-5.3` `GLM-5.3-FLASH` series can only be enabled, and the thinking depth is controlled by `reasoning_effort`; for other models, when enabled, GLM-5.2 GLM-5.1 GLM-5 GLM-4.6 and others will automatically determine whether to think, while GLM-4.7 will think compulsorily), default: enabled<br/>
         /// Default Value: enabled
         /// </param>
         /// <param name="clearThinking">
