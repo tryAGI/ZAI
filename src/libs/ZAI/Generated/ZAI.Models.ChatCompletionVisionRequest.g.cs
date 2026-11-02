@@ -9,7 +9,7 @@ namespace ZAI
     public sealed partial class ChatCompletionVisionRequest
     {
         /// <summary>
-        /// The model code to be called. The `GLM-5.3-Flash` series supports visual understanding, delivering excellent multimodal comprehension and tool calling capabilities.<br/>
+        /// The model code to be called. The `GLM-5.3-Flash` series supports visual understanding, delivering excellent multimodal comprehension and tool calling capabilities. The `glm-5.3-flashx-legal` variant is further optimized for professional legal workflows such as legal research, contract review, and legal document drafting.<br/>
         /// Default Value: glm-5.3-flashx<br/>
         /// Example: glm-5.3-flashx
         /// </summary>
@@ -128,7 +128,7 @@ namespace ZAI
         /// Initializes a new instance of the <see cref="ChatCompletionVisionRequest" /> class.
         /// </summary>
         /// <param name="model">
-        /// The model code to be called. The `GLM-5.3-Flash` series supports visual understanding, delivering excellent multimodal comprehension and tool calling capabilities.<br/>
+        /// The model code to be called. The `GLM-5.3-Flash` series supports visual understanding, delivering excellent multimodal comprehension and tool calling capabilities. The `glm-5.3-flashx-legal` variant is further optimized for professional legal workflows such as legal research, contract review, and legal document drafting.<br/>
         /// Default Value: glm-5.3-flashx<br/>
         /// Example: glm-5.3-flashx
         /// </param>

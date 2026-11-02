@@ -4,7 +4,7 @@
 namespace ZAI
 {
     /// <summary>
-    /// The model code to be called. The `GLM-5.3-Flash` series supports visual understanding, delivering excellent multimodal comprehension and tool calling capabilities.<br/>
+    /// The model code to be called. The `GLM-5.3-Flash` series supports visual understanding, delivering excellent multimodal comprehension and tool calling capabilities. The `glm-5.3-flashx-legal` variant is further optimized for professional legal workflows such as legal research, contract review, and legal document drafting.<br/>
     /// Default Value: glm-5.3-flashx<br/>
     /// Example: glm-5.3-flashx
     /// </summary>
@@ -18,6 +18,10 @@ namespace ZAI
         ///
         /// </summary>
         Glm53Flashx,
+        /// <summary>
+        ///
+        /// </summary>
+        Glm53FlashxLegal,
     }
 
     /// <summary>
@@ -34,6 +38,7 @@ namespace ZAI
             {
                 ChatCompletionVisionRequestModel.Glm53Flash => "glm-5.3-flash",
                 ChatCompletionVisionRequestModel.Glm53Flashx => "glm-5.3-flashx",
+                ChatCompletionVisionRequestModel.Glm53FlashxLegal => "glm-5.3-flashx-legal",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -46,6 +51,7 @@ namespace ZAI
             {
                 "glm-5.3-flash" => ChatCompletionVisionRequestModel.Glm53Flash,
                 "glm-5.3-flashx" => ChatCompletionVisionRequestModel.Glm53Flashx,
+                "glm-5.3-flashx-legal" => ChatCompletionVisionRequestModel.Glm53FlashxLegal,
                 _ => null,
             };
         }
