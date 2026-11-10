@@ -418,6 +418,43 @@ namespace ZAI
                                 retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
+                            // Request failed.
+                            if (!__response.IsSuccessStatusCode)
+                            {
+                                string? __content_default = null;
+                                global::System.Exception? __exception_default = null;
+                                global::ZAI.Error? __value_default = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_default = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_default = global::ZAI.Error.FromJson(__content_default, JsonSerializerContext);
+                                    }
+                                    else
+                                    {
+                                        __content_default = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_default = global::ZAI.Error.FromJson(__content_default, JsonSerializerContext);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_default = __ex;
+                                }
+
+
+                                throw global::ZAI.ApiException<global::ZAI.Error>.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_default ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_default,
+                                    responseBody: __content_default,
+                                    responseObject: __value_default,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
 
                             try
                             {
@@ -965,6 +1002,43 @@ namespace ZAI
                                 retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
+                            // Request failed.
+                            if (!__response.IsSuccessStatusCode)
+                            {
+                                string? __content_default = null;
+                                global::System.Exception? __exception_default = null;
+                                global::ZAI.Error? __value_default = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_default = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_default = global::ZAI.Error.FromJson(__content_default, JsonSerializerContext);
+                                    }
+                                    else
+                                    {
+                                        __content_default = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_default = global::ZAI.Error.FromJson(__content_default, JsonSerializerContext);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_default = __ex;
+                                }
+
+
+                                throw global::ZAI.ApiException<global::ZAI.Error>.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_default ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_default,
+                                    responseBody: __content_default,
+                                    responseObject: __value_default,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
 
                             try
                             {
