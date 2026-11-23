@@ -17,11 +17,10 @@ namespace ZAI
         public global::ZAI.ChatThinkingType? Type { get; set; }
 
         /// <summary>
-        /// Default value is True. Controls whether to clear `reasoning_content` from previous conversation turns. View more in [Thinking Mode](/guides/capabilities/thinking-mode). <br/>
-        ///  - `true` (default): For this request, the system ignores/removes `reasoning_content` from prior turns, and only keeps non-reasoning context (e.g., user/assistant visible text, tool calls, and tool results). This is recommended for general chat or lightweight tasks to reduce context length and cost. <br/>
-        ///  - `false`: Retains `reasoning_content` from prior turns and includes it in the context sent to the model. To enable Preserved Thinking, you must forward the full, unmodified, and correctly ordered historical `reasoning_content` in `messages`. Missing, truncated, rewritten, or reordered blocks may degrade performance or prevent the feature from taking effect. <br/>
+        /// Controls whether to clear `reasoning_content` from previous conversation turns. The default value depends on the model: `false` for GLM-5.4 and later, `true` for earlier models. View more in [Thinking Mode](/guides/capabilities/thinking-mode). <br/>
+        ///  - `true` (default for models before GLM-5.4): For this request, the system ignores/removes `reasoning_content` from prior turns, and only keeps non-reasoning context (e.g., user/assistant visible text, tool calls, and tool results). This is recommended for general chat or lightweight tasks to reduce context length and cost. <br/>
+        ///  - `false` (default for GLM-5.4 and later): Retains `reasoning_content` from prior turns and includes it in the context sent to the model. To enable Preserved Thinking, you must forward the full, unmodified, and correctly ordered historical `reasoning_content` in `messages`. Missing, truncated, rewritten, or reordered blocks may degrade performance or prevent the feature from taking effect. <br/>
         ///  - Notes: This parameter only affects cross-turn historical thinking blocks; it does not change whether the model generates/returns thinking in the current turn.<br/>
-        /// Default Value: true<br/>
         /// Example: true
         /// </summary>
         /// <example>true</example>
@@ -42,11 +41,10 @@ namespace ZAI
         /// Default Value: enabled
         /// </param>
         /// <param name="clearThinking">
-        /// Default value is True. Controls whether to clear `reasoning_content` from previous conversation turns. View more in [Thinking Mode](/guides/capabilities/thinking-mode). <br/>
-        ///  - `true` (default): For this request, the system ignores/removes `reasoning_content` from prior turns, and only keeps non-reasoning context (e.g., user/assistant visible text, tool calls, and tool results). This is recommended for general chat or lightweight tasks to reduce context length and cost. <br/>
-        ///  - `false`: Retains `reasoning_content` from prior turns and includes it in the context sent to the model. To enable Preserved Thinking, you must forward the full, unmodified, and correctly ordered historical `reasoning_content` in `messages`. Missing, truncated, rewritten, or reordered blocks may degrade performance or prevent the feature from taking effect. <br/>
+        /// Controls whether to clear `reasoning_content` from previous conversation turns. The default value depends on the model: `false` for GLM-5.4 and later, `true` for earlier models. View more in [Thinking Mode](/guides/capabilities/thinking-mode). <br/>
+        ///  - `true` (default for models before GLM-5.4): For this request, the system ignores/removes `reasoning_content` from prior turns, and only keeps non-reasoning context (e.g., user/assistant visible text, tool calls, and tool results). This is recommended for general chat or lightweight tasks to reduce context length and cost. <br/>
+        ///  - `false` (default for GLM-5.4 and later): Retains `reasoning_content` from prior turns and includes it in the context sent to the model. To enable Preserved Thinking, you must forward the full, unmodified, and correctly ordered historical `reasoning_content` in `messages`. Missing, truncated, rewritten, or reordered blocks may degrade performance or prevent the feature from taking effect. <br/>
         ///  - Notes: This parameter only affects cross-turn historical thinking blocks; it does not change whether the model generates/returns thinking in the current turn.<br/>
-        /// Default Value: true<br/>
         /// Example: true
         /// </param>
 #if NET7_0_OR_GREATER
